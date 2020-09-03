@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
-    <link rel="shortcut item-logo" href="./img/pamjaya-logo.png">
-    <link rel="apple-touch-item-logo" href="./img/pamjaya-logo.png">
+    <link rel="shortcut icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
+    <link rel="apple-touch-icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/main.css">
     <link rel="stylesheet" type='text/javascript' href="<?php echo base_url(); ?>assets/js/script.js">

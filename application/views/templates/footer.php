@@ -1,5 +1,5 @@
 <footer id="footer">
-    <img src="./img/footer.gif">
+    <img src="<?= base_url('assets/img/footer.gif'); ?>">
 </footer>
 
 

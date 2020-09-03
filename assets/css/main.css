@@ -199,7 +199,7 @@
     
     .services {
         display: grid;
-        row-gap: 20px;
+        row-gap: 50px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     /* Content */
@@ -207,7 +207,7 @@
     .item {
         display: grid;
         display: inline-block;
-        padding: 20px;
+        padding: 10px;
         width: 100px;
         height: 100px;
         justify-self: center;
@@ -253,16 +253,13 @@
         display: grid;
         font-size: 16px;
         align-self: end;
+        margin-top: 25px;
     }
     
     .title {
         font-size: 20px;
         text-align: center;
-        margin-top: 3rem;
-    }
-    
-    .item .password {
-        width: 60px;
+        margin-top: 5rem;
     }
     /* Footer */
     

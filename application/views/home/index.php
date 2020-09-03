@@ -1,55 +1,74 @@
 <section class="services">
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/alfrescologo.png'); ?>" alt="Alfresco">
+        <a href="https://docs.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/alfresco-icon.png'); ?>" alt="Alfresco">
+        </a>
         <h3 class="item-title">Alfresco </h3>
     </div>
     <div class="item">
-
-        <img class="item-logo" src="<?= base_url('assets/img/tnde.png'); ?>" alt="TNDE">
+        <a href="http://tnde.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/tnde-icon.png'); ?>" alt="TNDE">
+        </a>
         <h2 class="item-title">TNDE</h2>
     </div>
-
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/Zimbra_Identity_Color_HighRes.png-440px.png'); ?>" alt="zimbra">
-        <h3 class="item-title">Zimbra</h3>
+        <a href="https://mail.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/zimbra-icon.png'); ?>" alt="zimbra">
+        </a>
+        <h3 class="item-title">e-mail</h3>
 
     </div>
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/HRIS-2.png'); ?>" alt="HRIS">
+        <a href="https://sf.dataon.com/sf6/index.cfm" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/hris-icon.png'); ?>" alt="HRIS">
+        </a>
         <h2 class="item-title">HRIS</h2>
     </div>
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/akses sil.png'); ?>" alt="SIL">
+        <a href="http://portal.pamjaya.co.id/akses-sil.php" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/sil-icon.png'); ?>" alt="SIL">
+        </a>
         <h2 class="item-title"> SIL</h2>
-
     </div>
-
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/e-procurement.png'); ?>" alt="e-procurement">
-        <h2 class="item-title"> procurement</h2>
+        <a href="http://ppid.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/ppid-icon.png'); ?>" alt="PPID">
+        </a>
+        <h2 class="item-title">PPID</h2>
     </div>
-
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/kimonev.jpg'); ?>" alt="kimonev">
+        <a href="https://kimonev.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/kimonev-icon.png'); ?>" alt="kimonev">
+        </a>
         <h2 class="item-title">KIMONEV</h2>
     </div>
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/mata.png'); ?>" alt="MATA">
-        <h2 class="item-title">MATA</h2>
+        <a href="http://203.161.27.194:3821/sim_aset/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/maya-icon.png'); ?>" alt="MATA">
+        </a>
+        <h2 class="item-title">MAYA</h2>
     </div>
     <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/monica.png'); ?>" alt="monica">
+        <a href="https://monica.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/monica-icon.png'); ?>" alt="monica">
+        </a>
         <h2 class="item-title">MONICA</h2>
     </div>
 
-
-
+    <div class="item">
+        <a href="https://e-proc.pamjaya.co.id/" target="_blank">
+            <img class="item-logo" src="<?= base_url('assets/img/e-procurement-icon.png'); ?>" alt="e-procurement">
+        </a>
+        <h2 class="item-title"> e-procurement</h2>
+    </div>
 </section>
 
 <h1 class="title"> Pengaturan</h1>
 <hr>
 <div class="item">
-    <img class="item-logo password" src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
+    <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
+        <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
+    </a>
     <h2 class="item-title">Ubah password</h2>
 </div>
 </div>
