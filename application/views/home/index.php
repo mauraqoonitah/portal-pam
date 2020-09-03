@@ -1,14 +1,14 @@
 <section class="services">
     <div class="item">
+        <img class="item-logo" src="<?= base_url('assets/img/alfrescologo.png'); ?>" alt="Alfresco">
+        <h3 class="item-title">Alfresco </h3>
+    </div>
+    <div class="item">
+
         <img class="item-logo" src="<?= base_url('assets/img/tnde.png'); ?>" alt="TNDE">
         <h2 class="item-title">TNDE</h2>
     </div>
 
-    <div class="item">
-        <img class="item-logo" src="<?= base_url('assets/img/alfrescologo.png'); ?>" alt="Alfresco">
-        <h3 class="item-title">Alfresco </h3>
-
-    </div>
     <div class="item">
         <img class="item-logo" src="<?= base_url('assets/img/Zimbra_Identity_Color_HighRes.png-440px.png'); ?>" alt="zimbra">
         <h3 class="item-title">Zimbra</h3>
