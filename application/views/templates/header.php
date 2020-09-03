@@ -35,6 +35,6 @@
                 <li><a href="<?= base_url(); ?>home">Home</a></li>
                 <li><a href="http://portal.pamjaya.co.id/">Website</a></li>
                 <li><a href="<?= base_url(); ?>berita">Berita</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="<?= base_url(); ?>contact">Contact</a></li>
             </ul>
         </nav>
