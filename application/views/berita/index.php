@@ -3,17 +3,17 @@
         <div class="col-md-6">
             <h1 class="title"> Berita Internal</h1>
             <hr>
-            <section class="services">
+            <section class="services" style="margin-top: 50px;">
                 <div class="item">
-                    <h3 class="item-title">Alfresco </h3>
+                    <h3 class="item-title"> berita1</h3>
 
                 </div>
                 <div class="item">
-                    <h3 class="item-title">Zimbra</h3>
+                    <h3 class="item-title">berita2</h3>
 
                 </div>
                 <div class="item">
-                    <h2 class="item-title"> SIL</h2>
+                    <h2 class="item-title"> berita3</h2>
 
                 </div>
 
