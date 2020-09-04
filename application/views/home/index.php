@@ -7,7 +7,7 @@
             <h3 class="item-title">Alfresco</h3>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -20,7 +20,7 @@
             <h2 class="item-title">TNDE</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <h2 class="item-title">e-mail</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -46,7 +46,7 @@
             <h2 class="item-title">HRIS</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -59,7 +59,7 @@
             <h2 class="item-title">PPID</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <h2 class="item-title">SIL</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -85,7 +85,7 @@
             <h2 class="item-title">e-procuremen</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -98,7 +98,7 @@
             <h2 class="item-title">KIMONEV</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -111,7 +111,7 @@
             <h2 class="item-title">MAYA</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -124,7 +124,7 @@
             <h2 class="item-title">MONICA</h2>
             <div class="overlay">
                 <button type="button" class="btn" data-toggle="modal" data-target="#item-modal">
-                    detail
+                    <i class="fas fa-info-circle"></i>
                 </button>
             </div>
         </div>
@@ -134,12 +134,13 @@
 
 <h1 class="title"> Pengaturan</h1>
 <hr>
-<div class="item">
-    <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
-        <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
-    </a>
-    <h2 class="item-title">Ubah password</h2>
-</div>
+<div class="services">
+    <div class="item">
+        <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
+            <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
+        </a>
+        <h2 class="item-title">Ubah password</h2>
+    </div>
 </div>
 
 
