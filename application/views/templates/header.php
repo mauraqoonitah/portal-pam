@@ -8,8 +8,16 @@
     <link rel="shortcut icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
     <link rel="apple-touch-icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/main.css">
     <link rel="stylesheet" type='text/javascript' href="<?php echo base_url(); ?>assets/js/script.js">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -27,7 +35,7 @@
 
             <div class="brand">
                 <a href="<?= base_url(); ?>home">
-                    <h1> PORTAL PAM JAYA</h1>
+                    <h2> PORTAL PAM JAYA</h2>
                 </a>
 
             </div>
