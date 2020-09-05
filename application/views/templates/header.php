@@ -38,12 +38,11 @@
                 <a href="<?= base_url(); ?>home">
                     <h2> PORTAL PAM JAYA</h2>
                 </a>
-
             </div>
             <ul class="menu-list">
-                <li><a href="<?= base_url(); ?>home">Home</a></li>
-                <li><a href="http://portal.pamjaya.co.id/">Website</a></li>
-                <li><a href="<?= base_url(); ?>berita">Berita</a></li>
-                <li><a href="<?= base_url(); ?>contact">Contact</a></li>
+                <li class="menu-item"><a href="<?= base_url(); ?>home">Home</a></li>
+                <li class="menu-item"><a href="http://portal.pamjaya.co.id/">Website</a></li>
+                <li class="menu-item"><a href="<?= base_url(); ?>berita">Berita</a></li>
+                <li class="menu-item"><a href="<?= base_url(); ?>contact">Contact</a></li>
             </ul>
         </nav>
