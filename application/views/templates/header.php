@@ -22,26 +22,29 @@
 
 <body>
 
-    <div class="container">
+    <nav class="menu">
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <nav class="menu">
-
-            <div class="menu-toggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="brand">
-                <a href="<?= base_url(); ?>home">
-                    <h2> PORTAL PAM JAYA</h2>
+        <div class="brand">
+            <a href="<?= base_url(); ?>home">
+                <h2> PORTAL PAM JAYA</h2>
+            </a>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="<?= base_url(); ?>home">Home</a></li>
+            <li class="menu-item"><a href="<?= base_url(); ?>berita">Berita</a></li>
+            <li class="menu-item"><a href="<?= base_url(); ?>contact">Contact</a></li>
+            <li class="menu-item"><a href="http://portal.pamjaya.co.id/">Website</a></li>
+            <li class="menu-item">
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="admin">
+                    <i class="fas fa-user-circle fa-lg"></i>
                 </a>
-            </div>
-            <ul class="menu-list">
-                <li class="menu-item"><a href="<?= base_url(); ?>home">Home</a></li>
-                <li class="menu-item"><a href="http://portal.pamjaya.co.id/">Website</a></li>
-                <li class="menu-item"><a href="<?= base_url(); ?>berita">Berita</a></li>
-                <li class="menu-item"><a href="<?= base_url(); ?>contact">Contact</a></li>
-            </ul>
-        </nav>
+            </li>
+
+        </ul>
+    </nav>

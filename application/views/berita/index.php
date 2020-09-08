@@ -3,8 +3,8 @@
     <div class="page">
         <div class="page-berita">
             <article class="berita">1
-                <hr class="image">
-                <hr>
+                <h6 class="card-subtitle mb-2 text-muted">12/06/2020</h6>
+                <h4> Penggunaan Alfresco untuk seluruh karyawan PAM JAYA</h4>
             </article>
             <article class="berita">2
                 <hr>
@@ -12,6 +12,7 @@
                 <hr>
                 <hr>
                 <hr>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eveniet quos doloremque corporis! Dicta vitae minima recusandae distinctio ipsam non, expedita nobis commodi suscipit accusamus voluptate, illo est voluptatem. Libero rem, consequuntur eius vero unde facilis nostrum corrupti natus dignissimos atque, assumenda recusandae ad commodi minus enim pariatur dolorem dicta. </p>
             </article>
             <article class="berita">3
                 <hr>

@@ -8,11 +8,16 @@ html {
     background-color: #f7fafd;
     font-size: 14px;
     font-family: "Lato", sans-serif;
-    margin: 10px 60px;
+    margin: 10px 10px;
 }
 
 p {
     line-height: 150%;
+}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -42,6 +47,7 @@ p {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-left: 100px;
 }
 
 .menu a {
@@ -160,8 +166,8 @@ p {
     display: grid;
     display: inline-block;
     padding: 10px;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     justify-self: center;
     text-align: center;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='14' ry='14' stroke='%234290CD80' stroke-width='4' stroke-dasharray='7' stroke-dashoffset='4' stroke-linecap='round'/%3e%3c/svg%3e");
@@ -197,8 +203,8 @@ p {
 }
 
 .item-logo {
-    width: 90px;
-    justify-content: center;
+    width: 80px;
+    justify-self: center;
 }
 
 .item .item-title {
@@ -393,12 +399,12 @@ hr.image {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1em;
     grid-auto-flow: dense;
-    row-gap: 30px;
+    gap: 60px;
 }
 
 .berita {
     padding: 1em;
-    background: #fff;
+    background: rgb(245, 234, 234);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
     grid-column: auto, -1;
     border-radius: 10px;
@@ -433,7 +439,8 @@ hr.image {
     grid-column: 3 / -3;
 }
 
-.berita:nth-child(2),
+.berita:nth-child(1),
+.berita:nth-child(8),
 .berita:nth-child(18),
 .berita:nth-child(34),
 .berita:nth-child(50) {
@@ -456,7 +463,11 @@ hr.image {
         flex-direction: column;
     }
     .berita {
-        margin-bottom: 5em;
+        margin-bottom: 3em;
+    }
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 
@@ -467,6 +478,24 @@ hr.image {
     }
     .berita {
         margin-bottom: 2em;
+    }
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 769px) {
+    .page-berita {
+        display: flex;
+        flex-direction: column;
+    }
+    .berita {
+        margin-bottom: 2em;
+    }
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 
