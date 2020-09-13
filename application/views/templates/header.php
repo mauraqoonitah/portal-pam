@@ -45,6 +45,5 @@
                     <i class="fas fa-user-circle fa-lg"></i>
                 </a>
             </li>
-
         </ul>
     </nav>

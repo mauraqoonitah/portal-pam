@@ -1,0 +1,4 @@
+ <?php
+echo widget('berita');
+?> 
+
