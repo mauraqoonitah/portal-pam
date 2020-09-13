@@ -13,7 +13,6 @@ class Home extends CI_Controller
         $data['item'] = $this->Item_model->getAllItem();
         $this->load->helper('url');
         $data['title'] = 'Portal Aplikasi PAM Jaya';
-
         $this->load->view('templates/header', $data);
         $this->load->view('home/index', $data);
         $this->load->view('templates/footer');
