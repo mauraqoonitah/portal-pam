@@ -31,17 +31,19 @@
         </div>
 
         <div class="brand">
-            <a href="<?= base_url(); ?>home">
-                <h2> PORTAL PAM JAYA</h2>
+            <a class="icon" href="<?= base_url(); ?>home">
+                <img class="nav-logo" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
             </a>
+            <h2 class=""> PORTAL PAM JAYA</h2>
+
         </div>
         <ul class="menu-list">
-            <li class="menu-item"><a href="<?= base_url(); ?>home">Home</a></li>
-            <li class="menu-item"><a href="<?= base_url(); ?>berita">Berita</a></li>
-            <li class="menu-item"><a href="<?= base_url(); ?>contact">Contact</a></li>
-            <li class="menu-item"><a href="http://portal.pamjaya.co.id/">Website</a></li>
-            <li class="menu-item">
-                <a href="#" data-toggle="tooltip" data-placement="bottom" title="admin">
+            <li><a class="menu-item" href="<?= base_url(); ?>home">Home</a></li>
+            <li><a class="menu-item" href="<?= base_url(); ?>berita">Berita</a></li>
+            <li><a class="menu-item" href="<?= base_url(); ?>contact">Contact</a></li>
+            <li><a class="menu-item" href="http://portal.pamjaya.co.id/">Website</a></li>
+            <li>
+                <a class="menu-item" href="#" data-toggle="tooltip" data-placement="bottom" title="admin">
                     <i class="fas fa-user-circle fa-lg"></i>
                 </a>
             </li>
