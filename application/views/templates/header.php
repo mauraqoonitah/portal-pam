@@ -32,9 +32,9 @@
 
             </div>
             <ul class="menu-list">
-                <li><a href="<?= base_url(); ?>home">Home</a></li>
+                <li><a href="<?= base_url(); ?>Home">Home</a></li>
                 <li><a href="http://portal.pamjaya.co.id/">Website</a></li>
-                <li><a href="<?= base_url(); ?>berita">Berita</a></li>
-                <li><a href="<?= base_url(); ?>contact">Contact</a></li>
+                <li><a href="<?= base_url(); ?>Berita">Berita</a></li>
+                <li><a href="<?= base_url(); ?>Contact">Contact</a></li>
             </ul>
         </nav>
