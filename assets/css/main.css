@@ -5,7 +5,8 @@
 
 body,
 html {
-    background-color: #f7fafd;
+    /* background-color: #f7fafd; */
+    background-color: #ffffff;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     margin: 10px 10px;
@@ -21,7 +22,7 @@ p {
 }
 
 
-/* menuigasi */
+/* navigasi */
 
 .menu {
     order: -1;
@@ -33,10 +34,25 @@ p {
     cursor: pointer;
 }
 
+.menu .brand {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.menu .brand .icon {
+    list-style: none;
+}
+
+.nav-logo {
+    width: 50px;
+    margin-left: 50px;
+}
+
 .menu .brand h2 {
     color: #2f3188;
     font-weight: 800;
     text-decoration: none;
+    margin-left: 5px;
 }
 
 .menu .brand h2:before {
@@ -50,13 +66,12 @@ p {
     margin-left: 100px;
 }
 
-.menu a {
+.menu .menu-item {
     display: block;
     color: black;
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    background-color: #ebf5fd;
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: bold;
@@ -64,11 +79,11 @@ p {
     font-size: 14px;
 }
 
-.menu a:hover {
+.menu .menu-item:hover {
     color: #000;
 }
 
-.menu a:before {
+.menu .menu-item:before {
     content: "";
     position: absolute;
     width: 70%;
@@ -83,7 +98,12 @@ p {
 
 .menu a:hover::before {
     visibility: visible;
-    transform: scaleX(1);
+    transform: scaleX(.7);
+}
+
+.services .settings {
+    display: grid;
+    justify-items: start;
 }
 
 
@@ -155,7 +175,7 @@ p {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 
@@ -215,12 +235,6 @@ p {
     margin-top: 25px;
 }
 
-.title {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 5rem;
-}
-
 
 /* hover card  */
 
@@ -259,13 +273,14 @@ p {
 }
 
 .item button {
-    color: rgb(117, 168, 202);
+    color: #75a8ca;
+    justify-self: center;
     text-align: center;
     font-size: 16px;
     padding-top: 0;
     border-radius: 16px;
     width: 80px;
-    height: 20px;
+    height: 25px;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -296,6 +311,28 @@ p {
     background-image: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+}
+
+
+/* settings section */
+
+.settings .title {
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+.settings .services {
+    display: flex;
+    justify-self: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+hr .hr-section {
+    /*dummy content*/
+    height: 1px;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -388,10 +425,10 @@ hr.image {
 
 /* 
 .page {
-    padding: 2em;
-    background: #cecece;
-    max-width: 1100px;
-    border-radius: 10px;
+padding: 2em;
+background: #cecece;
+max-width: 1100px;
+border-radius: 10px;
 } */
 
 .page-berita {
@@ -450,8 +487,8 @@ hr.image {
 
 
 /* .berita:nth-child(8n+1) {
-    grid-column: 2 / -1;
-    background: rgba(11, 111, 222, 0.5);
+grid-column: 2 / -1;
+background: rgba(11, 111, 222, 0.5);
 } */
 
 
