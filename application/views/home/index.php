@@ -21,29 +21,30 @@
 
 
     </section>
-    <section class="settings">
-        <h3 class="title"> Pengaturan</h3>
+    <!-- <section class="settings">
+        <h3 class="title mb-5"> Pengaturan</h3>
 
         <div class="services">
-            <div class="item">
-                <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
-                    <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
-                </a>
-                <h2 class="item-title">Ubah password</h2>
+            <div class="box">
+                <div class="item">
+                    <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
+                        <img class="item-logo pw" src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
+                    </a>
+                    <h2 class="item-title">Ubah password</h2>
+                </div>
             </div>
-            <div class="item">
-                <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
-                    <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
-                </a>
-                <h2 class="item-title">Ubah password</h2>
-            </div>
-            <div class="item">
-                <a href="http://portal.pamjaya.co.id/ganti-pass.php" target="_blank">
-                    <img class="item-logo " src="<?= base_url('assets/img/change password.png'); ?>" alt="ubah password">
-                </a>
-                <h2 class="item-title">Ubah password</h2>
-            </div>
-    </section>
+
+
+    </section> -->
+
+    <div class="row mt-4 ml-4">
+        <div class="col text-left">
+            <form action="http://portal.pamjaya.co.id/ganti-pass.php" method="get" target="_blank">
+                <button type="submit" class="btn btn-outline-dark">ubah password</button>
+            </form>
+        </div>
+
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="item-modal" tabindex="-1" role="dialog" aria-labelledby="item-modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
