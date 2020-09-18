@@ -1,6 +1,10 @@
 <div class="container">
-    <h3 class="mt-3 text-center p-5">Berita Internal di Lingkungan PAM JAYA</h3>
-    <div class="page">
+    <div class="fluidy mt-3 p-5">
+        <h2>Berita Internal</h2>
+        <h2>Berita Internal</h2>
+    </div>
+
+    <div class="page mt-5">
         <div class="page-berita">
 
             <article class="berita">2

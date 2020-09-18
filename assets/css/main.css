@@ -53,7 +53,7 @@ h6 .h6 {
 .menu {
     order: -1;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.1fr 2fr;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 1rem;
@@ -63,6 +63,7 @@ h6 .h6 {
 .menu .brand {
     display: grid;
     grid-template-columns: 100px auto;
+    justify-content: center;
 }
 
 .menu .brand .icon {
@@ -403,44 +404,55 @@ hr .hr-section {
 @media screen and (max-width: 768px) {
     .menu {
         order: -1;
+        grid-template-columns: auto 1fr;
     }
     .menu-toggle {
         display: flex;
         justify-items: start;
     }
+    .menu .brand {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+        justify-self: start;
+    }
     .menu ul {
         display: flex;
         position: absolute;
-        right: 0;
-        height: 100vh;
+        height: 50vh;
         top: 0;
-        background-color: #c5e6ff;
+        background-color: rgb(197, 230, 255);
         width: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         z-index: 1;
-        transform: translateY(-100%);
+        transform: translateX(-100%);
         opacity: 0;
         transition: all 1s;
+        left: 0;
     }
     .menu ul.slide {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        width: 200px;
+        margin-left: 0px;
     }
-}
-
-@media screen and (max-width: 600px) {
-    body,
-    html {
-        margin: 10px 20px;
+    .menu ul.menu-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        margin-left: 0px;
     }
 }
 
 @media screen and (max-width: 500px) {
     body,
     html {
-        margin: 20px 10px;
+        margin: 15px 5px 8rem 5px;
     }
     .services {
         display: grid;
@@ -448,12 +460,16 @@ hr .hr-section {
     }
 }
 
-@media screen and (max-width: 1058px) and (min-width: 1024px) {
+@media screen (min-width: 1024px) {
     .menu .brand h2 {
         font-size: 25px;
     }
     .menu-list {
         font-size: 14px;
+    }
+    body,
+    html {
+        max-width: 1200px;
     }
 }
 
@@ -594,6 +610,23 @@ hr.image {
         padding-right: 5px;
         padding-left: 5px;
     }
+    .menu .brand {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+        justify-self: center;
+    }
+    .hovereffect {
+        height: 180px;
+    }
+    .nav-logo {
+        margin: 0;
+    }
+    img .nav-logo {
+        display: grid;
+        justify-content: center;
+        justify-self: center;
+    }
 }
 
 @media (max-width: 680px) {
@@ -650,22 +683,22 @@ hr.image {
 
 /* page contact */
 
-.content {
+.fluidy {
     display: flex;
     justify-content: center;
 }
 
-.content h2 {
+.fluidy h2 {
     position: absolute;
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
-.content h2:nth-child(1) {
+.fluidy h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 1px #4287f5;
 }
 
-.content h2:nth-child(2) {
+.fluidy h2:nth-child(2) {
     color: #4287f5;
     animation: wave 4s ease-in-out infinite;
 }
@@ -682,8 +715,8 @@ hr.image {
 
 .contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    row-gap: 20px;
     justify-items: stretch;
     column-gap: 20px;
     align-items: stretch;
@@ -693,7 +726,6 @@ hr.image {
 .konten {
     /* background: #87b5ff; */
     padding: 20px;
-    grid-row: 2 / -2;
     text-align: center;
     justify-content: center;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='14' ry='14' stroke='%234290CD80' stroke-width='4' stroke-dasharray='7' stroke-dashoffset='4' stroke-linecap='round'/%3e%3c/svg%3e");
@@ -721,7 +753,7 @@ hr.image {
 .konten:hover,
 .konten:hover .fa {
     -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
 }
 
 .konten .fa {
@@ -734,10 +766,6 @@ hr.image {
 }
 
 @media (max-width: 680px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
     .konten {
         margin-bottom: 2em;
     }
