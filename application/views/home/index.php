@@ -45,10 +45,10 @@
             </div> <?php endforeach; ?>
 
     </section>
-    <div class="row mt-4 ml-4">
+    <div class="row ml-4 mb-5">
         <div class="col text-left">
-            <form action="http://portal.pamjaya.co.id/ganti-pass.php" method="get" target="_blank">
-                <button type="submit" class="btn btn-outline-dark">ubah password</button>
+            <form action="<?= base_url(); ?>home/ubahpassword" method=" get" target="_blank">
+                <button type=" submit" class="btn btn-outline-dark">ubah password</button>
             </form>
         </div>
 
