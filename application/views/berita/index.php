@@ -3,7 +3,7 @@
         <h2>Berita Internal</h2>
         <h2>Berita Internal</h2>
     </div>
-    <div class="mt-5 mb-5">
+    <div class="mb-5" style="margin-top: 60px">
         <div class="page-berita">
             <div class="sibling-fade">
                 <?php foreach ($berita as $berita) : ?>

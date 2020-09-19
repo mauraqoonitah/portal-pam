@@ -391,6 +391,7 @@ h6 .h6 {
     row-gap: 50px;
     column-gap: 30px;
     box-sizing: border-box;
+    transition: 2s;
 }
 
 .berita {
@@ -402,9 +403,8 @@ h6 .h6 {
     grid-column: auto, -1;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: 2s;
     box-sizing: border-box;
-    transform: scale(1);
 }
 
 .berita:hover .ilang {
@@ -431,7 +431,6 @@ h6 .h6 {
     cursor: pointer;
     transition: 0.5s;
     box-sizing: border-box;
-    transform: scale(1);
 }
 
 .berita:hover .hide {
@@ -478,11 +477,11 @@ h6 .h6 {
 }
 
 .sibling-fade>* {
-    transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+    transition: opacity 200ms linear 100ms, transform 200ms ease-in-out 100ms;
 }
 
 .sibling-fade:hover>* {
-    opacity: 0.4;
+    opacity: 0.5;
     transform: scale(0.9);
 }
 
