@@ -115,7 +115,7 @@
           <div class="card-body">
             <div class="form-group">
               <label for="judul-berita">Judul Berita</label>
-              <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita">
+              <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita"disabled>
             </div>
             <div class="form-group">
               <label for="gambar-berita">Gambar Ilustrasi berita</label>
@@ -124,7 +124,7 @@
 
             <div class="form-group">
               <label for="konten-berita">Konten Berita</label>
-              <input type="text" class="form-control" id="konten-berita" placeholder="Konten Berita">
+              <input type="text" class="form-control" id="konten-berita" placeholder="Konten Berita" disabled>
             </div>
             <br>
           </div>
@@ -159,9 +159,17 @@
               <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita">
             </div>
             <div class="form-group">
-              <label for="gambar-berita">Gambar Ilustrasi berita</label>
-              <img src="" alt="" id="gambar-berita">
-            </div>
+                      <label for="exampleInputFile">Gambar Illustrasi Berita</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                        <!-- <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                      </div> -->
+                      </div>
+             </div>
 
             <div class="form-group">
               <label for="konten-berita">Konten Berita</label>
@@ -176,9 +184,10 @@
           <!-- /.card-body -->
         </form>
         <div class="modal-footer right-content-between">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
 
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          
         </div>
         <!-- End Form Edit -->
       </div>
@@ -203,8 +212,8 @@
         Yakin hapus berita?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger">Batalkan</button>
-        <button type="button" class="btn btn-success" data-dismiss="modal">Hapus</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+        <button type="button" class="btn btn-danger">Hapus</button>
       </div>
     </div>
   </div>
