@@ -19,4 +19,24 @@ class Home extends CI_Controller
         $this->load->view('home/index', $data);
         $this->load->view('templates/footer');
     }
+    public function ubahpassword()
+    {
+        $this->load->helper('url');
+
+        $data['title'] = 'Ubah Password';
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('home/ubahpassword', $data);
+        $this->load->view('templates/footer');
+    }
+    public function aksesSIL()
+    {
+        $this->load->helper('url');
+
+        $data['title'] = 'Sistem Informasi Laboratorium';
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('home/aksesSIL', $data);
+        $this->load->view('templates/footer');
+    }
 }
