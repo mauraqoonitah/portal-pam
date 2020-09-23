@@ -43,7 +43,7 @@
             <li><a class="menu-item" href="<?= base_url(); ?>contact">Contact</a></li>
             <li><a class="menu-item" href="http://portal.pamjaya.co.id/">Website</a></li>
             <li>
-                <a class="menu-item" href="<?= base_url(); ?>admin/admin_home" data-toggle="tooltip" data-placement="bottom" title="admin">
+                <a class="menu-item" href="<?= base_url('login'); ?>" data-toggle="tooltip" data-placement="bottom" title="admin">
                     <i class="fas fa-user-circle fa-lg"></i>
                 </a>
             </li>
