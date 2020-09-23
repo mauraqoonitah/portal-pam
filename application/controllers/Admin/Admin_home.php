@@ -7,7 +7,7 @@ class Admin_home extends CI_Controller
     {
         $data['admin'] = $this->db->get_where('admin', ['email' =>
         $this->session->userdata('email')])->row_array();
-        echo 'Selamat Datang ' . $data['admin']['name'];
+        //echo 'Selamat Datang ' . $data['admin']['name'];
 
         $data['title'] = 'Admin Portal PAM Jaya';
 
