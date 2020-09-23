@@ -29,7 +29,7 @@ class Login extends CI_Controller
         $email = $this->input->post('email');
         $password = $this->input->post('password');
 
-        $admin = $this->db->get_where('admin', ['email'])->row_array();
+         $admin = $this->db->get_where('admin', ['email' => $email])->row_array();
 
         if ($admin) {
             if ($admin['is_active'] == 1) {
