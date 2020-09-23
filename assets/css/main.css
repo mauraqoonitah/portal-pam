@@ -604,6 +604,17 @@ h6 .h6 {
     body,
     html {
         max-width: 1200px;
+		 body,
+   		 html {
+        max-width: 1200px;
+        margin-left: 30px;
+    }
+    .container {
+        margin-left: 30px;
+    }
+    
+}
+
     }
 }
 
