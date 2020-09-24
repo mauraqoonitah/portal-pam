@@ -1,6 +1,4 @@
-<!-- <?php var_dump($item); ?> -->
 <div class="container">
-
     <section class="services">
         <?php foreach ($item as $item) : ?>
             <div class="hovereffect">
@@ -17,9 +15,6 @@
                 </div>
 
             </div>
-
-
-
             <!-- Modal -->
 
             <div class="modal fade" id="item-modal" tabindex="-1" role="dialog" aria-labelledby="item-modalTitle" aria-hidden="true">

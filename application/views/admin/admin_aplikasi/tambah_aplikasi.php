@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url('admin/admin_home') ?>">Home</a></li>
             <li class="breadcrumb-item active">Tambah Aplikasi</li>
           </ol>
         </div>
@@ -19,10 +19,28 @@
 
   <!-- Main content -->
   <section class="content">
+    <?php if ($this->session->flashdata('flash')) : ?>
+      <div class="row mt-3">
+        <div class="col-md-4 ml-2">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Aplikasi <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <a href="<?php echo base_url('home') ?>" class="nav-link" target="_blank">
+              <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
+            </a>
+          </div>
+
+        </div>
+      </div>
+    <?php endif; ?>
+
+
     <div class="container-fluid">
       <div class="row">
         <!-- left column -->
-        <div class="col-md-12">
+        <div class="col-lg-8">
           <!-- general form elements -->
           <div class="card card-primary">
             <div class="card-header">
@@ -30,30 +48,37 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" accept="" method="post">
               <div class="card-body">
                 <!-- Form Edit -->
-                <form role="form">
+                <form role="form ">
                   <div class="card-body">
-                    <div class="form-group mt-0">
-                      <label for="exampleInputEmail1">Nama Aplikasi</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nama Aplikasi">
+                    <?php if (validation_errors()) : ?>
+                      <div class="text-danger">
+                        <?= validation_errors(); ?>
+                      </div>
+                    <?php endif; ?>
+
+                    <div class="form-group mt-0 ">
+                      <label for="app-name">Nama Aplikasi</label>
+                      <input type="text" class="form-control" id="app-name" name="name" placeholder="Nama Aplikasi">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="app-link">Link Aplikasi</label>
+                      <input type="text" class="form-control" id="app-link" name="link" placeholder="Link Aplikasi">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Link Aplikasi</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Link Aplikasi">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Deskripsi aplikasi</label>
+                      <label for="app-deskripsi">Deskripsi aplikasi</label>
                       <div class="mb-3">
-                        <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        <input type="text" class="form-control" id="app-deskripsi" name="deskripsi" placeholder="deskripsi singkat aplikasi" style="height: 100px;"></input>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputFile">Logo</label>
+                      <label for="app-icon">Logo</label>
                       <div class="input-group">
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
+                          <input type="file" class="custom-file-input" id="app-icon" name="icon">
                           <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                         </div>
                         <!-- <div class="input-group-append">
@@ -77,7 +102,7 @@
                   <!-- /.card-body -->
                 </form>
                 <div class="modal-footer ">
-                  <button type="button" class="btn btn-primary">Simpan</button>
+                  <button type="submit" name="tambah" class="btn btn-primary">Simpan</button>
                 </div>
                 <!-- End Form Edit -->
               </div>

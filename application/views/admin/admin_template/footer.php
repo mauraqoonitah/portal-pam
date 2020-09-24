@@ -1,12 +1,12 @@
-<footer class="main-footer">
-    <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Portal Pam Jaya</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <!-- <b>Version</b> 3.0.5 -->
-    </div>
-  </footer>
+<footer class="main-footer text-center my-auto">
+  <strong>Copyright <?= date('Y'); ?>&copy;Portal Pam Jaya.</strong>
 
- 
+  <div class="float-right d-none d-sm-inline-block">
+    <!-- <b>Version</b> 3.0.5 -->
+  </div>
+</footer>
+
+
 </div>
 <!-- ./wrapper -->
 
@@ -45,4 +45,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url('assets/template/dist') ?>/js/demo.js"></script>
 </body>
+
 </html>
