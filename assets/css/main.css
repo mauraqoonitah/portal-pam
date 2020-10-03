@@ -40,7 +40,7 @@ h5 .h5 {
 }
 
 h6 .h6 {
-    font-size: px;
+    font-size: 16px;
 }
 
 
@@ -604,20 +604,19 @@ h6 .h6 {
     body,
     html {
         max-width: 1200px;
-		 body,
-   		 html {
-        max-width: 1200px;
-        margin-left: 30px;
-    }
-    .container {
-        margin-left: 30px;
-    }
-    
-}
-
+        body,
+        html {
+            max-width: 1200px;
+            margin-left: 30px;
+        }
+        .container {
+            margin-left: 30px;
+        }
     }
 }
 
+
+}
 @media (max-width: 1024px) {
     .menu,
     .contact {
@@ -625,22 +624,24 @@ h6 .h6 {
         grid-template-columns: 1fr;
     }
 }
-
 @media (max-width: 768px) {
     .menu {
         order: -1;
         grid-template-columns: auto 1fr;
     }
+    
     .menu-toggle {
         display: flex;
         justify-items: start;
     }
+    
     .menu .brand {
         display: grid;
         grid-template-columns: auto 1fr;
         justify-content: center;
         justify-self: start;
     }
+    
     .menu ul {
         display: flex;
         position: absolute;
@@ -657,6 +658,7 @@ h6 .h6 {
         transition: all 1s;
         left: 0;
     }
+    
     .menu ul.slide {
         opacity: 1;
         transform: translateX(0);
@@ -666,77 +668,85 @@ h6 .h6 {
         width: 200px;
         margin-left: 0px;
     }
+    
     .menu ul.menu-list {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         margin-left: 0px;
     }
+    
     .page-berita {
         display: flex;
         flex-direction: column;
     }
+    
     .berita {
         margin-bottom: 0;
     }
+    
     .container {
         padding-right: 5px;
         padding-left: 5px;
     }
 }
-
 @media (max-width: 680px) {
     .page-berita {
         display: flex;
         flex-direction: column;
     }
+    
     .container {
         padding-right: 5px;
         padding-left: 5px;
     }
+    
     .konten {
         margin-bottom: 2em;
     }
 }
-
 @media (max-width: 500px) {
     body,
     html {
         margin: 15px 5px 3rem 5px;
     }
+    
     .services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 459px) {
     .page-berita {
         display: flex;
         flex-direction: column;
     }
+    
     .container {
         padding-right: 5px;
         padding-left: 5px;
     }
+    
     .menu .brand {
         display: grid;
         grid-template-columns: auto 1fr;
         justify-content: center;
         justify-self: center;
     }
+    
     .hovereffect {
         height: 180px;
     }
+    
     .nav-logo {
         margin: 0;
     }
+    
     img .nav-logo {
         display: grid;
         justify-content: center;
         justify-self: center;
     }
 }
-
 
 /* footer */
