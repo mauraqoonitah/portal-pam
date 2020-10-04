@@ -44,6 +44,15 @@
 <script src="<?php echo base_url('assets/template/dist') ?>/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url('assets/template/dist') ?>/js/demo.js"></script>
+
+
+<script>
+  $('.custom-file-input').on('change', function() {
+    let fileName = $(this).val().split('\\').pop();
+    $(this).next('.custom-file-label').addClass("selected").html(fileName);
+  });
+</script>
+
 </body>
 
 </html>

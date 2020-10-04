@@ -37,6 +37,23 @@ class Admin_tambah_aplikasi extends CI_Controller
             $this->load->view('admin/admin_aplikasi/tambah_aplikasi', $data);
             $this->load->view('admin/admin_template/footer');
         } else {
+
+
+            $upload_image = $_FILES['icon']['name'];
+            if ($upload_image) {
+                $config['allowed_types'] = "jpg|png|jpeg";
+                $config['max-size'] = '2048';
+                $config['upload_path'] = './assets/img/';
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('icon')) {
+                    $new_image = $this->upload->data('file_name');
+                    $this->db->set('icon', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
             $this->Item_model->tambahAplikasi();
             $this->session->set_flashdata('flash', 'ditambahkan!');
             redirect('admin/Admin_tambah_aplikasi');

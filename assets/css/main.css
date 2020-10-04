@@ -98,7 +98,7 @@ h6 .h6 {
     font-size: 0.9em;
     font-weight: bold;
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     padding: 14px;
 }
 
@@ -698,14 +698,11 @@ h6 .h6 {
     .menu-toggle {
         display: flex;
         justify-items: start;
+        margin-left: 10px;
     }
     .page-berita {
         display: flex;
         flex-direction: column;
-    }
-    .container {
-        padding-right: 5px;
-        padding-left: 5px;
     }
     .konten {
         margin-bottom: 2em;
