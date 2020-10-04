@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 23, 2020 at 08:52 AM
+-- Generation Time: Oct 04, 2020 at 06:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -44,8 +44,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(10, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$/fqxGRracSrNlajO0GIqZuGRESp8OiFA6QymqT4j4v1L8gmsZAl7G', 2, 1, 1600794559),
-(11, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t5opZK1nOY6qJCMY5VldHeEJLopotFNjGXn.tHZJ.V30LPZKr2yNK', 2, 1, 1600796186);
+(10, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$/fqxGRracSrNlajO0GIqZuGRESp8OiFA6QymqT4j4v1L8gmsZAl7G', 1, 1, 1600794559),
+(11, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t5opZK1nOY6qJCMY5VldHeEJLopotFNjGXn.tHZJ.V30LPZKr2yNK', 1, 1, 1600796186);
 
 -- --------------------------------------------------------
 
@@ -104,7 +104,11 @@ INSERT INTO `item` (`id`, `nama`, `icon`, `link`, `deskripsi`) VALUES
 (14, 'SIL', 'sil-icon.png', 'home/aksesSIL', 'SIL Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (15, 'Kimonev', 'kimonev-icon.png', 'https://kimonev.pamjaya.co.id/', 'kimonev Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (16, 'MAYA', 'maya-icon.png', 'http://203.161.27.194:3821/sim_aset/', 'maya Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
-(17, 'MONICA', 'monica-icon.png', 'https://monica.pamjaya.co.id/', 'monica Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!');
+(17, 'MONICA', 'monica-icon.png', 'https://monica.pamjaya.co.id/', 'monica Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
+(49, 'Maura Qoonitah', '', 'https://www.instagram.com/', 'ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu '),
+(50, 'Divina Fatriandira', '20191021_055517_01.jpg', 'https://www.instagram.com/', 'ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu '),
+(51, 'femi ', 'cropped-logo-femi-300x288.png', 'https://www.instagram.com/', 'ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu '),
+(52, 'Divina Fatriandira', '1.png', 'https://www.instagram.com/', 'ad');
 
 -- --------------------------------------------------------
 
@@ -173,7 +177,7 @@ ALTER TABLE `berita`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `user_role`

@@ -91,10 +91,11 @@
               </li>
             </ul>
           </li>
+
           <!-- /Berita -->
 
 
-          <!-- Berita -->
+          <!-- Akun -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user-plus"></i>
