@@ -25,7 +25,7 @@ class Admin_tambah_aplikasi extends CI_Controller
         $this->form_validation->set_rules('name', 'Nama Aplikasi', 'required');
         $this->form_validation->set_rules('link', 'Link Aplikasi', 'required');
         $this->form_validation->set_rules('deskripsi', 'Deskripsi Aplikasi', 'required');
-        $this->form_validation->set_rules('icon', 'Logo Aplikasi', 'required');
+        $this->form_validation->set_rules('icon', 'Logo Aplikasi');
 
 
 
