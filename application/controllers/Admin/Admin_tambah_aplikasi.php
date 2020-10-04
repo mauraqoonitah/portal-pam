@@ -48,11 +48,13 @@ class Admin_tambah_aplikasi extends CI_Controller
                 $this->load->library('upload', $config);
 
                 if ($this->upload->do_upload('icon')) {
+
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('icon', $new_image);
                 } else {
                     echo $this->upload->display_errors();
                 }
+            } else {
             }
             $this->Item_model->tambahAplikasi();
             $this->session->set_flashdata('flash', 'ditambahkan!');

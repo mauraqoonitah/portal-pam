@@ -10,6 +10,7 @@ class Item_model extends CI_Model
     {
         $data = [
             "nama" => $this->input->post('name', true),
+            "icon" => 'item_default.png',
             "link" => $this->input->post('link', true),
             "deskripsi" => $this->input->post('deskripsi', true)
         ];
