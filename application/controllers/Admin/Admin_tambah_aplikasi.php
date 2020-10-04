@@ -13,7 +13,12 @@ class Admin_tambah_aplikasi extends CI_Controller
 
     public function index()
     {
+        $this->load->helper('url');
+
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
+        $data['item'] = $this->Item_model->getAllItem();
+
+
 
         $data['title'] = 'Admin Portal PAM Jaya';
 
@@ -29,7 +34,7 @@ class Admin_tambah_aplikasi extends CI_Controller
             $this->load->view('admin/admin_template/head', $data);
             $this->load->view('admin/admin_template/navbar', $data);
             $this->load->view('admin/admin_template/sidebar', $data);
-            $this->load->view('admin/admin_aplikasi/tambah_aplikasi');
+            $this->load->view('admin/admin_aplikasi/tambah_aplikasi', $data);
             $this->load->view('admin/admin_template/footer');
         } else {
             $this->Item_model->tambahAplikasi();

@@ -115,7 +115,7 @@
           <div class="card-body">
             <div class="form-group">
               <label for="judul-berita">Judul Berita</label>
-              <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita"disabled>
+              <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita" disabled>
             </div>
             <div class="form-group">
               <label for="gambar-berita">Gambar Ilustrasi berita</label>
@@ -159,17 +159,17 @@
               <input type="text" class="form-control" id="judul-berita" placeholder="Nama berita">
             </div>
             <div class="form-group">
-                      <label for="exampleInputFile">Gambar Illustrasi Berita</label>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <!-- <div class="input-group-append">
+              <label for="exampleInputFile">Gambar Illustrasi Berita</label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="exampleInputFile">
+                  <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                </div>
+                <!-- <div class="input-group-append">
                         <span class="input-group-text" id="">Upload</span>
                       </div> -->
-                      </div>
-             </div>
+              </div>
+            </div>
 
             <div class="form-group">
               <label for="konten-berita">Konten Berita</label>
@@ -187,7 +187,7 @@
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
 
-          
+
         </div>
         <!-- End Form Edit -->
       </div>

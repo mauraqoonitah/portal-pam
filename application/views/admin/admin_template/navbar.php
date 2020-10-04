@@ -20,15 +20,13 @@
   <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="<?php echo base_url('home') ?>" class="nav-link">
-        <!-- <i class="fas fa-power-off"></i> -->
-        <p style="color:black;">Portal PAM JAYA </p>
+      <a href="<?php echo base_url('home') ?>" class="nav-link font-weight-bold">
+        Portal PAM JAYA
       </a>
     </li>
-    <li class="nav-item d-none d-sm-inline-block">
-      <a href="<?php echo base_url('login/logout') ?>" class="nav-link">
-        <!-- <i class="fas fa-power-off"></i> -->
-        <p style="color:#dc3545;">Logout </p>
+    <li class="nav-item d-none d-sm-inline">
+      <a href="<?php echo base_url('login/logout') ?>" class="nav-link font-weight-bold text-danger"><i class="fas fa-power-off"></i>
+        Logout
       </a>
     </li>
 

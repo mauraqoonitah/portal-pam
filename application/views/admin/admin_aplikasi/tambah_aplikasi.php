@@ -21,7 +21,7 @@
   <section class="content">
     <?php if ($this->session->flashdata('flash')) : ?>
       <div class="row mt-3">
-        <div class="col-md-4 ml-2">
+        <div class="col-lg-8">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             Aplikasi <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
