@@ -1,14 +1,11 @@
-<body class="hold-transition login-page">
-
-
+<body class="hold-transition login-page" style="background-color:#a0c7e6;">
     <div class="login-box">
         <div class="login-logo">
-            <a href=""><b>ADMIN PORTAL PAM JAYA</b></a>
+            <h4 class="mt-5"><b>Login<br>Admin Portal PAM JAYA</b></h4>
         </div>
 
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Admin Login</p>
 
                 <?= $this->session->flashdata('message'); ?>
 
@@ -40,9 +37,9 @@
                 </form>
                 <hr>
                 <div class="text-center">
-                    <a class="small" href="<?= base_url('login/registration'); ?>">Register New Account</a>
+                    <a class="" href="<?= base_url('login/registration'); ?>">Register New Admin Account</a>
                     <form method="post" action="<?= base_url() ?>">
-                        <button type="submit" class="btn btn-sm btn-outline-primary mt-3">Back to Portal</button>
+                        <button type="submit" class="btn btn-outline-primary mt-3">Back to Portal</button>
                     </form>
                 </div>
 

@@ -1,9 +1,11 @@
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color: #a0c7e6;">
     <div class="login-box">
-
+        <div class="login-logo">
+            <h4 class="mt-5"><b>Register<br>Admin Portal PAM JAYA</b></h4>
+        </div>
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Register Admin Portal PAM Jaya</p>
+                <p class="login-box-msg"></p>
 
                 <form action="<?= base_url('login/registration'); ?> " method="post">
                     <div class="input-group mt-3">
@@ -58,7 +60,7 @@
                 <div class="text-center">
                     <a class="div" href="<?= base_url('login'); ?>">Already have an account? Login!</a>
                     <form method="post" action="<?= base_url() ?>">
-                        <button type="submit" class="btn btn-sm btn-outline-primary mt-3">Back to Portal</button>
+                        <button type="submit" class="btn btn-outline-primary mt-3">Back to Portal</button>
                     </form>
                 </div>
 

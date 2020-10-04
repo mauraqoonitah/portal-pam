@@ -1,7 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?= $title; ?></title>
+  <link rel="shortcut icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
+  <link rel="apple-touch-icon" href="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
+
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -15,7 +19,7 @@
   <!-- JQVMap -->
   <link rel="stylesheet" href="<?php echo base_url('assets/template/plugins') ?>/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url('assets/template/dist')?>/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url('assets/template/dist') ?>/css/adminlte.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?php echo base_url('assets/template/plugins') ?>/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->

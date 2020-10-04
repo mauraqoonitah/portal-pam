@@ -8,7 +8,7 @@
                     </a>
                     <h3 class="item-title"><?= $item['nama']; ?></h3>
                     <div class="overlay">
-                        <button type="button" class="btn" data-toggle="modal" data-target="#item-modal" data-whatever="<?= $item['nama']; ?>" data-whatever2="<?= $item['deskripsi']; ?>">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#item-modal" data-modalnama="<?= $item['nama']; ?>" data-modaldesc="<?= $item['deskripsi']; ?>">
                             <i class=" fas fa-info-circle"></i>
                         </button>
                     </div>

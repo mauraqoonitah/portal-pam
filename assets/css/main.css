@@ -11,7 +11,7 @@ html {
     background-color: #ffffff;
     font-size: 14px;
     font-family: "Lato", sans-serif;
-    margin: 10px 10px;
+    margin: 15px 15px;
 }
 
 .container {
@@ -51,7 +51,6 @@ h6 .h6 {
     display: grid;
     grid-template-columns: 1.1fr 2fr;
     align-items: center;
-    margin-top: 10px;
     margin-bottom: 1rem;
     cursor: pointer;
 }
@@ -59,7 +58,7 @@ h6 .h6 {
 .menu .brand {
     display: grid;
     grid-template-columns: 100px auto;
-    justify-content: center;
+    justify-content: start;
 }
 
 .menu .brand .icon {
@@ -71,14 +70,16 @@ h6 .h6 {
     margin-left: 50px;
 }
 
-.menu .brand h2 {
+.menu .brand .mealzy {
+    display: grid;
+    align-items: center;
     color: #2f3188;
     font-weight: 800;
     text-decoration: none;
     margin-left: 5px;
 }
 
-.menu .brand h2:before {
+.menu .brand .mealzy:before {
     display: none;
 }
 
@@ -86,7 +87,6 @@ h6 .h6 {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin-left: 100px;
 }
 
 .menu .menu-item {
@@ -94,12 +94,12 @@ h6 .h6 {
     color: black;
     text-decoration: none;
     text-align: center;
-    padding: 10px;
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: bold;
     position: relative;
     font-size: 14px;
+    padding: 14px;
 }
 
 .menu .menu-item:hover {
@@ -134,6 +134,8 @@ h6 .h6 {
     height: 20px;
     position: relative;
     z-index: 999;
+    text-decoration: none;
+    font-size: 32px;
 }
 
 .menu-toggle span {
@@ -601,53 +603,51 @@ h6 .h6 {
     .menu-list {
         font-size: 14px;
     }
-    body,
-    html {
-        max-width: 1200px;
-        body,
-        html {
-            max-width: 1200px;
-            margin-left: 30px;
-        }
-        .container {
-            margin-left: 30px;
-        }
-    }
 }
 
-
-}
 @media (max-width: 1024px) {
     .menu,
     .contact {
         order: inherit;
         grid-template-columns: 1fr;
     }
+    .menu .brand {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+        justify-self: center;
+    }
+    .nav-logo {
+        margin: 0;
+    }
 }
+
 @media (max-width: 768px) {
     .menu {
         order: -1;
         grid-template-columns: auto 1fr;
     }
-    
+    .menu .brand {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+        justify-self: center;
+    }
+    .menu-item {
+        margin-top: 60px;
+    }
     .menu-toggle {
         display: flex;
         justify-items: start;
     }
-    
-    .menu .brand {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: center;
-        justify-self: start;
-    }
-    
     .menu ul {
         display: flex;
         position: absolute;
-        height: 50vh;
+        height: 100vh;
         top: 0;
-        background-color: rgb(197, 230, 255);
+        background-color: rgb(197, 230, 255, .9);
+        border-color: transparent;
         width: 100%;
         flex-direction: column;
         justify-content: space-evenly;
@@ -658,7 +658,6 @@ h6 .h6 {
         transition: all 1s;
         left: 0;
     }
-    
     .menu ul.slide {
         opacity: 1;
         transform: translateX(0);
@@ -668,85 +667,80 @@ h6 .h6 {
         width: 200px;
         margin-left: 0px;
     }
-    
     .menu ul.menu-list {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         margin-left: 0px;
     }
-    
     .page-berita {
         display: flex;
         flex-direction: column;
     }
-    
     .berita {
         margin-bottom: 0;
     }
-    
     .container {
         padding-right: 5px;
         padding-left: 5px;
     }
 }
+
 @media (max-width: 680px) {
+    .menu .brand {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mealzy {
+        font-size: 24px;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: flex;
+        justify-items: start;
+    }
     .page-berita {
         display: flex;
         flex-direction: column;
     }
-    
     .container {
         padding-right: 5px;
         padding-left: 5px;
     }
-    
     .konten {
         margin-bottom: 2em;
     }
 }
+
 @media (max-width: 500px) {
-    body,
-    html {
-        margin: 15px 5px 3rem 5px;
-    }
-    
     .services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 459px) {
     .page-berita {
         display: flex;
         flex-direction: column;
     }
-    
-    .container {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    
     .menu .brand {
         display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: center;
-        justify-self: center;
+        grid-template-columns: 1fr;
     }
-    
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
     .hovereffect {
         height: 180px;
     }
-    
-    .nav-logo {
-        margin: 0;
-    }
-    
     img .nav-logo {
         display: grid;
-        justify-content: center;
-        justify-self: center;
+        justify-content: end;
+        justify-self: end;
     }
 }
+
 
 /* footer */
