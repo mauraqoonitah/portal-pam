@@ -20,7 +20,7 @@ class Admin_tambah_aplikasi extends CI_Controller
 
 
 
-        $data['title'] = 'Admin Portal PAM Jaya';
+        $data['title'] = 'Tambah Aplikasi Portal | Admin Portal PAM Jaya';
 
         $this->form_validation->set_rules('name', 'Nama Aplikasi', 'required');
         $this->form_validation->set_rules('link', 'Link Aplikasi', 'required');

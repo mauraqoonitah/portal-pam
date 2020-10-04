@@ -7,7 +7,7 @@ class Admin_tambah_account extends CI_Controller
     {
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['title'] = 'Admin Portal PAM Jaya';
+        $data['title'] = 'Tambah Akun Admin | Admin Portal PAM Jaya';
 
         $this->load->view('admin/admin_template/head', $data);
         $this->load->view('admin/admin_template/navbar', $data);
