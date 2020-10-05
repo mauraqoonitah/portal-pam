@@ -249,11 +249,12 @@ h6 .h6 {
 }
 
 .item .item-title {
-    display: grid;
     font-size: 16px;
-    align-self: end;
     font-weight: bolder;
+    max-width: 100%;
     margin-top: 25px;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
 
@@ -265,7 +266,7 @@ h6 .h6 {
     width: 160px;
     height: 200px;
     padding: 20px;
-    float: left;
+    margin: float: left;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -741,3 +742,11 @@ h6 .h6 {
 
 
 /* footer */
+
+footer .footer {
+    width: 100% !important;
+    height: 40px !important;
+    background-color: #b9b5b5 !important;
+    text-align: center !important;
+    padding: 5px !important;
+}

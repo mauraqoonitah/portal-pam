@@ -40,6 +40,7 @@ class Admin_tambah_aplikasi extends CI_Controller
 
 
             $upload_image = $_FILES['icon']['name'];
+
             if ($upload_image) {
                 $config['allowed_types'] = "jpg|png|jpeg";
                 $config['max-size'] = '2048';
@@ -48,13 +49,16 @@ class Admin_tambah_aplikasi extends CI_Controller
                 $this->load->library('upload', $config);
 
                 if ($this->upload->do_upload('icon')) {
-
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('icon', $new_image);
-                } else {
-                    echo $this->upload->display_errors();
                 }
             } else {
+                // no image uploaded - set default image
+
+                $this->Item_model->tambahDefaultImgApp();
+
+                $this->session->set_flashdata('flash', 'mau set ke default image');
+                redirect('admin/Admin_tambah_aplikasi');
             }
             $this->Item_model->tambahAplikasi();
             $this->session->set_flashdata('flash', 'ditambahkan!');

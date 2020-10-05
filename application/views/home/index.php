@@ -40,7 +40,7 @@
             </div> <?php endforeach; ?>
 
     </section>
-    <div class="row ml-4 mb-5">
+    <div class="row ml-4 mb-5 mt-5">
         <div class="col text-left">
             <form action="<?= base_url(); ?>home/ubahpassword" method=" get" target="_blank">
                 <button type=" submit" class="btn btn-outline-dark">ubah password</button>

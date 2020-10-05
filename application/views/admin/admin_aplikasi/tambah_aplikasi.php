@@ -73,35 +73,46 @@
                     <input type="text" class="form-control" id="app-deskripsi" name="deskripsi" placeholder="deskripsi singkat aplikasi" style="height: 100px;"></input>
                   </div>
                 </div>
-                <div class="form-group">
+
+                <fieldset class="form-group">
                   <label for="app-icon">Logo</label>
+                  <div class="row">
+                    <!-- unggah logo -->
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label  mb-2" for="gridRadios1">
+                          Unggah Logo
+                        </label>
 
-                  <!-- upload -->
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="icon" name="icon">
-                      <label class="custom-file-label" for="icon">Choose file</label>
+                        <!-- upload -->
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="icon" name="icon">
+                            <label class="custom-file-label" for="icon">Choose file</label>
+                          </div>
+                          <!-- end upload -->
+                        </div>
+
+                        <small class="form-text text-muted">
+                          jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB
+                        </small>
+
+                      </div>
+
+                      <!-- logo default -->
+                      <div class="form-check mt-4">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Gunakan Logo Default
+                        </label>
+                      </div>
+                      <img class=" ml-3 mt-2" style="width: 100px;" src="<?= base_url('assets/img/item_default.png'); ?>" alt=" logo default">
+
                     </div>
-                    <!-- <div class="input-group-append">
-                        <span class="input-group-text" id="">Upload</span>
-                      </div> -->
-
-                    <!-- end upload -->
-
                   </div>
-                </div>
-                <br>
-                <div class="form-group">
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
-                    <label for="customRadio1" class="custom-control-label">Khusus berjalan di area PAM Jaya</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
-                    <label for="customRadio2" class="custom-control-label">Izinkan berjalan diluar area PAM JAYA</label>
-                  </div>
+                </fieldset>
 
-                </div>
               </div>
               <!-- /.card-body -->
               <div class="modal-footer ">
