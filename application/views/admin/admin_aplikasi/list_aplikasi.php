@@ -42,7 +42,10 @@
               <td class="text-right py-0 align-middle">
                 <div class="btn-group btn-group-sm">
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-aplikasi-<?= $item['id']; ?>"><i class="fas fa-eye"></i></a>
-                  <a href="#" class="btn btn-success" data-toggle="modal" data-target="#modal-edit-aplikasi-<?= $item['id']; ?>"><i class="fas fa-pencil-alt"></i></a>
+
+
+                  <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>" target="_blank" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+
                   <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-aplikasi-<?= $item['id']; ?>"><i class="fas fa-trash"></i></a>
                 </div>
               </td>
@@ -59,6 +62,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
+
                     <!-- Form Edit -->
                     <form role="form">
                       <div class="card-body " style="margin-top:0; padding-top: 0;margin-bottom:0; padding-bottom: 0">
@@ -85,70 +89,6 @@
                     </form>
                     <div class="modal-footer right-content-between">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- End Form Edit -->
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Modal EDIT aplikasi -->
-            <div class="modal fade" id="modal-edit-aplikasi-<?= $item['id']; ?>" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered mt-0" role="document" style="max-width: 600px;">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Aplikasi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Form Edit -->
-                    <form role="form" action="<?= base_url('admin/admin_aplikasi/tambah_aplikasi'); ?>" method="post">
-                      <div class="card-body" style="margin-top:0; padding-top: 0;margin-bottom:0; padding-bottom: 0">
-                        <div class="form-group">
-                          <label for="app-name">Nama Aplikasi</label>
-                          <input type="text" class="form-control" id="app-name" name="name" value="<?= $item['nama']; ?>">
-                        </div>
-                        <div class="form-group ">
-                          <label for="app-link">Link Aplikasi</label>
-                          <input type="text" class="form-control" id="app-link" name="link" value="<?= $item['link']; ?>">
-                        </div>
-                        <div class="form-group">
-                          <label for="app-deskripsi">Deskripsi Aplikasi</label>
-                          <textarea type="text" class="form-control" id="app-deskripsi" name="deskripsi" rows="6" value="<?= $item['deskripsi']; ?>"><?= $item['deskripsi']; ?></textarea>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="app-icon">Logo</label>
-                          <div class="input-group">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="app-icon" name="icon">
-                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-
-                          </div>
-                        </div>
-                        <br>
-                        <div class="form-group">
-                          <div class="custom-control custom-radio">
-                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
-                            <label for="customRadio1" class="custom-control-label">Khusus berjalan di area PAM Jaya</label>
-                          </div>
-                          <div class="custom-control custom-radio">
-                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
-                            <label for="customRadio2" class="custom-control-label">Izinkan berjalan diluar area PAM JAYA</label>
-                          </div>
-
-                        </div>
-                      </div>
-                      <!-- /.card-body -->
-                    </form>
-                    <div class="modal-footer right-content-between">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Simpan</button>
                     </div>
                     <!-- End Form Edit -->
                   </div>
