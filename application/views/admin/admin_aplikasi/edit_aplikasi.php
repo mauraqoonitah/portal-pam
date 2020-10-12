@@ -86,8 +86,8 @@
                                             </div>
 
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                                <label class="form-check-label  mb-2" for="gridRadios1">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="uploadIconRadios" value="uploadIconRadios" checked>
+                                                <label class="form-check-label  mb-2" for="uploadIconRadios">
                                                     Unggah Logo
                                                 </label>
 
@@ -108,12 +108,13 @@
 
                                             <!-- logo default -->
                                             <div class="form-check mt-4">
-                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                                <label class="form-check-label" for="gridRadios2">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="uploadDefIconRadios" value="uploadDefIconRadios">
+                                                <label class="form-check-label" for="uploadDefIconRadios">
                                                     Gunakan Logo Default
                                                 </label>
                                             </div>
                                             <img class=" ml-3 mt-2" style="width: 100px;" src="<?= base_url('assets/img/item_default.png'); ?>" alt=" logo default">
+                                            <hr>
 
                                         </div>
                                     </div>
