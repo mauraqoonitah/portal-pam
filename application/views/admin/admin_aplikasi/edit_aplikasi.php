@@ -86,9 +86,9 @@
                                             </div>
 
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="uploadIconRadios" value="uploadIconRadios" checked>
+                                                <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadIconRadios" value="uploadIconRadios" checked="checked">
                                                 <label class="form-check-label  mb-2" for="uploadIconRadios">
-                                                    Unggah Logo
+                                                    Unggah Logo Baru
                                                 </label>
 
                                                 <!-- upload -->
@@ -108,7 +108,7 @@
 
                                             <!-- logo default -->
                                             <div class="form-check mt-4">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="uploadDefIconRadios" value="uploadDefIconRadios">
+                                                <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadDefIconRadios" value="uploadDefIconRadios">
                                                 <label class="form-check-label" for="uploadDefIconRadios">
                                                     Gunakan Logo Default
                                                 </label>
