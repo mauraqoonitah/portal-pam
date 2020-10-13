@@ -9,6 +9,8 @@
           <i class="fas fa-minus"></i></button>
       </div>
     </div>
+
+    <!-- flashdata -->
     <?php if ($this->session->flashdata('flash')) : ?>
       <div class="row mt-3">
         <div class="col-lg-8">
@@ -24,6 +26,8 @@
         </div>
       </div>
     <?php endif; ?>
+    <!--end flashdata -->
+
     <div class="card-body p-0">
       <table class="table col-lg-6">
         <thead>
@@ -34,6 +38,7 @@
           </tr>
         </thead>
         <tbody>
+
           <?php $i = 1; ?>
           <?php foreach ($item as $item) : ?>
             <tr>
@@ -41,11 +46,13 @@
               <td><?= $item['nama']; ?></td>
               <td class="text-right py-0 align-middle">
                 <div class="btn-group btn-group-sm">
+                  <!-- lihat aplikasi -->
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-aplikasi-<?= $item['id']; ?>"><i class="fas fa-eye"></i></a>
 
+                  <!-- edit aplikasi -->
+                  <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>" data-toggle="modal" data-target="#modal-edit-aplikasi-<?= $item['id']; ?>" target="_blank" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
 
-                  <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>" target="_blank" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
-
+                  <!-- hapus aplikasi -->
                   <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-aplikasi-<?= $item['id']; ?>"><i class="fas fa-trash"></i></a>
                 </div>
               </td>
@@ -63,7 +70,7 @@
                   </div>
                   <div class="modal-body">
 
-                    <!-- Form Edit -->
+                    <!-- Form Lihat Aplikasi -->
                     <form role="form">
                       <div class="card-body " style="margin-top:0; padding-top: 0;margin-bottom:0; padding-bottom: 0">
                         <div class="form-group">
@@ -90,12 +97,37 @@
                     <div class="modal-footer right-content-between">
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
-                    <!-- End Form Edit -->
+                    <!-- End Form Lihat Aplikasi -->
                   </div>
 
                 </div>
               </div>
             </div>
+
+            <!-- Modal EDIT aplikasi -->
+            <div class="modal fade" id="modal-edit-aplikasi-<?= $item['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-edit-aplikasiTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Aplikasi </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Pilih Edit untuk mengubah data dari Aplikasi <Strong><?= $item['nama']; ?></Strong>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
+
+                    <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>">
+                      <button type="button" class="btn btn-info">Edit </button></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
             <!-- Modal DELETE aplikasi -->
             <div class="modal fade" id="modal-delete-aplikasi-<?= $item['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-delete-aplikasiTitle" aria-hidden="true">
@@ -113,7 +145,8 @@
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
 
-                    <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/hapus/<?= $item['id']; ?>"> <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
+                    <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/hapus/<?= $item['id']; ?>">
+                      <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
 
                   </div>
                 </div>

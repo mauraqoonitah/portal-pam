@@ -2,6 +2,12 @@
 
 class Admin_list_berita extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Berita_model');
+    }
+
     public function index()
     {
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();

@@ -72,76 +72,78 @@
                                 <div class="form-group">
                                     <label for="app-deskripsi">Deskripsi Aplikasi</label>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="app-deskripsi" name="deskripsi" value="<?= $item['deskripsi']; ?>" style="height: 100px;"></input>
+                                        <textarea name="deskripsi" class="form-control text-left" id="app-deskripsi">
+                                        <?= $item['deskripsi']; ?>
+                                        </textarea>
+
                                     </div>
-                                </div>
 
-                                <fieldset class="form-group">
-                                    <label for="app-icon">Logo Aplikasi</label>
-                                    <div class="row">
-                                        <!-- unggah logo -->
-                                        <div class="col-sm-10">
-                                            <div class="form-group">
-                                                <img style="width: 100px;" src="<?= base_url('assets/img/') . $item['icon']; ?>" alt="<?= $item['nama']; ?>">
-                                            </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadIconRadios" value="uploadIconRadios" checked="checked">
-                                                <label class="form-check-label  mb-2" for="uploadIconRadios">
-                                                    Unggah Logo Baru
-                                                </label>
-
-                                                <!-- upload -->
-                                                <div class="input-group">
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="icon" name="icon">
-                                                        <label class="custom-file-label" for="icon">Choose file</label>
-                                                    </div>
-                                                    <!-- end upload -->
+                                    <fieldset class="form-group">
+                                        <label for="app-icon">Logo Aplikasi</label>
+                                        <div class="row">
+                                            <!-- unggah logo -->
+                                            <div class="col-sm-10">
+                                                <div class="form-group">
+                                                    <img style="width: 100px;" src="<?= base_url('assets/img/') . $item['icon']; ?>" alt="<?= $item['nama']; ?>">
                                                 </div>
 
-                                                <small class="form-text text-muted">
-                                                    jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB
-                                                </small>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadIconRadios" value="uploadIconRadios" checked="checked">
+                                                    <label class="form-check-label  mb-2" for="uploadIconRadios">
+                                                        Unggah Logo Baru
+                                                    </label>
+
+                                                    <!-- upload -->
+                                                    <div class="input-group">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="icon" name="icon">
+                                                            <label class="custom-file-label" for="icon">Choose file</label>
+                                                        </div>
+                                                        <!-- end upload -->
+                                                    </div>
+
+                                                    <small class="form-text text-muted">
+                                                        jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB
+                                                    </small>
+
+                                                </div>
+
+                                                <!-- logo default -->
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadDefIconRadios" value="uploadDefIconRadios">
+                                                    <label class="form-check-label" for="uploadDefIconRadios">
+                                                        Gunakan Logo Default
+                                                    </label>
+                                                </div>
+                                                <img class=" ml-3 mt-2" style="width: 100px;" src="<?= base_url('assets/img/item_default.png'); ?>" alt=" logo default">
+                                                <hr>
 
                                             </div>
-
-                                            <!-- logo default -->
-                                            <div class="form-check mt-4">
-                                                <input class="form-check-input" type="radio" name="iconImageRadios" id="uploadDefIconRadios" value="uploadDefIconRadios">
-                                                <label class="form-check-label" for="uploadDefIconRadios">
-                                                    Gunakan Logo Default
-                                                </label>
-                                            </div>
-                                            <img class=" ml-3 mt-2" style="width: 100px;" src="<?= base_url('assets/img/item_default.png'); ?>" alt=" logo default">
-                                            <hr>
-
                                         </div>
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
 
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="modal-footer ">
+                                    <button type="submit" name="edit" class="btn btn-primary">Simpan</button>
+                                </div>
+                                <!-- End Form Edit -->
                             </div>
                             <!-- /.card-body -->
-                            <div class="modal-footer ">
-                                <button type="submit" name="edit" class="btn btn-primary">Simpan</button>
-                            </div>
-                            <!-- End Form Edit -->
-                        </div>
-                        <!-- /.card-body -->
-                        <?php echo form_close(); ?>
+                            <?php echo form_close(); ?>
 
+                        </div>
+                        <!-- /.card -->
                     </div>
+
+
                     <!-- /.card -->
                 </div>
-
-
-                <!-- /.card -->
+                <!--/.col (right) -->
             </div>
-            <!--/.col (right) -->
-        </div>
-        <!-- /.row -->
-</div><!-- /.container-fluid -->
-</section>
-<!-- /.content -->
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

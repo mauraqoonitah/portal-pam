@@ -2,8 +2,8 @@
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="index3.html" class="brand-link">
-    <img src="<?php echo base_url('assets/template/dist') ?>/img/AdminLTELogo.png" alt="Portal PamJaya Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+  <a href="<?php echo base_url('admin/Admin_home') ?>" class="brand-link">
+    <img src="<?php echo base_url('assets/img/') ?>pamjaya-logo.png" alt="Portal PamJaya Logo" class="brand-image ml-1" style="background-color: white; opacity: .7; border-radius: 5px; ">
     <span class="brand-text font-weight-light">Admin Portal </span>
   </a>
 
