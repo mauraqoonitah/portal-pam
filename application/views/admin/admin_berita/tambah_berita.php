@@ -9,8 +9,8 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">General Form</li>
+            <li class="breadcrumb-item"><a href="<?= base_url(); ?>admin/Admin_home">Home</a></li>
+            <li class="breadcrumb-item active">Tambah Berita</li>
           </ol>
         </div>
       </div>
@@ -19,61 +19,76 @@
 
   <!-- Main content -->
   <section class="content">
+    <?php if ($this->session->flashdata('flash')) : ?>
+      <div class="row mt-3">
+        <div class="col-lg-8">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Berita <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <a href="<?php echo base_url('berita') ?>" class="nav-link" target="_blank">
+              <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
+            </a>
+          </div>
+
+        </div>
+      </div>
+    <?php endif; ?>
+
+
     <div class="container-fluid">
       <div class="row">
-        <!-- left column -->
         <div class="col-md-12">
-          <!-- general form elements -->
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title"> </h3>
             </div>
-            <!-- /.card-header -->
-            <!-- form start -->
-            <form role="form">
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="judul-berita">Judul Berita</label>
-                  <input type="text" class="form-control" id="judul-berita" placeholder="Judul Berita">
+
+            <?php echo form_open_multipart(base_url('admin/Admin_tambah_berita')) ?>
+
+            <div class="card-body">
+              <?php if (validation_errors()) : ?>
+                <div class="text-danger">
+                  <?= validation_errors(); ?>
                 </div>
-                <div class="form-group">
-                      <label for="exampleInputFile">Gambar Illustrasi Berita</label>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                        </div>
-                        <!-- <div class="input-group-append">
-                        <span class="input-group-text" id="">Upload</span>
-                      </div> -->
-                      </div>
-                    </div>
+              <?php endif; ?>
 
-                <div class="form-group">
-                  <label for="isi-berita">Konten Berita</label>
-                  <div class="mb-3">
-                    <textarea class="textarea form-control" id="isi-berita" placeholder="Isi Konten Berita disini..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                  </div>
-                </div> <!-- /.card-body -->
+              <div class="form-group">
+                <label for="creator">Creator : </label>
+                <input readonly type="text" id="creator" name="creator" class="form-control" value="<?= $admin['name']; ?>">
               </div>
-              <br>
+
+              <div class="form-group">
+                <label for="publishedAt">Tanggal Posting </label>
+                <input readonly type="text" class="form-control" id="publishedAt" name="publishedAt" value="<?= date('d F Y'); ?>">
+              </div>
+
+              <div class="form-group mt-4">
+                <label for="judul">Judul Berita</label>
+                <input type="text" class="form-control" id="judul" name="judul" placeholder="Judul Berita">
+              </div>
+
+
+
+              <div class="form-group  mt-5">
+                <label for="konten">Konten Berita</label>
+                <textarea type="text" class="textarea form-control" id="konten" name="konten" placeholder="Isi Konten Berita disini..." style="font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              </div>
+
+              <div class="card-footer">
+                <button type="submit" name="tambahBerita" class="btn btn-primary">Tambah</button>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-          </form>
+          <?php echo form_close(); ?>
+
+
         </div>
-        <!-- /.card -->
       </div>
-
-
-      <!-- /.card -->
     </div>
-    <!--/.col (right) -->
 </div>
-<!-- /.row -->
-</div><!-- /.container-fluid -->
+</div>
+</div>
 </section>
-<!-- /.content -->
 </div>
-<!-- /.content-wrapper -->

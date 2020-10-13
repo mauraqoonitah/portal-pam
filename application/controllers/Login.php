@@ -39,7 +39,7 @@ class Login extends CI_Controller
                         'role_id' => $admin['role_id']
                     ];
                     $this->session->set_userdata($data);
-                    redirect('admin/admin_home');
+                    redirect(base_url('admin/admin_home'));
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
                     redirect('login');

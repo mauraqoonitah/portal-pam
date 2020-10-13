@@ -39,17 +39,13 @@
 
     <div class="container-fluid">
       <div class="row">
-        <!-- left column -->
-        <div class="col-lg-8">
-          <!-- general form elements -->
+        <div class="col-lg-12">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title"> </h3>
             </div>
-            <!-- /.card-header -->
-            <!-- form start -->
 
-            <?php echo form_open_multipart('admin/Admin_tambah_aplikasi') ?>
+            <?php echo form_open_multipart(base_url('admin/Admin_tambah_aplikasi')) ?>
             <div class="card-body">
               <!-- Form Edit -->
               <div class="card-body">
@@ -114,27 +110,18 @@
                 </fieldset>
 
               </div>
-              <!-- /.card-body -->
               <div class="modal-footer ">
                 <button type="submit" name="tambah" class="btn btn-primary">Simpan</button>
               </div>
-              <!-- End Form Edit -->
             </div>
-            <!-- /.card-body -->
             <?php echo form_close(); ?>
 
           </div>
-          <!-- /.card -->
         </div>
 
 
-        <!-- /.card -->
       </div>
-      <!--/.col (right) -->
     </div>
-    <!-- /.row -->
-</div><!-- /.container-fluid -->
-</section>
-<!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
+</section>
+</div>

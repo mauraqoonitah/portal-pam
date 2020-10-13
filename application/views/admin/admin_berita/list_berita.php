@@ -36,6 +36,7 @@
             <th>No.</th>
             <th>Judul Berita</th>
             <th>Tanggal Posting</th>
+            <th>Admin</th>
             <th>Action</th>
 
           </tr>
@@ -48,6 +49,8 @@
               <td><?= $i; ?></td>
               <td><?= $berita['judul']; ?></td>
               <td><?= $berita['publishedAt']; ?></td>
+              <td> <?= $berita['creator']; ?></td>
+
               <td class="text-right py-0 align-middle">
                 <div class="btn-group btn-group-sm">
                   <!-- lihat berita -->
@@ -76,61 +79,52 @@
 
 
                   <div class="modal-body">
-                    <!-- Form Edit -->
+                    <!-- Form Lihat Berita -->
                     <form role="form">
                       <div class="card-body">
                         <div class="form-group">
-                          <label for="judul-berita">Judul Berita</label>
-                          <div class="card">
-                            <div class="card-body">
-                              <p id="judul-berita"><?= $berita['judul']; ?></p>
-                            </div>
-                          </div>
+                          <label for="creator">Creator : </label>
+                          <span type="text" id="creator" name="creator"> Admin <?= $admin['name']; ?></span>
+
+                        </div>
+                        <div class="form-group">
+                          <label for="konten-berita">Tanggal Posting : </label>
+                          <span id="publishedAt" name="publishedAt"><?= $berita['publishedAt']; ?></span>
+                          <hr>
+                        </div>
+                        <div class="form-group">
+                          <label for="judul-berita">Judul Berita : </label>
+                          <h5 id="judul" name="judul"><?= $berita['judul']; ?></h5>
+
                         </div>
 
-                        <div class="form-group">
-                          <label for="konten-berita">Tanggal Posting</label>
+
+                        <div class="form-group ">
+                          <label for="konten">Konten Berita</label>
                           <div class="card">
                             <div class="card-body">
-                              <p id="tanggal-berita"><?= $berita['publishedAt']; ?></p>
+                              <p id="konten" name="konten"> <?= $berita['konten']; ?></p>
                             </div>
                           </div>
+                          <br>
                         </div>
 
                         <div class="form-group">
                           <label for="gambar-berita">Gambar Ilustrasi berita</label><br>
                           <div class="card">
                             <div class="card-body">
-                              <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['gambar']; ?>">
+                              <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['gambar']; ?>" name="gambar" id="gambar">
                             </div>
                           </div>
                         </div>
 
-                        <div class="form-group">
-                          <label for="konten-berita">Deskripsi Berita</label>
-                          <div class="card">
-                            <div class="card-body">
-                              <p id="deskripsi-berita"> Deskripsi singkat</p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="konten-berita">Konten Berita</label>
-                          <div class="card">
-                            <div class="card-body">
-                              <p id="konten-berita"> <?= $berita['konten']; ?></p>
-                            </div>
-                          </div>
-                          <br>
-                        </div>
                         <!-- /.card-body -->
                         <div class="modal-footer right-content-between">
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                       </div>
                     </form>
-                    <!-- End Form Edit -->
+                    <!-- End Form Lihat Berita -->
                   </div>
 
                 </div>
@@ -139,7 +133,7 @@
             </div>
     </div>
 
-    <!-- Modal EDIT Berita -->
+    <!-- Modal direct EDIT Berita -->
     <div class="modal fade" id="modal-edit-berita-<?= $berita['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-edit-beritaTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
