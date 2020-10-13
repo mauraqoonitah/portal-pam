@@ -34,7 +34,7 @@
           <tr>
             <th>No.</th>
             <th>Nama Aplikasi</th>
-            <th></th>
+            <th class="text-right">Action</th>
           </tr>
         </thead>
         <tbody>

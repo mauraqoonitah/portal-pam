@@ -10,6 +10,8 @@ class Admin_list_berita extends CI_Controller
 
     public function index()
     {
+        $data['berita'] = $this->Berita_model->getBerita();
+
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
 
         $data['title'] = 'Daftar Berita Portal | Admin Portal PAM Jaya';
