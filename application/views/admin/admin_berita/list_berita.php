@@ -81,33 +81,54 @@
                       <div class="card-body">
                         <div class="form-group">
                           <label for="judul-berita">Judul Berita</label>
-                          <textarea readonly type="text" class="form-control" rows="2" id="judul-berita"><?= $berita['judul']; ?></textarea>
+                          <div class="card">
+                            <div class="card-body">
+                              <p id="judul-berita"><?= $berita['judul']; ?></p>
+                            </div>
+                          </div>
                         </div>
+
                         <div class="form-group">
                           <label for="konten-berita">Tanggal Posting</label>
-                          <span readonly type="text" class="form-control" id="konten-berita"><?= $berita['publishedAt']; ?></span>
+                          <div class="card">
+                            <div class="card-body">
+                              <p id="tanggal-berita"><?= $berita['publishedAt']; ?></p>
+                            </div>
+                          </div>
                         </div>
 
                         <div class="form-group">
                           <label for="gambar-berita">Gambar Ilustrasi berita</label><br>
-                          <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['gambar']; ?>">
-
+                          <div class="card">
+                            <div class="card-body">
+                              <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['gambar']; ?>">
+                            </div>
+                          </div>
                         </div>
 
                         <div class="form-group">
                           <label for="konten-berita">Deskripsi Berita</label>
-                          <textarea readonly type="text" class="form-control" id="konten-berita">Deskripsi singkat</textarea>
+                          <div class="card">
+                            <div class="card-body">
+                              <p id="deskripsi-berita"> Deskripsi singkat</p>
+                            </div>
+                          </div>
                         </div>
+
                         <div class="form-group">
                           <label for="konten-berita">Konten Berita</label>
-                          <textarea readonly type="text" class="form-control" id="konten-berita" style="min-height: 500px;"> <?= $berita['konten']; ?></textarea>
-
+                          <div class="card">
+                            <div class="card-body">
+                              <p id="konten-berita"> <?= $berita['konten']; ?></p>
+                            </div>
+                          </div>
                           <br>
                         </div>
                         <!-- /.card-body -->
                         <div class="modal-footer right-content-between">
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
+                      </div>
                     </form>
                     <!-- End Form Edit -->
                   </div>
