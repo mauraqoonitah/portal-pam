@@ -760,3 +760,7 @@ footer .footer {
     text-align: center !important;
     padding: 5px !important;
 }
+
+#login-page {
+    background-color: blue;
+}

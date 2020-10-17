@@ -39,13 +39,18 @@ class Login extends CI_Controller
                         'role_id' => $admin['role_id']
                     ];
                     $this->session->set_userdata($data);
-                    redirect(base_url('admin/admin_home'));
+                    if ($admin['role_id'] == 1) {
+                        redirect(base_url('admin/admin_home'));
+                    } else {
+                        redirect(base_url('admin/Admin_profile_account'));
+                    }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
                     redirect('login');
                 }
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not been activated!</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not been activated!<br><br>Please ask your system administrator to enable your account</div>');
+
                 redirect('login');
             }
         } else {
@@ -82,12 +87,12 @@ class Login extends CI_Controller
                 'image' => 'default.png',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
-                'is_active' => 1,
+                'is_active' => 0,
                 'date_created' => time()
             ];
             $this->db->insert('admin', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success mx-auto" role="alert">
-            your account has been created! please Login</div>');
+            Your account has been created!<br> Please Login</div>');
             redirect('login');
         }
     }

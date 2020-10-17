@@ -1,11 +1,12 @@
-<body class="hold-transition login-page" style="background-color:#a0c7e6;">
+<body class="hold-transition login-page" style="background: rgb(33,162,246);
+background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100%);">
     <div class="login-box">
         <div class="login-logo">
-            <h4 class="mt-5"><b>Login<br>Admin Portal PAM JAYA</b></h4>
+            <h4 class="mt-3"><b>Login<br>Admin Portal PAM JAYA</b></h4>
         </div>
 
         <div class="card">
-            <div class="card-body login-card-body">
+            <div class="card-body login-card-body" style="border-radius: 20px;">
 
                 <?= $this->session->flashdata('message'); ?>
 
