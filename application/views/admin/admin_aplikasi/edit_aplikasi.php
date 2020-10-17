@@ -72,7 +72,7 @@
                                 <div class="form-group">
                                     <label for="app-deskripsi">Deskripsi Aplikasi</label>
                                     <div class="mb-3">
-                                        <textarea name="deskripsi" class="form-control text-left" id="app-deskripsi">
+                                        <textarea name="deskripsi" class="form-control text-left" id="app-deskripsi" rows="5">
                                         <?= $item['deskripsi']; ?>
                                         </textarea>
 

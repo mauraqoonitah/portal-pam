@@ -3,6 +3,8 @@
         <h2>Berita Internal</h2>
         <h2>Berita Internal</h2>
     </div>
+</div>
+<div class="content-wrapper ml-5 mr-5">
     <section class="mt-5">
         <div class="page-berita">
             <div class="sibling-fade">

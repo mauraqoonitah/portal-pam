@@ -43,13 +43,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="Admin_tambah_aplikasi" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_tambah_aplikasi') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tambah Aplikasi</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="Admin_list_aplikasi" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_list_aplikasi') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>List Aplikasi</p>
               </a>
@@ -68,13 +68,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="Admin_tambah_berita" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_tambah_berita') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tambah Berita</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="Admin_list_berita" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_list_berita') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>List Berita</p>
               </a>
@@ -96,13 +96,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="Admin_tambah_account" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_tambah_account') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tambah Account</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="Admin_list_account" class="nav-link">
+              <a href="<?php echo base_url('admin/Admin_list_account') ?>" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>List Account</p>
               </a>

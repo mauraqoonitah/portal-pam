@@ -21,13 +21,13 @@
   <section class="content">
     <?php if ($this->session->flashdata('flash')) : ?>
       <div class="row mt-3">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             Aplikasi <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <a href="<?php echo base_url('home') ?>" class="nav-link" target="_blank">
+            <a href="<?php echo base_url('') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
             </a>
           </div>
@@ -66,7 +66,7 @@
                 <div class="form-group">
                   <label for="app-deskripsi">Deskripsi aplikasi</label>
                   <div class="mb-3">
-                    <input type="text" class="form-control" id="app-deskripsi" name="deskripsi" placeholder="deskripsi singkat aplikasi" style="height: 100px;"></input>
+                    <textarea rows="3" type="text" class="form-control" id="app-deskripsi" name="deskripsi" placeholder="deskripsi singkat aplikasi" style="height: 100px;"></textarea>
                   </div>
                 </div>
 

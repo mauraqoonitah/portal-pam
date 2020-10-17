@@ -11,7 +11,7 @@ html {
     background-color: #ffffff;
     font-size: 14px;
     font-family: "Lato", sans-serif;
-    margin: 15px 15px;
+    margin: 10px 15px;
 }
 
 .container {
@@ -266,7 +266,8 @@ h6 .h6 {
     width: 160px;
     height: 200px;
     padding: 20px;
-    margin: float: left;
+    margin: 10px;
+    float: left;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -453,8 +454,17 @@ h6 .h6 {
     line-height: 1.6em;
 }
 
-.page-konten p {
+.border {
+    border-width: 5px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.konten-berita p {
     font-size: 1.1em;
+    line-height: 170%;
+    text-align: justify;
 }
 
 .page-konten .back {

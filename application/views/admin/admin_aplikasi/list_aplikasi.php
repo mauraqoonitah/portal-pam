@@ -12,8 +12,8 @@
 
     <!-- flashdata -->
     <?php if ($this->session->flashdata('flash')) : ?>
-      <div class="row mt-3">
-        <div class="col-lg-8">
+      <div class="row mt-3 ml-2 mr-2">
+        <div class=" col-lg-12">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             Aplikasi <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -29,12 +29,15 @@
     <!--end flashdata -->
 
     <div class="card-body p-0">
-      <table class="table col-lg-6">
+      <table class="table col-lg-12">
         <thead>
           <tr>
             <th>No.</th>
+            <th>Logo</th>
             <th>Nama Aplikasi</th>
-            <th class="text-right">Action</th>
+            <th>Link Aplikasi</th>
+
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -42,9 +45,13 @@
           <?php $i = 1; ?>
           <?php foreach ($item as $item) : ?>
             <tr>
-              <td><?= $i; ?></td>
-              <td><?= $item['nama']; ?></td>
-              <td class="text-right py-0 align-middle">
+              <td class="align-middle"><?= $i; ?></td>
+              <td class="align-middle"> <img style="width: 50px;" src="<?= base_url('assets/img/') . $item['icon']; ?>" alt="<?= $item['nama']; ?>">
+              </td>
+              <td class="align-middle"><?= $item['nama']; ?></td>
+              <td class="align-middle"><a href="<?= $item['link']; ?>" target="_blank"><?= $item['link']; ?></a></td>
+
+              <td class="align-middle">
                 <div class="btn-group btn-group-sm">
                   <!-- lihat aplikasi -->
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-aplikasi-<?= $item['id']; ?>"><i class="fas fa-eye"></i></a>
@@ -63,7 +70,7 @@
               <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 600px;">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Lihat Aplikasi</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Deskripsi Aplikasi</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -73,30 +80,17 @@
                     <!-- Form Lihat Aplikasi -->
                     <form role="form">
                       <div class="card-body " style="margin-top:0; padding-top: 0;margin-bottom:0; padding-bottom: 0">
+
                         <div class="form-group">
-                          <label for="app-name">Nama Aplikasi</label>
-                          <span type="text" class="form-control" id="app-name"><?= $item['nama']; ?> </span>
-                        </div>
-                        <div class="form-group">
-                          <label for="app-logo">Logo Aplikasi</label><br>
-                          <img style="width: 100px;" src="<?= base_url('assets/img/') . $item['icon']; ?>" alt="<?= $item['nama']; ?>">
-                        </div>
-                        <div class="form-group ">
-                          <label for="app-link">Link Aplikasi</label>
-                          <span type="text" class="form-control" id="app-link"><?= $item['link']; ?> </span>
-                        </div>
-                        <div class="form-group">
-                          <label for="app-deskripsi">Deskripsi Aplikasi</label>
-                          <span type="text" class="form-control" id="app-deskripsi" style="min-height: 200px;"> <?= $item['deskripsi']; ?></span>
+                          <h5 for="app-deskripsi" class="text-center font-weight-bold"><?= $item['nama']; ?></h5>
+                          <textarea readonly rows="8" type="text" class="form-control" id="app-deskripsi"> <?= $item['deskripsi']; ?></textarea>
 
                         </div>
 
                         <br>
                       </div>
                     </form>
-                    <div class="modal-footer right-content-between">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
+
                     <!-- End Form Lihat Aplikasi -->
                   </div>
 
@@ -109,19 +103,17 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Aplikasi </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h6 class="modal-title" id="exampleModalLongTitle">Edit data dari Aplikasi <Strong><?= $item['nama']; ?>? </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                   </div>
-                  <div class="modal-body">
-                    Pilih Edit untuk mengubah data dari Aplikasi <Strong><?= $item['nama']; ?></Strong>
-                  </div>
+
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
 
                     <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>">
-                      <button type="button" class="btn btn-info">Edit </button></a>
+                      <button type="button" class="btn btn-success">Edit </button></a>
 
                   </div>
                 </div>

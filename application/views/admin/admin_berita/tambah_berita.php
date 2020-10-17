@@ -21,7 +21,7 @@
   <section class="content">
     <?php if ($this->session->flashdata('flash')) : ?>
       <div class="row mt-3">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             Berita <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -73,11 +73,13 @@
 
               <div class="form-group  mt-5">
                 <label for="konten">Konten Berita</label>
-                <textarea type="text" class="textarea form-control" id="konten" name="konten" placeholder="Isi Konten Berita disini..." style="font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                <!-- <textarea type="text" class="textarea form-control" id="konten" name="konten" placeholder="Isi Konten Berita disini..." style="font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea> -->
+                <textarea type="text" class="form-control" id="konten" name="konten" placeholder="Isi Konten Berita disini..." rows="5"></textarea>
               </div>
 
-              <div class="card-footer">
-                <button type="submit" name="tambahBerita" class="btn btn-primary">Tambah</button>
+
+              <div class="modal-footer">
+                <button type="submit" name="tambahBerita" class="btn btn-primary">Posting</button>
               </div>
             </div>
           </div>
