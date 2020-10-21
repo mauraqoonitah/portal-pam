@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('Nodirect script access allowed');
 
 class Admin_home extends CI_Controller
 {
+
+    public function __construct()
+    {
+        parent::__construct();
+        is_logged_in();
+    }
     public function index()
     {
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();

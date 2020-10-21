@@ -24,7 +24,7 @@
                     <div class="card-body">
                       <h3 class="card-title"><?= $admin['name']; ?></h3>
                       <p class="card-text"><?= $admin['email']; ?></p>
-                      <p class="card-text"><small class="text-muted">Created: <?= date('d F Y', $admin['date_created']); ?> </small></p>
+                      <p class="card-text"><small class="text-muted">Created: <?= $admin['date_created']; ?> </small></p>
                     </div>
                   </div>
                 </div>

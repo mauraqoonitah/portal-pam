@@ -49,7 +49,7 @@ class Login extends CI_Controller
                     redirect('login');
                 }
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not been activated!<br><br>Please ask your system administrator to enable your account</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email has not been activated!<br>Please ask your system administrator to enable your account</div>');
 
                 redirect('login');
             }
@@ -92,7 +92,7 @@ class Login extends CI_Controller
             ];
             $this->db->insert('admin', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success mx-auto" role="alert">
-            Your account has been created!<br> Please Login</div>');
+            Your account has been created!<br> Please log in after getting permission from your system administrator</div>');
             redirect('login');
         }
     }
@@ -105,5 +105,10 @@ class Login extends CI_Controller
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
        You have been logged out</div>');
         redirect('login');
+    }
+
+    public function blocked()
+    {
+        $this->load->view('login/blocked');
     }
 }

@@ -116,31 +116,33 @@
           ?>
 
           <?php foreach ($subMenu as $sm) : ?>
-
-
-            <!-- Akun -->
-            <li class="nav-item">
+            <?php if ($title == $sm['title']) : ?>
+              <!-- Akun -->
+              <li class="nav-item menu-open">
+              <?php else : ?>
+              <li class="nav-item">
+              <?php endif; ?>
               <a href="<?php echo base_url($sm['url']); ?>" class="nav-link">
                 <i class="<?= $sm['icon']; ?>"></i>
                 <p>
                   <?= $sm['title']; ?>
                 </p>
               </a>
-            </li>
+              </li>
+
+            <?php endforeach; ?>
+            <div class="user-panel pb-3 mb-3 d-flex"></div>
+
+
 
           <?php endforeach; ?>
-          <div class="user-panel pb-3 mb-3 d-flex"></div>
 
-
-
-        <?php endforeach; ?>
-
-        <li class=" nav-link">
-          <a href="<?php echo base_url('login/logout') ?>" class="nav-link">
-            <i class="fas fa-power-off text-danger"></i>
-            <p class=" font-weight-bold text-danger"> Logout </p>
-          </a>
-        </li>
+          <li class=" nav-link">
+            <a href="<?php echo base_url('login/logout') ?>" class="nav-link">
+              <i class="fas fa-power-off text-danger"></i>
+              <p class=" font-weight-bold text-danger"> Logout </p>
+            </a>
+          </li>
 
       </ul>
     </nav>

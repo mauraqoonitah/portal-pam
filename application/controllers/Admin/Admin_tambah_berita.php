@@ -9,7 +9,12 @@ class Admin_tambah_berita extends CI_Controller
         $this->load->model('Berita_model');
         $this->load->library('form_validation');
         $this->load->library('session');
+        if (!$this->session->userdata('email')) {
+            redirect(base_url('login'));
+        }
     }
+
+
     public function index()
     {
         $this->load->helper('url');

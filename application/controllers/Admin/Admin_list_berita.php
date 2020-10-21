@@ -6,6 +6,9 @@ class Admin_list_berita extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Berita_model');
+        if (!$this->session->userdata('email')) {
+            redirect(base_url('login'));
+        }
     }
 
     public function index()
