@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 17, 2020 at 08:07 PM
+-- Generation Time: Oct 26, 2020 at 10:22 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
   `password` varchar(256) NOT NULL,
   `role_id` int(11) NOT NULL,
   `is_active` int(1) NOT NULL,
-  `date_created` int(11) NOT NULL
+  `date_created` date DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -44,10 +44,12 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(10, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$/fqxGRracSrNlajO0GIqZuGRESp8OiFA6QymqT4j4v1L8gmsZAl7G', 1, 1, 1600794559),
-(11, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t5opZK1nOY6qJCMY5VldHeEJLopotFNjGXn.tHZJ.V30LPZKr2yNK', 1, 1, 1600796186),
-(14, 'Vivi Rofiah', 'vivi@gmail.com', 'default.png', '$2y$10$ufWas4UIfEIFP50hXSctH.HJR3TtzXdC7Xsi7jQtnNx5SUKkca8lW', 2, 2, 1602943667),
-(15, 'Divina Fatriandira', 'dfatriandira@gmail.com', 'default.png', '$2y$10$6aC1S9puG1UwzoKQu1TWR.9hywCLvZgrPehCbHr3/uOqGXb.wkFQK', 2, 1, 1602944728);
+(10, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$/fqxGRracSrNlajO0GIqZuGRESp8OiFA6QymqT4j4v1L8gmsZAl7G', 1, 1, '0000-00-00'),
+(11, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t5opZK1nOY6qJCMY5VldHeEJLopotFNjGXn.tHZJ.V30LPZKr2yNK', 1, 1, '0000-00-00'),
+(14, 'Vivi Rofiah', 'vivi@gmail.com', 'default.png', '$2y$10$ufWas4UIfEIFP50hXSctH.HJR3TtzXdC7Xsi7jQtnNx5SUKkca8lW', 1, 1, '0000-00-00'),
+(15, 'Divina Fatriandira', 'dfatriandira@gmail.com', 'default.png', '$2y$10$6aC1S9puG1UwzoKQu1TWR.9hywCLvZgrPehCbHr3/uOqGXb.wkFQK', 2, 1, '0000-00-00'),
+(21, 'Nia Normaliana', 'nianormaliana@gmail.com', 'default.png', '$2y$10$cMNc4U5iJqvVXpEuCb9E1ufYMyj0oqGreSEOp//TxlCtxGrxweY9q', 1, 0, '0000-00-00'),
+(22, 'Amanda Azalia', 'adinigseni06@gmail.com', 'default.png', '$2y$10$M.C3TVvtgD79CgmG26FZ.OuwziXhCZcA0fqqr9mTqHINj.t9714Ei', 2, 0, '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -151,7 +153,8 @@ CREATE TABLE `user_menu` (
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Administrator'),
-(2, '');
+(2, 'User'),
+(3, 'Menu');
 
 -- --------------------------------------------------------
 
@@ -169,8 +172,8 @@ CREATE TABLE `user_role` (
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
-(1, 'admin'),
-(2, 'member');
+(1, 'Admin'),
+(2, 'Member');
 
 -- --------------------------------------------------------
 
@@ -249,7 +252,7 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `berita`
@@ -267,13 +270,13 @@ ALTER TABLE `item`
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_role`
@@ -285,7 +288,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
