@@ -6,6 +6,8 @@ class Admin_manage_account extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Admin_model');
+        $this->load->helper('auth');
+
         is_logged_in();
     }
     public function index()
@@ -26,5 +28,11 @@ class Admin_manage_account extends CI_Controller
         } else {
             redirect(base_url('admin/admin_manage_account'));
         }
+    }
+    public function hapusAccount($id)
+    {
+        $this->Admin_model->hapusAccount($id);
+        $this->session->set_flashdata('flash', 'dihapus!');
+        redirect('admin/Admin_manage_account');
     }
 }
