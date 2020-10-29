@@ -31,10 +31,10 @@
                         <h3><i class="fas fa-exclamation-triangle text-warning"></i> Oops! Access Forbidden.</h3>
 
                         <p class="mt-2">
-                            Sorry, your access is refused due to security reasons of our server and also our sensitive data.
+                            Sorry, your access is refused due to security reasons of our server and also our sensitive data. Please contact your administrator to activate your account.
 
                             <br>
-                            <i class="fa fa-arrow-left mt-3" aria-hidden="true"></i><a href="<?= base_url(); ?>home"> return to Portal PAM Jaya</a>
+                            <i class="fa fa-arrow-left mt-3" aria-hidden="true"></i><a href="<?= base_url(); ?>login"> Please login first</a>
                         </p>
 
                     </div>

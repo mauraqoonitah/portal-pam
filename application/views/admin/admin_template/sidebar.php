@@ -22,69 +22,6 @@
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item has-treeview menu-open">
-          <a href="<?php echo base_url('admin/Admin_home') ?>" class="nav-link">
-            <i class="nav-icon fas fa-laptop-house"></i>
-            <p>
-              Dashboard
-            </p>
-          </a>
-        </li>
-
-
-        <!-- Aplikasi -->
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-code"></i>
-            <p>
-              Aplikasi
-              <i class="right fas fa-angle-right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="<?php echo base_url('admin/Admin_tambah_aplikasi') ?>" class="nav-link">
-                <i class="far fa-dot-circle nav-icon"></i>
-                <p>Tambah Aplikasi</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?php echo base_url('admin/Admin_list_aplikasi') ?>" class="nav-link">
-                <i class="far fa-dot-circle nav-icon"></i>
-                <p>List Aplikasi</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <!-- Berita -->
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-newspaper"></i>
-            <p>
-              Berita
-              <i class="right fas fa-angle-right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="<?php echo base_url('admin/Admin_tambah_berita') ?>" class="nav-link">
-                <i class="far fa-dot-circle nav-icon"></i>
-                <p>Tambah Berita</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="<?php echo base_url('admin/Admin_list_berita') ?>" class="nav-link">
-                <i class="far fa-dot-circle nav-icon"></i>
-                <p>List Berita</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <!-- /Berita -->
-
-        <div class="user-panel pb-3 mb-3 d-flex"></div>
 
         <!-- query menu -->
         <?php
@@ -131,7 +68,7 @@
               </li>
 
             <?php endforeach; ?>
-            <div class="user-panel pb-3 mb-3 d-flex"></div>
+            <div class="user-panel pb-1 mb-3 d-flex"></div>
 
 
 

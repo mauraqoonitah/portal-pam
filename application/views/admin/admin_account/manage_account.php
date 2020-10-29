@@ -107,7 +107,7 @@
 
                     </table>
                     <div class="col-lg-8">
-                        <p class="" style="color: grey">*Admin - Menghapus, menambah, mengedit, dan mengaktifkan status akun<br>*Active - Aktivasi akun setelah registrasi</p>
+                        <p class="" style="color: grey;">*Admin = Access Aplikasi, Berita, Manage Akun (Aktivasi, Menghapus Akun) <br>*Active = Aktivasi akun setelah registrasi agar bisa masuk ke halaman admin</p>
                     </div>
 
                 </div>
