@@ -57,7 +57,7 @@
 <!-- manage admin checklist -->
 <script>
   // get data
-  $('.form-check-input').on('click', function() {
+  $('.form-check-input-role').on('click', function() {
     const roleId = $(this).data('role');
     const id = $(this).data('id');
 

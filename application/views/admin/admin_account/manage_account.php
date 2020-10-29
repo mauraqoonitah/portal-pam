@@ -37,8 +37,8 @@
                                 <th scope="col">Nama</th>
                                 <th scope="col">Admin</th>
                                 <th scope="col">Active</th>
-                                <th scope="col">role_id</th>
-                                <th scope="col">is_active</th>
+                                <!-- <th scope="col">role_id</th>
+                                <th scope="col">is_active</th> -->
                                 <th scope="col">Action</th>
 
 
@@ -54,7 +54,7 @@
                                     <td><?= $akun['name'] ?></td>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
+                                            <input class="form-check-input-role" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
 
                                         </div>
 
@@ -64,10 +64,9 @@
                                             <input class="form-check-input-status" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
-                                    <td><?= $akun['role_id'] ?></td>
-                                    <td><?= $akun['is_active'] ?></td>
+                                    <!-- <td><?= $akun['role_id'] ?></td>
+                                    <td><?= $akun['is_active'] ?></td> -->
                                     <td>
-                                        <a href="<?= base_url('admin/admin_manage_account/account_access/') . $akun['id']; ?>" class="badge badge-warning">access</a>
 
                                         <a href="" class="badge badge-danger" data-toggle="modal" data-target="#modal-delete-account-<?= $akun['id']; ?>">delete</a>
 
@@ -110,7 +109,7 @@
                     <div class="col-lg-8">
                         <p class="" style="color: grey">*Admin - Menghapus, menambah, mengedit, dan mengaktifkan status akun<br>*Active - Aktivasi akun setelah registrasi</p>
                     </div>
-                    <a href="" class="btn btn-primary mb-3 mt-5" data-toggle="modal" data-target="#newRoleModal">Tambah Akun Admin</a>
+
                 </div>
             </div>
         </div>
@@ -119,33 +118,4 @@
     <?php echo form_close(); ?>
 
     <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
-
-<!-- Modal Add Menu -->
-<div class="modal fade" id="newRoleModal" tabindex="-1" role="dialog" aria-labelledby="newRoleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="newRoleModalLabel">Tambah Akun</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <form action="<?= base_url('admin/Admin_manage_account'); ?>" method="POST">
-
-
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="menu" name="menu" placeholder="akun">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="submit" class="btn btn-primary">Tambah</button>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
