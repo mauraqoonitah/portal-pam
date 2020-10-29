@@ -7,7 +7,7 @@ class Admin_model extends CI_Model
     {
         return $this->db->get('admin')->result_array();
     }
-    public function getBeritaById($id)
+    public function getAdminById($id)
     {
         return $this->db->get_where('admin', ['id' => $id])->row_array();
     }

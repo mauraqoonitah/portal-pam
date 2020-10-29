@@ -8,26 +8,24 @@
                     <h1>Manage Akun</h1>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6  mb-3">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="<?php echo base_url('admin/admin_home') ?>">Home</a></li>
                         <li class="breadcrumb-item active">Manage Akun</li>
                     </ol>
                 </div>
-                <div class="col-lg-8 ">
-                    <p>Hanya yang punya status Admin yang bisakonfigurasi akun seperti menghapus, menambah, mengedit, dan mengaktifkan status akun</p>
-                    <p>Ubah status akun member menjadi Admin dengan cara ceklis kolom admin</p>
-                    <p>Aktifkan akun dengan ceklis kolom active</p>
-                </div>
+
             </div>
         </div><!-- /.container-fluid -->
     </section>
 
     <!-- Main content -->
+
     <section class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
+
 
                     <?= $this->session->flashdata('message'); ?>
 
@@ -38,7 +36,7 @@
                                 <th scope="col">No.</th>
                                 <th scope="col">Nama</th>
                                 <th scope="col">Admin</th>
-                                <th scope="col">Status Active</th>
+                                <th scope="col">Active</th>
                                 <th scope="col">role_id</th>
                                 <th scope="col">is_active</th>
                                 <th scope="col">Action</th>
@@ -47,20 +45,23 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php echo form_open_multipart() ?>
                             <?php $i = 1; ?>
                             <?php foreach ($adminAkun as $akun) : ?>
+
                                 <tr>
                                     <th scope="row"><?= $i; ?></th>
                                     <td><?= $akun['name'] ?></td>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>">
+                                            <input class="form-check-input" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
+
                                         </div>
 
                                     </td>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>">
+                                            <input class="form-check-input-status" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
                                     <td><?= $akun['role_id'] ?></td>
@@ -73,6 +74,7 @@
 
                                     </td>
                                 </tr>
+
                                 <!-- Modal DELETE account -->
                                 <div class=" modal fade" id="modal-delete-account-<?= $akun['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-delete-accountTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -103,13 +105,19 @@
                                 <?php $i++; ?>
                             <?php endforeach; ?>
                         </tbody>
+
                     </table>
+                    <div class="col-lg-8">
+                        <p class="" style="color: grey">*Admin - Menghapus, menambah, mengedit, dan mengaktifkan status akun<br>*Active - Aktivasi akun setelah registrasi</p>
+                    </div>
                     <a href="" class="btn btn-primary mb-3 mt-5" data-toggle="modal" data-target="#newRoleModal">Tambah Akun Admin</a>
                 </div>
             </div>
         </div>
 
     </section>
+    <?php echo form_close(); ?>
+
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
@@ -126,6 +134,8 @@
             </div>
 
             <form action="<?= base_url('admin/Admin_manage_account'); ?>" method="POST">
+
+
                 <div class="modal-body">
                     <div class="form-group">
                         <input type="text" class="form-control" id="menu" name="menu" placeholder="akun">

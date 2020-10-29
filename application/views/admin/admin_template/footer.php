@@ -59,15 +59,38 @@
   // get data
   $('.form-check-input').on('click', function() {
     const roleId = $(this).data('role');
+    const id = $(this).data('id');
 
     $.ajax({
       url: "<?= base_url('admin/Admin_manage_account/changeRole/'); ?>",
       type: 'post',
       data: {
         roleId: roleId,
+        id: id
       },
       success: function() {
-        document.location.href = "<?= base_url('admin/Admin_manage_account'); ?>"
+        document.location.href = "<?= base_url('admin/Admin_manage_account/'); ?>"
+
+      }
+    })
+  });
+</script>
+
+<script>
+  // get data
+  $('.form-check-input-status').on('click', function() {
+    const activeId = $(this).data('active');
+    const id = $(this).data('id');
+
+    $.ajax({
+      url: "<?= base_url('admin/Admin_manage_account/activeStatus/'); ?>",
+      type: 'post',
+      data: {
+        activeId: activeId,
+        id: id
+      },
+      success: function() {
+        document.location.href = "<?= base_url('admin/Admin_manage_account/'); ?>"
 
       }
     })
