@@ -53,6 +53,27 @@
   });
 </script>
 
+
+<!-- manage admin checklist -->
+<script>
+  // get data
+  $('.form-check-input').on('click', function() {
+    const roleId = $(this).data('role');
+
+    $.ajax({
+      url: "<?= base_url('admin/Admin_manage_account/changeRole/'); ?>",
+      type: 'post',
+      data: {
+        roleId: roleId,
+      },
+      success: function() {
+        document.location.href = "<?= base_url('admin/Admin_manage_account'); ?>"
+
+      }
+    })
+  });
+</script>
+
 </body>
 
 </html>

@@ -35,4 +35,23 @@ class Admin_manage_account extends CI_Controller
         $this->session->set_flashdata('flash', 'dihapus!');
         redirect('admin/Admin_manage_account');
     }
+
+    public function changeRole()
+    {
+        $role_id = $this->input->post('roleId');
+
+        $data = [
+            'role_id' => $role_id
+        ];
+        $result = $this->db->get_where('admin', $data);
+
+
+        if ($role_id == "1") {
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+            role_id = 1 , status button clicked</div>');
+        } else if ($role_id == "2") {
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+            role_id = 2 , status button clicked</div>');
+        }
+    }
 }

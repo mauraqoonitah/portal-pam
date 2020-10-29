@@ -54,13 +54,13 @@
                                     <td><?= $akun['name'] ?></td>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" <?= check_status($akun['role_id']); ?>>
+                                            <input class="form-check-input" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>">
                                         </div>
 
                                     </td>
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" <?= check_access($akun['is_active']); ?>>
+                                            <input class="form-check-input" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>">
                                         </div>
                                     </td>
                                     <td><?= $akun['role_id'] ?></td>
