@@ -8,7 +8,9 @@ class Admin_tambah_aplikasi extends CI_Controller
         $this->load->model('Item_model');
         $this->load->library('form_validation');
         $this->load->library('session');
-        is_logged_in();
+        if (!$this->session->userdata('email')) {
+            redirect(base_url('login'));
+        }
     }
 
     public function index()

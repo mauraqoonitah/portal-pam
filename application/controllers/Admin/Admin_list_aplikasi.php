@@ -6,7 +6,9 @@ class Admin_list_Aplikasi extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Item_model');
-        is_logged_in();
+        if (!$this->session->userdata('email')) {
+            redirect(base_url('login'));
+        }
     }
     public function index()
     {

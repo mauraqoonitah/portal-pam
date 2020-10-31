@@ -7,7 +7,6 @@ class Admin_manage_account extends CI_Controller
         parent::__construct();
         $this->load->model('Admin_model');
         $this->load->helper('auth');
-
         is_logged_in();
     }
     public function index()

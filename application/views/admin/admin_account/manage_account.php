@@ -35,7 +35,7 @@
                             <tr>
                                 <th scope="col">No.</th>
                                 <th scope="col">Nama</th>
-                                <th scope="col">Admin</th>
+                                <th scope="col">Super Admin</th>
                                 <th scope="col">Active</th>
                                 <!-- <th scope="col">role_id</th>
                                 <th scope="col">is_active</th> -->
@@ -106,8 +106,9 @@
                         </tbody>
 
                     </table>
-                    <div class="col-lg-8">
-                        <p class="" style="color: grey;">*Admin = Access Aplikasi, Berita, Manage Akun (Aktivasi, Menghapus Akun) <br>*Active = Aktivasi akun setelah registrasi agar bisa masuk ke halaman admin</p>
+                    <div class="col-lg-8 mt-5" style="color: grey;">
+                        <h6><strong>Role: </strong></h6>
+                        <p class="">*Super Admin = Access Menu Manage Akun <br>*Active = Aktivasi akun setelah registrasi untuk masuk ke halaman admin</p>
                     </div>
 
                 </div>
