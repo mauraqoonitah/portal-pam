@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2020 at 03:14 PM
+-- Generation Time: Oct 31, 2020 at 05:07 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
   `password` varchar(256) NOT NULL,
   `role_id` int(11) NOT NULL,
   `is_active` int(1) NOT NULL,
-  `date_created` date NOT NULL DEFAULT current_timestamp()
+  `date_created` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -44,10 +44,10 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$rCW0oMoxZfGOmQDa1H9QoO9Jdxy5cdNrRtLmf8ETaq1BQhFwFhGFK', 1, 1, '0000-00-00'),
-(4, 'Fachry Muhammad', 'fachry.muhammad13@gmail.com', 'default.png', '$2y$10$mBNYE.GXAD.88WVcuC.5med8VNTS9UBzW8agKx6KQK5OHDhkuhTfK', 2, 1, '0000-00-00'),
-(46, 'Ilham Arrosyid', 'ilhamarrosyid@gmail.com', 'default.png', '$2y$10$Hj8IOX7i6uWBngkRuAIkXuHiALY7YZPk4sVVlWV8Pc/HAEAzr8KPu', 2, 1, '0000-00-00'),
-(50, 'Irwan Wibawa', 'irwan@pamjaya.co.id', 'default.png', '$2y$10$cFrUZrBcI9.MgDORstX8peMaLRaC.34YVYw.1/jsqiSW.C8PiElEe', 1, 1, '0000-00-00');
+(1, 'Irwan Wibawa', 'irwan@pamjaya.co.id', 'default.png', '$2y$10$cFrUZrBcI9.MgDORstX8peMaLRaC.34YVYw.1/jsqiSW.C8PiElEe', 1, 1, '1 September 20'),
+(2, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$rCW0oMoxZfGOmQDa1H9QoO9Jdxy5cdNrRtLmf8ETaq1BQhFwFhGFK', 1, 1, '3 October 20'),
+(3, 'Ilham Arrosyid', 'ilhamarrosyid@gmail.com', 'default.png', '$2y$10$KGFAnqH4hmcHjCcDRD/Jh.ob.E49qX3matDpWb6Y2KqurA.Eh6FOa', 1, 1, '15 October 20'),
+(4, 'Fachry Muhammad', 'fachry.muhammad13@gmail.com', 'default.png', '$2y$10$0nR0H6wUcoPWqdJbCN0upe8yU9al4GYU2Jv7rVcCJGvBHlIRyUIrC', 2, 1, '16 October 20');
 
 -- --------------------------------------------------------
 
@@ -259,7 +259,7 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT for table `berita`
