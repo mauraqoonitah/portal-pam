@@ -30,6 +30,9 @@
             <a href="<?php echo base_url('') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
             </a>
+            <a href="<?php echo base_url('admin/admin_list_aplikasi') ?>" class="nav-link" target="_blank">
+              <i class="fas fa-fw fa-chevron-right"></i> Lihat di List Aplikasi
+            </a>
           </div>
 
         </div>

@@ -11,8 +11,9 @@
     </div>
 
     <!-- flashdata -->
+
     <?php if ($this->session->flashdata('flash')) : ?>
-      <div class="row mt-3">
+      <div class="row mt-3 ml-2">
         <div class="col-lg-8">
           <div class="alert alert-success alert-dismissible fade show" role="alert">
             Berita <strong>berhasil </strong><?= $this->session->flashdata('flash'); ?>
@@ -35,8 +36,8 @@
           <tr>
             <th>No.</th>
             <th>Judul Berita</th>
-            <th>Tanggal Posting</th>
-            <th>Admin</th>
+            <th>Tgl Posting</th>
+            <th>Creator</th>
             <th>Action</th>
 
           </tr>
@@ -54,43 +55,43 @@
               <td class="text-right py-0 align-middle">
                 <div class="btn-group btn-group-sm">
                   <!-- lihat berita -->
-                  <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-berita"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-berita-<?= $berita['id']; ?>"><i class="fas fa-eye"></i></a>
                   <!-- edit berita -->
                   <a href="<?= base_url(); ?>admin/Admin_list_berita/edit/<?= $berita['id']; ?>" data-toggle="modal" data-target="#modal-edit-berita-<?= $berita['id']; ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
 
+
                   <!-- hapus berita -->
-                  <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-berita"><i class="fas fa-trash"></i></a>
+                  <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-berita-<?= $berita['id']; ?>"><i class="fas fa-trash"></i></a>
 
                 </div>
               </td>
             </tr>
 
             <!-- Modal LIHAT berita -->
-            <div class="modal fade" id="modal-lihat-berita" tabindex="-1" role="dialog">
+            <div class="modal fade" id="modal-lihat-berita-<?= $berita['id']; ?>" tabindex="-1" role="dialog">
               <div class="modal-dialog modal-dialog-centered " role="document" style="max-width: 600px;">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Lihat berita</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Lihat Berita</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
 
 
-                  <div class="modal-body">
+                  <div class="modal-body pt-0 mt-0">
                     <!-- Form Lihat Berita -->
                     <form role="form">
                       <div class="card-body">
-                        <div class="form-group">
+                        <div class="form-group" style="color: grey;">
                           <label for="creator">Creator : </label>
-                          <span type="text" id="creator" name="creator"> Admin <?= $admin['name']; ?></span>
+                          <span type="text" id="creator" name="creator"><?= $admin['name']; ?></span><br>
+                          <label for="konten-berita">Tgl Posting : </label>
+                          <span id="publishedAt" name="publishedAt"><?= $berita['publishedAt']; ?></span>
+
 
                         </div>
-                        <div class="form-group">
-                          <label for="konten-berita">Tanggal Posting : </label>
-                          <span id="publishedAt" name="publishedAt"><?= $berita['publishedAt']; ?></span>
-                          <hr>
-                        </div>
+
                         <div class="form-group">
                           <label for="judul-berita">Judul Berita : </label>
                           <h5 id="judul" name="judul"><?= $berita['judul']; ?></h5>
@@ -99,20 +100,20 @@
 
 
                         <div class="form-group ">
-                          <label for="konten">Konten Berita</label>
                           <div class="card">
                             <div class="card-body">
+                              <label for="konten">Konten Berita:</label>
                               <p id="konten" name="konten"> <?= $berita['konten']; ?></p>
                             </div>
                           </div>
                           <br>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mt-0">
                           <label for="gambar-berita">Gambar Ilustrasi berita</label><br>
                           <div class="card">
                             <div class="card-body">
-                              <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['gambar']; ?>" name="gambar" id="gambar">
+                              <img style="width: 200px;" src="<?= base_url('assets/img/berita/') . $berita['gambar']; ?>" alt="gambar berita" name="gambar" id="gambar">
                             </div>
                           </div>
                         </div>
@@ -136,12 +137,7 @@
     <div class="modal fade" id="modal-edit-berita-<?= $berita['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-edit-beritaTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Edit Berita </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+
           <div class="modal-body">
             Ubah data Berita <Strong><?= $berita['judul']; ?></Strong>
           </div>
@@ -149,7 +145,7 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
 
             <a href="<?= base_url(); ?>admin/Admin_list_berita/edit/<?= $berita['id']; ?>">
-              <button type="button" class="btn btn-info">Edit </button></a>
+              <button type="button" class="btn btn-success">Edit </button></a>
 
           </div>
         </div>
@@ -157,7 +153,7 @@
     </div>
 
     <!-- Modal DELETE berita -->
-    <div class="modal fade" id="modal-delete-berita" tabindex="-1" role="dialog" aria-labelledby="modal-delete-beritaTitle" aria-hidden="true">
+    <div class="modal fade" id="modal-delete-berita-<?= $berita['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-delete-beritaTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -171,7 +167,12 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-            <button type="button" class="btn btn-danger">Ya, Hapus</button>
+
+            <a href="<?= base_url(); ?>admin/Admin_list_berita/hapus/<?= $berita['id']; ?>">
+              <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
+
+
+
           </div>
         </div>
       </div>

@@ -9,6 +9,8 @@
                 <h3 class="mb-4"> <?= $berita['judul']; ?></h3>
                 <p class="text-center"> <?= $berita['konten']; ?>. </p>
             </article>
+
+
         </div>
     </div>
 

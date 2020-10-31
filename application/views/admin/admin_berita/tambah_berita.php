@@ -30,6 +30,10 @@
             <a href="<?php echo base_url('berita') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
             </a>
+            <a href="<?php echo base_url('admin/admin_list_berita') ?>" class="nav-link" target="_blank">
+              <i class="fas fa-fw fa-chevron-right"></i> Lihat di List Berita
+            </a>
+
           </div>
 
         </div>

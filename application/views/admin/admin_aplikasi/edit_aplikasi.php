@@ -50,7 +50,7 @@
                         <!-- form start -->
 
                         <?php echo form_open_multipart() ?>
-                        <input type="text" name="id" value="<?= $item['id']; ?>">
+                        <input type="hidden" name="id" value="<?= $item['id']; ?>">
 
                         <div class="card-body">
                             <!-- Form Edit -->

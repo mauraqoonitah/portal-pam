@@ -54,7 +54,7 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                     <div class="input-group mt-2">
                         <?php $timezone = date_default_timezone_set('Asia/Jakarta');
                         ?>
-                        <?php $date = date('j F y');
+                        <?php $date = date('j F Y');
                         ?>
                         <input type="hidden" class="form-control" placeholder="date created" id="date_created" name="date_created" value="<?= set_value('date_created', $date); ?>">
                         <?php var_dump($date) ?>
