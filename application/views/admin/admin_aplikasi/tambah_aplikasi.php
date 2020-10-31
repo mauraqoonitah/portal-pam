@@ -111,7 +111,8 @@
 
               </div>
               <div class="modal-footer ">
-                <button type="submit" name="tambah" class="btn btn-primary">Simpan</button>
+
+                <button type="submit" name="tambah" class="btn btn-primary">Tambah</button>
               </div>
             </div>
             <?php echo form_close(); ?>

@@ -22,6 +22,7 @@
 
 <body>
 
+<div class="container">
     <nav class="menu">
         <div class="menu-toggle">
             <input type="checkbox" />
@@ -36,7 +37,7 @@
             </a>
             <h2 class="mealzy"> PORTAL PAM JAYA</h2>
         </div>
-        <ul class="menu-list">
+        <ul class="menu-list right">
             <li><a class="menu-item" href="<?= base_url(); ?>home">Home</a></li>
             <li><a class="menu-item" href="<?= base_url(); ?>berita">Berita</a></li>
             <li><a class="menu-item" href="<?= base_url(); ?>contact">Contact</a></li>
@@ -48,3 +49,4 @@
             </li>
         </ul>
     </nav>
+</div>

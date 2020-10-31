@@ -42,7 +42,7 @@ class Login extends CI_Controller
                     if ($admin['role_id'] == 1) {
                         redirect(base_url('admin/admin_home'));
                     } else {
-                        redirect(base_url('admin/Admin_profile_account'));
+                        redirect(base_url('admin/Admin_tambah_berita'));
                     }
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Wrong password!</div>');

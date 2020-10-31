@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2020 at 10:22 AM
+-- Generation Time: Oct 30, 2020 at 08:24 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -44,12 +44,19 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
+<<<<<<< HEAD
 (10, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$/fqxGRracSrNlajO0GIqZuGRESp8OiFA6QymqT4j4v1L8gmsZAl7G', 1, 1, '0000-00-00'),
 (11, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t5opZK1nOY6qJCMY5VldHeEJLopotFNjGXn.tHZJ.V30LPZKr2yNK', 1, 1, '0000-00-00'),
 (14, 'Vivi Rofiah', 'vivi@gmail.com', 'default.png', '$2y$10$ufWas4UIfEIFP50hXSctH.HJR3TtzXdC7Xsi7jQtnNx5SUKkca8lW', 1, 1, '0000-00-00'),
 (15, 'Divina Fatriandira', 'dfatriandira@gmail.com', 'default.png', '$2y$10$6aC1S9puG1UwzoKQu1TWR.9hywCLvZgrPehCbHr3/uOqGXb.wkFQK', 2, 1, '0000-00-00'),
 (21, 'Nia Normaliana', 'nianormaliana@gmail.com', 'default.png', '$2y$10$cMNc4U5iJqvVXpEuCb9E1ufYMyj0oqGreSEOp//TxlCtxGrxweY9q', 1, 0, '0000-00-00'),
 (22, 'Amanda Azalia', 'adinigseni06@gmail.com', 'default.png', '$2y$10$M.C3TVvtgD79CgmG26FZ.OuwziXhCZcA0fqqr9mTqHINj.t9714Ei', 2, 0, '0000-00-00');
+=======
+(1, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$rCW0oMoxZfGOmQDa1H9QoO9Jdxy5cdNrRtLmf8ETaq1BQhFwFhGFK', 1, 1, '0000-00-00'),
+(3, 'mora', 'moraqipi@gmail.com', 'default.png', '$2y$10$3Jf0iEVPYVozElKCeGgR9eX8cjwJDXRrIMs7YK35AWBEp7r4AN/gy', 2, 0, '0000-00-00'),
+(4, 'Fachry Muhammad', 'fachry.muhammad13@gmail.com', 'default.png', '$2y$10$mBNYE.GXAD.88WVcuC.5med8VNTS9UBzW8agKx6KQK5OHDhkuhTfK', 1, 1, '0000-00-00'),
+(45, 'Adini Gufroni', 'adinigufroni06@gmail.com', 'default.png', '$2y$10$t/I0/dPjMYYSx75gbf5zYu/oV9tyeJEMSZmzzvYJ6Knzdg7o5KcpS', 2, 1, '0000-00-00');
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 -- --------------------------------------------------------
 
@@ -80,7 +87,12 @@ INSERT INTO `berita` (`id`, `judul`, `gambar`, `publishedAt`, `konten`, `creator
 (7, '3 Biggest Takeaways for Bitcoin From Powell’s Press Conference', 'test.jpg', '07/09/2020', 'Tech firms have been urged to stop advertising to under-18s in an open letter signed by MPs, academics and children\'s-rights advocates.\r\nBehavioural advertising not only undermines privacy but puts \"susceptible\" youngsters under unfair marketing pressure, the letter says.\r\nIt is addressed to Google, Amazon, Apple, Facebook and Microsoft.\r\nIn a separate move Google-owned YouTube is accused of unlawfully mining data from five million under-13s in the UK.\r\nEuropean data protection laws forbid the mining of data of young children.\r\n\"The fact that ad-tech companies hold 72 million data points on a child by the time they turn 13 shows the extent of disregard for these laws, and the extraordinary surveillance to which children are subjected,\" the letter reads.\r\n\"There is no justification for targeting teenagers with personalised ads any more than there is for targeting 12-year-olds.\r\n\"You, the most powerful companies on the internet, have a responsibility to protect your users.\"\r\nYouTube legal fight\r\nAmong the 23 signatories are MP Caroline Lucas and clinical psychologist Dr Elly Hanson. Friends of the Earth is also named on the letter.\r\nIt was co-ordinated by Global Action Plan, which argues that online advertising accelerates consumerism, and adds unnecessary pressure to the planet.\r\nAll the firms involved have been asked to comment but none has yet responded.\r\nSeparately, privacy advocate Duncan McCann is suing Google on behalf of five million British children, claiming it broke privacy laws by tracking children online, in breach of both UK and European data-protection laws.\r\nThe case, lodged with the UK High Court in July, will be strongly contested by YouTube which will argue its platform is not for children aged under 13.\r\nMr McCann, who has three children under that age, believes damages of between £100 and £500 could be payable to children who are found to have had their data breached.\r\nMore on this story', 'Ilham'),
 (8, 'Crypto Stimulus: How Ethereum Based Uniswap Gave All Its Users Nearly $1,200', 'test.jpg', '08/09/2020', 'How e-commerce is exploding in South Africa\r\n\r\nHow e-commerce is exploding in South Africa\r\nClose\r\nE-commerce has been one sector that has boomed in South Africa during the pandemic.\r\n\r\nStartup Bottles launched South Africa\'s first ever on-demand alcohol delivery app service in 2016.\r\n\r\nDuring the coronavirus lockdown the app firm expanded its services to provide groceries instead, and it saw triple the demand and its user base doubled.\r\n\r\n\"Most definitely, I think coronavirus has, in just the space of a few weeks, accelerated the entire ecommerce industry in South Africa by 4-5 years at least,\" Bottles\' co-founder and chief executive Vincent Viviers told the BBC.', 'Maura'),
 (18, 'judul nih', '', '17 October 2020', 'konten', 'Maura Qoonitah'),
+<<<<<<< HEAD
 (19, 'sgs', '', '17 October 2020', 'fdbfrhsrhshsrhsh', 'Maura Qoonitah');
+=======
+(19, 'sgs', '', '17 October 2020', 'fdbfrhsrhshsrhsh', 'Maura Qoonitah'),
+(20, 'judul nih bbbreritatatat', '', '30 October 2020', 'sfvsrgvrsegbregsgdgsgrdffcd', 'Fachry Muhammad');
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 -- --------------------------------------------------------
 
@@ -111,8 +123,12 @@ INSERT INTO `item` (`id`, `nama`, `icon`, `link`, `deskripsi`) VALUES
 (15, 'Kimonev', 'kimonev-icon.png', 'https://kimonev.pamjaya.co.id/', 'kimonev Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (16, 'MAYA', 'maya-icon.png', 'http://203.161.27.194:3821/sim_aset/', 'maya Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (17, 'MONICA', 'monica-icon.png', 'https://monica.pamjaya.co.id/', 'monica Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
+<<<<<<< HEAD
 (51, 'femi ', 'cropped-logo-femi-300x288.png', 'https://www.instagram.com/', 'ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu '),
 (76, 'femi ', 'logo4.png', 'https://www.instagram.com/', 'Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk '),
+=======
+(51, 'femi festifal mipa', 'item_default.png', 'https://www.instagram.com/', '                                        ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu ini adalah aplikasi baru yaitu                                         '),
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 (77, 'pelangi matematika', 'item_default.png', 'https://www.instagram.com/', 'Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi ');
 
 -- --------------------------------------------------------
@@ -134,7 +150,15 @@ CREATE TABLE `user_access_menu` (
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (1, 1, 1),
 (2, 1, 2),
+<<<<<<< HEAD
 (3, 2, 2);
+=======
+(3, 2, 2),
+(22, 2, 3),
+(23, 1, 3),
+(24, 1, 4),
+(25, 2, 4);
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 -- --------------------------------------------------------
 
@@ -153,8 +177,14 @@ CREATE TABLE `user_menu` (
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Administrator'),
+<<<<<<< HEAD
 (2, 'User'),
 (3, 'Menu');
+=======
+(2, 'Berita'),
+(3, 'Aplikasi'),
+(4, 'User');
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 -- --------------------------------------------------------
 
@@ -196,7 +226,15 @@ CREATE TABLE `user_sub_menu` (
 
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
 (1, 1, 'Manage Akun', 'admin/Admin_manage_account', 'nav-icon fas fa-user-plus', 1),
+<<<<<<< HEAD
 (2, 2, 'My Profile', 'admin/Admin_profile_account', 'nav-icon fas fa-user', 1);
+=======
+(2, 2, 'Tambah Berita', 'admin/Admin_tambah_berita', 'nav-icon fas fa-newspaper\r\n', 1),
+(3, 2, 'List Berita', 'admin/Admin_list_berita', 'far fa-dot-circle nav-icon', 1),
+(18, 3, 'Tambah Aplikasi', 'admin/Admin_tambah_aplikasi', 'nav-icon fas fa-code', 1),
+(19, 3, 'List Aplikasi', 'admin/Admin_list_aplikasi', 'far fa-dot-circle nav-icon', 1),
+(20, 4, 'Dashboard', 'admin/Admin_home', 'nav-icon fas fa-laptop-house', 1);
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- Indexes for dumped tables
@@ -252,31 +290,51 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 
 --
 -- AUTO_INCREMENT for table `user_role`
@@ -288,7 +346,11 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+>>>>>>> df13c92ee7a96c0e67a80065e5477068462f0417
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

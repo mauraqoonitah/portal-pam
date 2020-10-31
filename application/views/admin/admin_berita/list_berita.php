@@ -57,8 +57,7 @@
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-berita"><i class="fas fa-eye"></i></a>
                   <!-- edit berita -->
                   <a href="<?= base_url(); ?>admin/Admin_list_berita/edit/<?= $berita['id']; ?>" data-toggle="modal" data-target="#modal-edit-berita-<?= $berita['id']; ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
-                  <!-- sembunyikan berita -->
-                  <a href="" target="_blank" class="btn btn-secondary" data-toggle="modal" data-target="#modal-hide-berita"><i class="fas fa-eye-slash"></i></a>
+
                   <!-- hapus berita -->
                   <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-berita"><i class="fas fa-trash"></i></a>
 
@@ -179,27 +178,6 @@
 
     </div>
 
-    <!-- Modal HIDE berita -->
-    <div class="modal fade" id="modal-hide-berita" tabindex="-1" role="dialog" aria-labelledby="modal-hide-beritaTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle"><?= $berita['judul']; ?></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <b>Sembunyikan berita ini dari daftar berita portal?<br></b>
-            <small>Berita akan tetap tersimpan di halaman admin</small>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-            <button type="button" class="btn btn-danger">Ya, Sembunyikan</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <?php $i++; ?>
   <?php endforeach; ?>
   </tbody>
