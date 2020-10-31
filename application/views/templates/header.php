@@ -22,31 +22,31 @@
 
 <body>
 
-<div class="container">
-    <nav class="menu">
-        <div class="menu-toggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    <div class="container">
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <div class="brand">
-            <a class="icon" href="<?= base_url(); ?>home">
-                <img class="nav-logo" alt="logo" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
-            </a>
-            <h2 class="mealzy"> PORTAL PAM JAYA</h2>
-        </div>
-        <ul class="menu-list right">
-            <li><a class="menu-item" href="<?= base_url(); ?>home">Home</a></li>
-            <li><a class="menu-item" href="<?= base_url(); ?>berita">Berita</a></li>
-            <li><a class="menu-item" href="<?= base_url(); ?>contact">Contact</a></li>
-            <li><a class="menu-item" target="_blank" href="http://portal.pamjaya.co.id/">Website</a></li>
-            <li>
-                <a class="menu-item" href="<?= base_url('login'); ?>" data-toggle="tooltip" data-placement="bottom" title="admin">
-                    <i class="fas fa-user-circle fa-lg"></i>
+            <div class="brand">
+                <a class="icon" href="<?= base_url(); ?>home">
+                    <img class="nav-logo" alt="logo" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
                 </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+                <h2 class="judul"> PORTAL PAM JAYA</h2>
+            </div>
+            <ul class="menu-list right">
+                <li><a class="menu-item" href="<?= base_url(); ?>home">Home</a></li>
+                <li><a class="menu-item" href="<?= base_url(); ?>berita"> Berita</a></li>
+                <li><a class="menu-item" href="<?= base_url(); ?>contact">Contact</a></li>
+                <li><a class="menu-item" target="_blank" href="http://portal.pamjaya.co.id/">Website</a></li>
+                <li>
+                    <a class="menu-item" href="<?= base_url('login'); ?>" data-toggle="tooltip" data-placement="bottom" title="admin">
+                        <i class="fas fa-user-circle fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
