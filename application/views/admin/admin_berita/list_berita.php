@@ -31,7 +31,7 @@
 
     <div class="card-body p-0">
       <table class="table">
-        <thead>
+        <thead class="thead-light">
           <tr>
             <th>No.</th>
             <th>Judul Berita</th>

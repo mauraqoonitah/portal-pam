@@ -72,6 +72,7 @@ class Login extends CI_Controller
             'min_length' => 'Password too short!'
         ]);
 
+
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 
         if ($this->form_validation->run() == false) {
@@ -81,6 +82,7 @@ class Login extends CI_Controller
             $this->load->view('admin/admin_template/head', $data);
             $this->load->view('login/registration');
         } else {
+
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
@@ -88,7 +90,7 @@ class Login extends CI_Controller
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
                 'is_active' => 0,
-                'date_created' => time()
+                'date_created' => $this->input->post('date_created', true)
             ];
             $this->db->insert('admin', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success mx-auto" role="alert">

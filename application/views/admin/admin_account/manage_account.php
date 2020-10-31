@@ -30,11 +30,14 @@
                     <?= $this->session->flashdata('message'); ?>
 
 
-                    <table class="table table-hover">
-                        <thead>
+
+                    <table class="table table-hover ">
+                        <thead class="thead-light">
                             <tr>
                                 <th scope="col">No.</th>
                                 <th scope="col">Nama</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Date Created</th>
                                 <th scope="col">Super Admin</th>
                                 <th scope="col">Active</th>
                                 <!-- <th scope="col">role_id</th>
@@ -48,10 +51,12 @@
                             <?php echo form_open_multipart() ?>
                             <?php $i = 1; ?>
                             <?php foreach ($adminAkun as $akun) : ?>
-
                                 <tr>
                                     <th scope="row"><?= $i; ?></th>
                                     <td><?= $akun['name'] ?></td>
+                                    <td><?= $akun['email'] ?></td>
+                                    <td><?= $akun['date_created'] ?></td>
+
                                     <td>
                                         <div class="form-check">
                                             <input class="form-check-input-role" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
@@ -108,7 +113,7 @@
                     </table>
                     <div class="col-lg-8 mt-5" style="color: grey;">
                         <h6><strong>Role: </strong></h6>
-                        <p class="">*Super Admin = Access Menu Manage Akun <br>*Active = Aktivasi akun setelah registrasi untuk masuk ke halaman admin</p>
+                        <p class="">*Super Admin = Access Menu Manage Akun <br>*Active = Aktivasi akun untuk akses ke halaman admin</p>
                     </div>
 
                 </div>

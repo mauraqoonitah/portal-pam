@@ -50,7 +50,16 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+
+                    <div class="input-group mt-2">
+                        <?php $timezone = date_default_timezone_set('Asia/Jakarta');
+                        ?>
+                        <?php $date = date('j F y');
+                        ?>
+                        <input type="hidden" class="form-control" placeholder="date created" id="date_created" name="date_created" value="<?= set_value('date_created', $date); ?>">
+                        <?php var_dump($date) ?>
+                    </div>
+                    <div class=" row">
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block mt-2">Register Account</button>
                         </div>

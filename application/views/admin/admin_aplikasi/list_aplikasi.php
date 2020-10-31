@@ -30,7 +30,7 @@
 
     <div class="card-body p-0">
       <table class="table col-lg-12">
-        <thead>
+        <thead class="thead-light">
           <tr>
             <th>No.</th>
             <th>Logo</th>
