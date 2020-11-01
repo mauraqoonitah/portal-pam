@@ -429,6 +429,7 @@ h6 .h6 {
 .img-berita {
     width: 250px;
     height: 150px;
+	border-radius: 6px;
     background-size: cover;
     background-color: rgb(235, 235, 235, .5);
 }
