@@ -17,7 +17,7 @@
                             <div>
                                 <i class="far fa-newspaper" style="font-size: 30px; margin-bottom: 15px;"></i>
                                 <h6 class="card-subtitle mb-2 text-muted gone"><?= $berita['publishedAt']; ?></h6>
-                                <h5 class="mr-5"> <?= $berita['judul']; ?></h5>
+                                <h5 class="judul-berita"> <?= $berita['judul']; ?></h5>
                             </div>
                         </div>
                         <div class="hide">
