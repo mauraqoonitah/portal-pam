@@ -93,7 +93,7 @@
                                                 <!-- unggah gambar -->
                                                 <div class="col-sm-10">
                                                     <div class="form-group">
-                                                        <img style="width: 100px;" src="<?= base_url('assets/img/') . $berita['gambar']; ?>" alt="<?= $berita['judul']; ?>">
+                                                        <img style="width: 300px;" src="<?= base_url('assets/img/berita/') . $berita['gambar']; ?>" alt="<?= $berita['judul']; ?>">
                                                     </div>
 
                                                     <div class="form-check">
@@ -124,7 +124,7 @@
                                                             Gunakan gambar Default
                                                         </label>
                                                     </div>
-                                                    <img class=" ml-3 mt-2" style="width: 100px;" src="<?= base_url('assets/img/item_default.png'); ?>" alt=" gambar default">
+                                                    <img class=" ml-3 mt-2" style="width: 300px;" src="<?= base_url('assets/img/berita/berita-img.png'); ?>" alt=" gambar default">
                                                     <hr>
 
                                                 </div>

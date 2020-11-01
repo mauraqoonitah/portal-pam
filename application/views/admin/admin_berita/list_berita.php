@@ -109,7 +109,7 @@
                           <br>
                         </div>
 
-                        <div class="form-group mt-0">
+                        <div class="form-group">
                           <label for="gambar-berita">Gambar Ilustrasi berita</label><br>
                           <div class="card">
                             <div class="card-body">

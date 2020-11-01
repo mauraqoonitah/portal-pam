@@ -53,7 +53,7 @@ class Berita_model extends CI_Model
             "publishedAt" => $this->input->post('publishedAt', true),
             "judul" => $this->input->post('judul', true),
             "konten" => $this->input->post('konten', true),
-            "gambar" => 'item_default.png',
+            "gambar" => 'berita-img.png',
         ];
 
         $this->db->where('id', $this->input->post('id'));
@@ -68,7 +68,7 @@ class Berita_model extends CI_Model
             "publishedAt" => $this->input->post('publishedAt', true),
             "judul" => $this->input->post('judul', true),
             "konten" => $this->input->post('konten', true),
-            "gambar" => 'item_default.png',
+            "gambar" => 'berita-img.png',
         ];
 
 

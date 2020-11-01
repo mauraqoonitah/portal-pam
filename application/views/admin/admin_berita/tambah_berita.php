@@ -81,6 +81,48 @@
                 <textarea type="text" class="form-control" id="konten" name="konten" placeholder="Isi Konten Berita disini..." rows="5"></textarea>
               </div>
 
+              <fieldset class="form-group">
+                <label for="berita-gambar">Gambar Berita</label>
+                <div class="row">
+                  <!-- unggah gambar -->
+                  <div class="col-sm-10">
+
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gambarImageRadios" id="uploadgambarRadios" value="uploadgambarRadios" checked="checked">
+                      <label class="form-check-label  mb-2" for="uploadgambarRadios">
+                        Unggah Gambar Baru
+                      </label>
+
+                      <!-- upload -->
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="gambar" name="gambar">
+                          <label class="custom-file-label" for="gambar">Choose file</label>
+                        </div>
+                        <!-- end upload -->
+                      </div>
+
+                      <small class="form-text text-muted">
+                        jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB
+                      </small>
+
+                    </div>
+
+                    <!-- gambar default -->
+                    <div class="form-check mt-4">
+                      <input class="form-check-input" type="radio" name="gambarImageRadios" id="uploadDefgambarRadios" value="uploadDefgambarRadios">
+                      <label class="form-check-label" for="uploadDefgambarRadios">
+                        Gunakan gambar Default
+                      </label>
+                    </div>
+                    <img class=" ml-3 mt-2" style="width: 300px;" src="<?= base_url('assets/img/berita/berita-img.png'); ?>" alt="gambar default">
+                    <hr>
+
+                  </div>
+                </div>
+              </fieldset>
+
 
               <div class="modal-footer">
                 <button type="submit" name="tambahBerita" class="btn btn-primary">Posting</button>

@@ -388,13 +388,29 @@ h6 .h6 {
 
 .page-berita {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 200px 1fr;
     grid-gap: 1em;
     row-gap: 50px;
     column-gap: 30px;
     box-sizing: border-box;
     transition: 2s;
+}
+
+.sibling-fade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 200px 1fr;
+    grid-gap: 1em;
+    row-gap: 50px;
+    column-gap: 30px;
+    box-sizing: border-box;
+}
+
+.gone {
+    display: grid;
+    grid-template-columns: 250px auto;
+    column-gap: 10px;
 }
 
 .berita {
@@ -410,7 +426,14 @@ h6 .h6 {
     box-sizing: border-box;
 }
 
-.berita:hover .ilang {
+.img-berita {
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-color: rgb(235, 235, 235, .5);
+}
+
+.berita:hover .gone {
     display: none;
 }
 
@@ -434,6 +457,7 @@ h6 .h6 {
     cursor: pointer;
     transition: 0.5s;
     box-sizing: border-box;
+    background-color: crimson;
 }
 
 .berita:hover .hide {
@@ -441,11 +465,13 @@ h6 .h6 {
 }
 
 .berita:hover {
-    display: block;
+    display: grid;
     background-color: rgb(66, 135, 245, 0.5);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 200px 1fr;
 }
 
-.berita:hover .ilang {
+.berita:hover .gone {
     display: none;
 }
 
@@ -461,9 +487,10 @@ h6 .h6 {
 }
 
 .konten-berita p {
-    font-size: 1.1em;
+    font-size: 16px;
     line-height: 170%;
     text-align: justify;
+    letter-spacing: .6px;
 }
 
 .page-konten .back {
@@ -501,16 +528,6 @@ h6 .h6 {
     opacity: 1;
     transform: scale(1);
     transition-delay: 0ms, 0ms;
-}
-
-.sibling-fade {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 200px;
-    grid-gap: 1em;
-    row-gap: 50px;
-    column-gap: 30px;
-    box-sizing: border-box;
 }
 
 .sibling-fade>* {
@@ -691,7 +708,9 @@ h6 .h6 {
     }
     .page-berita {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .berita {
         margin-bottom: 0;
@@ -714,17 +733,16 @@ h6 .h6 {
     .menu-toggle {
         display: flex;
         justify-items: start;
-        margin-left: 10px;
-    }
-    .page-berita {
-        display: flex;
-        flex-direction: column;
     }
     .konten {
         margin-bottom: 2em;
     }
     .services {
         margin-left: 4em;
+    }
+    .page-berita {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -734,12 +752,16 @@ h6 .h6 {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
+    .page-berita {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 459px) {
     .page-berita {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .menu .brand {
         display: grid;
