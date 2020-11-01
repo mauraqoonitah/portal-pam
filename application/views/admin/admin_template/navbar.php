@@ -25,7 +25,7 @@
       </a>
     </li>
     <li class="nav-item d-none d-sm-inline">
-      <a href="<?php echo base_url('login/logout') ?>" class="nav-link font-weight-bold text-danger"><i class="fas fa-power-off"></i>
+      <a href="#" data-toggle="modal" data-target="#logout" class="nav-link font-weight-bold text-danger"><i class="fas fa-power-off"></i>
         Logout
       </a>
     </li>
@@ -33,3 +33,22 @@
   </ul>
 </nav>
 <!-- /.navbar -->
+
+<!-- Modal Logout aplikasi -->
+<div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body text-danger text-center">
+        Logout from admin?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+        <a href="<?php echo base_url('login/logout') ?>">
+          <button type="button" class="btn btn-danger">Logout</button></a>
+
+      </div>
+    </div>
+  </div>
+</div>

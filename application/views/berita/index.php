@@ -14,7 +14,7 @@
                     <article class="berita">
                         <div class="gone">
                             <img class="img-berita" src="<?= base_url('assets/img/berita/') . $berita['gambar']; ?>" alt="image">
-                            <div>
+                            <div class="content">
                                 <i class="far fa-newspaper" style="font-size: 30px; margin-bottom: 15px;"></i>
                                 <h6 class="card-subtitle mb-2 text-muted gone"><?= $berita['publishedAt']; ?></h6>
                                 <h5 class="judul-berita"> <?= $berita['judul']; ?></h5>

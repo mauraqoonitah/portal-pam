@@ -11,11 +11,11 @@
       <!-- Content Header (Page header) -->
       <div class="content-header">
         <div class="container-fluid">
-          <div class="row mb-2">
+          <div class="row mb-2 pl-4 col-lg-12">
             <div class="col-sm-6">
               <h1 class="m-0 text-dark">Dashboard Admin</h1>
               <!-- card profile admin -->
-              <div class="card mb-3 mt-3" style="max-width:400px;">
+              <div class="card mb-3 mt-3 mx-auto">
                 <div class="row no-gutters">
                   <div class="col-md-4 p-2">
                     <img src="<?= base_url('assets/template/dist/img/') . $admin['image']; ?>" class="card-img" style="width: 100px;">
@@ -30,49 +30,66 @@
                 </div>
 
               </div>
-            </div><!-- /.col -->
+            </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
               </ol>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.content-header -->
+
 
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-6 p-5  mx-auto">
               <!-- small box -->
-              <div class="small-box bg-info">
+              <div class="small-box bg-info mb-4">
                 <div class="inner">
-                  <h3>15</h3>
 
-                  <p>Aplikasi</p>
+                  <h5 class="text-center">List Aplikasi</h5>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-code-working"></i>
+                  <i class="far fa-dot-circle nav-icon"></i>
                 </div>
-                <a href="<?= base_url('admin/Admin_list_aplikasi') ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="<?= base_url('admin/Admin_list_aplikasi') ?>" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="small-box bg-info">
+                <div class="inner">
+
+                  <h5 class="text-center">Tambah Aplikasi</h5>
+                </div>
+                <div class="icon">
+                  <i class="nav-icon fas fa-code"></i>
+                </div>
+                <a href="<?= base_url('admin/Admin_tambah_aplikasi') ?>" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
 
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-6 p-5   mx-auto">
               <!-- small box -->
-              <div class="small-box bg-danger">
+              <div class="small-box bg-success  mb-4">
                 <div class="inner">
-                  <h3>65</h3>
-                  <p>Jumlah Berita</p>
+                  <h5 class="text-center">List Berita</h5>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-ios-paper"></i>
+                  <i class="far fa-dot-circle nav-icon"></i>
                 </div>
-                <a href="<?= base_url('admin/Admin_list_berita') ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="<?= base_url('admin/Admin_list_berita') ?>" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="small-box bg-success">
+                <div class="inner">
+                  <h5 class="text-center">Tambah Berita</h5>
+                </div>
+                <div class="icon">
+                  <i class="nav-icon fas fa-newspaper"></i>
+                </div>
+                <a href="<?= base_url('admin/Admin_tambah_berita') ?>" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -81,6 +98,4 @@
           <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
       </section>
-      <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
