@@ -62,14 +62,14 @@
     const id = $(this).data('id');
 
     $.ajax({
-      url: "<?= base_url('admin/Admin_manage_account/changeRole/'); ?>",
+      url: "<?= base_url('Admin/Admin_manage_account/changeRole/'); ?>",
       type: 'post',
       data: {
         roleId: roleId,
         id: id
       },
       success: function() {
-        document.location.href = "<?= base_url('admin/Admin_manage_account/'); ?>"
+        document.location.href = "<?= base_url('Admin/Admin_manage_account/'); ?>"
 
       }
     })
@@ -83,14 +83,14 @@
     const id = $(this).data('id');
 
     $.ajax({
-      url: "<?= base_url('admin/Admin_manage_account/activeStatus/'); ?>",
+      url: "<?= base_url('Admin/Admin_manage_account/activeStatus/'); ?>",
       type: 'post',
       data: {
         activeId: activeId,
         id: id
       },
       success: function() {
-        document.location.href = "<?= base_url('admin/Admin_manage_account/'); ?>"
+        document.location.href = "<?= base_url('Admin/Admin_manage_account/'); ?>"
 
       }
     })

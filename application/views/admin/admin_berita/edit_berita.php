@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('admin/admin_home') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('Admin/Admin_home') ?>">Home</a></li>
                         <li class="breadcrumb-item active">Edit Berita</li>
                     </ol>
                 </div>
@@ -30,7 +30,7 @@
                         <a href="<?php echo base_url('home') ?>" class="nav-link" target="_blank">
                             <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
                         </a>
-                        <a href="<?php echo base_url('admin/admin_list_berita') ?>" class="nav-link" target="_blank">
+                        <a href="<?php echo base_url('Admin/Admin_list_berita') ?>" class="nav-link" target="_blank">
                             <i class="fas fa-fw fa-chevron-right"></i> Lihat di List Berita
                         </a>
                     </div>

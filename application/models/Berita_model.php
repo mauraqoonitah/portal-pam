@@ -4,6 +4,7 @@ class Berita_model extends CI_Model
 {
     public function getBerita()
     {
+        $this->db->order_by('id', 'DESC');
         return $this->db->get('berita')->result_array();
     }
     public function getBeritaById($id)
@@ -38,6 +39,7 @@ class Berita_model extends CI_Model
             "publishedAt" => $this->input->post('publishedAt', true),
             "judul" => $this->input->post('judul', true),
             "konten" => $this->input->post('konten', true)
+
         ];
 
         $this->db->where('id', $this->input->post('id'));

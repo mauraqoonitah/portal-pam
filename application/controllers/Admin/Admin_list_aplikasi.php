@@ -27,7 +27,7 @@ class Admin_list_Aplikasi extends CI_Controller
     {
         $this->Item_model->hapusAplikasi($id);
         $this->session->set_flashdata('flash', 'dihapus!');
-        redirect('admin/Admin_list_aplikasi');
+        redirect('Admin/Admin_list_aplikasi');
     }
 
     public function edit($id)
@@ -78,11 +78,11 @@ class Admin_list_Aplikasi extends CI_Controller
                 $this->Item_model->ubahkeDefaultImgApp();
 
                 $this->session->set_flashdata('flash', 'diubah!');
-                redirect('admin/Admin_list_aplikasi');
+                redirect('Admin/Admin_list_aplikasi');
             }
             $this->Item_model->editAplikasi();
             $this->session->set_flashdata('flash', 'diubah!');
-            redirect('admin/Admin_list_aplikasi/');
+            redirect('Admin/Admin_list_aplikasi/');
         }
     }
 }

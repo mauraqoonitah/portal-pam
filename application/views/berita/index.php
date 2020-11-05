@@ -6,7 +6,7 @@
 </div>
 
 
-<div class="content-wrapper ml-5 mr-5">
+<div class="content-wrapper">
     <section class="mt-5">
         <div class="page-berita">
             <div class="sibling-fade">

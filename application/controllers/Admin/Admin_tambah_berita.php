@@ -45,7 +45,7 @@ class Admin_tambah_berita extends CI_Controller
             if ($upload_image) {
                 $config['allowed_types'] = "jpg|png|jpeg";
                 $config['max-size'] = '2048';
-                $config['upload_path'] = './assets/img/berita';
+                $config['upload_path'] = './assets/img/berita/';
 
                 $this->load->library('upload', $config);
 
@@ -59,11 +59,11 @@ class Admin_tambah_berita extends CI_Controller
                 $this->Berita_model->tambahDefaultImgApp();
 
                 $this->session->set_flashdata('flash', 'ditambahkan!');
-                redirect('admin/Admin_tambah_berita');
+                redirect('Admin/Admin_tambah_berita');
             }
             $this->Berita_model->tambahBerita();
             $this->session->set_flashdata('flash', 'ditambahkan!');
-            redirect(base_url('admin/Admin_tambah_berita'));
+            redirect(base_url('Admin/Admin_tambah_berita'));
         }
     }
 }

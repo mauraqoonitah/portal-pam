@@ -1,6 +1,4 @@
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -16,21 +14,15 @@
                 </div>
 
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
 
     <!-- Main content -->
-
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-
-
+                <div class="col-lg-12 table-responsive-lg">
                     <?= $this->session->flashdata('message'); ?>
-
-
-
                     <table class="table table-hover ">
                         <thead class="thead-light">
                             <tr>
@@ -40,11 +32,7 @@
                                 <th scope="col">Date Created</th>
                                 <th scope="col">Super Admin</th>
                                 <th scope="col">Active</th>
-                                <!-- <th scope="col">role_id</th>
-                                <th scope="col">is_active</th> -->
                                 <th scope="col">Action</th>
-
-
                             </tr>
                         </thead>
                         <tbody>
@@ -60,22 +48,16 @@
                                     <td>
                                         <div class="form-check">
                                             <input class="form-check-input-role" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
-
                                         </div>
-
                                     </td>
                                     <td>
                                         <div class="form-check">
                                             <input class="form-check-input-status" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
-                                    <!-- <td><?= $akun['role_id'] ?></td>
-                                    <td><?= $akun['is_active'] ?></td> -->
                                     <td>
 
                                         <a href="" class="badge badge-danger" data-toggle="modal" data-target="#modal-delete-account-<?= $akun['id']; ?>">delete</a>
-
-
                                     </td>
                                 </tr>
 
@@ -98,30 +80,21 @@
 
                                                 <a href="<?= base_url(); ?>admin/Admin_manage_account/hapusAccount/<?= $akun['id']; ?>">
                                                     <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
-
                                             </div>
-
-
-
                                         </div>
                                     </div>
                                 </div>
                                 <?php $i++; ?>
                             <?php endforeach; ?>
                         </tbody>
-
                     </table>
-                    <div class="col-lg-8 mt-5" style="color: grey;">
-                        <h6><strong>Role: </strong></h6>
-                        <p class="">*Super Admin = Access Menu Manage Akun <br>*Active = Aktivasi akun untuk akses ke halaman admin</p>
-                    </div>
-
+                </div>
+                <div class="col-lg-8 mt-5" style="color: grey;">
+                    <h6><strong>Role: </strong></h6>
+                    <p class="">*Super Admin = Dapat mengakses Menu Manage Akun <br>*Active = Izinkan akun untuk akses ke halaman admin</p>
                 </div>
             </div>
         </div>
-
     </section>
     <?php echo form_close(); ?>
-
-    <!-- /.content -->
 </div>

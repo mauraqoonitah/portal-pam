@@ -57,7 +57,7 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                         <?php $date = date('j F Y');
                         ?>
                         <input type="hidden" class="form-control" placeholder="date created" id="date_created" name="date_created" value="<?= set_value('date_created', $date); ?>">
-                        <?php var_dump($date) ?>
+
                     </div>
                     <div class=" row">
                         <div class="col-12">

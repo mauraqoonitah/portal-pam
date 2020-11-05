@@ -34,7 +34,7 @@
                             Sorry, your access is refused due to security reasons of our server and also our sensitive data. Please contact your administrator to activate your account.
 
                             <br>
-                            <i class="fa fa-arrow-left mt-3" aria-hidden="true"></i><a href="<?= base_url('admin/Admin_home'); ?>"> Back</a>
+                            <i class="fa fa-arrow-left mt-3" aria-hidden="true"></i><a href="<?= base_url('Admin/Admin_home'); ?>"> Back</a>
                         </p>
 
                     </div>

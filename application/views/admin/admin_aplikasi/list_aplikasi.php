@@ -1,5 +1,4 @@
 <div class="content-wrapper">
-  <!-- /.card -->
   <div class="card card-info">
     <div class="card-header">
       <h3 class="card-title">Daftar Aplikasi Portal PAM Jaya</h3>
@@ -28,7 +27,7 @@
     <?php endif; ?>
     <!--end flashdata -->
 
-    <div class="card-body p-0">
+    <div class="card-body p-0 table-responsive-lg">
       <table class="table col-lg-12">
         <thead class="thead-light">
           <tr>
@@ -36,7 +35,6 @@
             <th>Logo</th>
             <th>Nama Aplikasi</th>
             <th>Link Aplikasi</th>
-
             <th>Action</th>
           </tr>
         </thead>
@@ -84,16 +82,12 @@
                         <div class="form-group">
                           <h5 for="app-deskripsi" class="text-center font-weight-bold"><?= $item['nama']; ?></h5>
                           <textarea readonly rows="8" type="text" class="form-control" id="app-deskripsi"> <?= $item['deskripsi']; ?></textarea>
-
                         </div>
-
                         <br>
                       </div>
                     </form>
-
                     <!-- End Form Lihat Aplikasi -->
                   </div>
-
                 </div>
               </div>
             </div>
@@ -111,10 +105,8 @@
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-
                     <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>">
                       <button type="button" class="btn btn-success">Edit </button></a>
-
                   </div>
                 </div>
               </div>
@@ -136,10 +128,8 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-
                     <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/hapus/<?= $item['id']; ?>">
                       <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
-
                   </div>
                 </div>
               </div>
@@ -150,5 +140,4 @@
     </tbody>
     </table>
   </div>
-</div>
 </div>

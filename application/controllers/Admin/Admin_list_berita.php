@@ -1,4 +1,5 @@
 <?php
+ob_start();
 
 class Admin_list_berita extends CI_Controller
 {
@@ -29,7 +30,7 @@ class Admin_list_berita extends CI_Controller
     {
         $this->Berita_model->hapusBerita($id);
         $this->session->set_flashdata('flash', 'dihapus!');
-        redirect('admin/Admin_list_berita');
+        redirect('Admin/Admin_list_berita');
     }
     public function edit($id)
     {
@@ -79,11 +80,11 @@ class Admin_list_berita extends CI_Controller
                 $this->Berita_model->ubahkeDefaultImgApp();
 
                 $this->session->set_flashdata('flash', 'diubah!');
-                redirect('admin/Admin_list_berita');
+                redirect('Admin/Admin_list_berita');
             }
             $this->Berita_model->editBerita();
             $this->session->set_flashdata('flash', 'diubah!');
-            redirect('admin/Admin_list_berita/');
+            redirect('Admin/Admin_list_berita/');
         }
     }
 }

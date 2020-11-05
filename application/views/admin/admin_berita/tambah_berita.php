@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?= base_url(); ?>admin/Admin_home">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url(); ?>Admin/Admin_home">Home</a></li>
             <li class="breadcrumb-item active">Tambah Berita</li>
           </ol>
         </div>
@@ -30,7 +30,7 @@
             <a href="<?php echo base_url('berita') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
             </a>
-            <a href="<?php echo base_url('admin/admin_list_berita') ?>" class="nav-link" target="_blank">
+            <a href="<?php echo base_url('Admin/admin_list_berita') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di List Berita
             </a>
 
@@ -49,7 +49,7 @@
               <h3 class="card-title"> </h3>
             </div>
 
-            <?php echo form_open_multipart(base_url('admin/Admin_tambah_berita')) ?>
+            <?php echo form_open_multipart(base_url('Admin/Admin_tambah_berita')) ?>
 
             <div class="card-body">
               <?php if (validation_errors()) : ?>
@@ -59,7 +59,7 @@
               <?php endif; ?>
 
               <div class="form-group">
-                <label for="creator">Creator : </label>
+                <label for="creator">Creator </label>
                 <input readonly type="text" id="creator" name="creator" class="form-control" value="<?= $admin['name']; ?>">
               </div>
 
@@ -104,7 +104,7 @@
                       </div>
 
                       <small class="form-text text-muted">
-                        jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB
+                        (Disarankan gambar dengan format landscape/lebar). Jenis format gambar (.png/.jpg/.jpeg) dan maksimal size 2MB.
                       </small>
 
                     </div>

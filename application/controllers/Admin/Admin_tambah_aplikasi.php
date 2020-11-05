@@ -60,11 +60,11 @@ class Admin_tambah_aplikasi extends CI_Controller
                 $this->Item_model->tambahDefaultImgApp();
 
                 $this->session->set_flashdata('flash', 'ditambahkan!');
-                redirect('admin/Admin_tambah_aplikasi');
+                redirect('Admin/Admin_tambah_aplikasi');
             }
             $this->Item_model->tambahAplikasi();
             $this->session->set_flashdata('flash', 'ditambahkan!');
-            redirect('admin/Admin_tambah_aplikasi');
+            redirect('Admin/Admin_tambah_aplikasi');
         }
     }
 }

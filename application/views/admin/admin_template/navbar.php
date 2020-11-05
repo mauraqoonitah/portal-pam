@@ -40,7 +40,7 @@
     <div class="modal-content">
 
       <div class="modal-body text-danger text-center">
-        Logout from admin?
+        <h5>Logout from admin?</h5>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

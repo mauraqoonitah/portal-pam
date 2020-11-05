@@ -25,7 +25,7 @@ class Admin_manage_account extends CI_Controller
             $this->load->view('admin/admin_account/manage_account', $data);
             $this->load->view('admin/admin_template/footer');
         } else {
-            redirect(base_url('admin/admin_manage_account'));
+            redirect(base_url('Admin/Admin_manage_account'));
         }
     }
     public function hapusAccount($id)
@@ -33,7 +33,7 @@ class Admin_manage_account extends CI_Controller
         $this->Admin_model->hapusAccount($id);
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
         Delete success!</div>');
-        redirect('admin/Admin_manage_account');
+        redirect(base_url('Admin/Admin_manage_account'));
     }
 
     public function changeRole()
@@ -47,7 +47,7 @@ class Admin_manage_account extends CI_Controller
 
         if ($role_id == "1") {
             $this->session->set_flashdata('message', '<div class="alert alert-success  col-lg-4" role="alert">
-            Status Admin: <b>OFF</b></div>');
+            Status Super Admin: <b>OFF</b></div>');
             $data = [
                 "role_id" => "2",
                 'id' => $id
@@ -57,7 +57,7 @@ class Admin_manage_account extends CI_Controller
             $this->db->update('admin', $data);
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-success col-lg-4" role="alert">
-            Status Admin: <b>ON</b></div>');
+            Status Super Admin: <b>ON</b></div>');
             $data = [
                 "role_id" => "1"
             ];
