@@ -1,26 +1,21 @@
-<!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
 
-  <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
-    <!-- <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li> -->
   </ul>
 
 
-
-
-  <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item d-none d-sm-inline-block mt-1">
+      <img src="<?php echo base_url('assets/img/') ?>pamjaya-logo.png" alt="Portal PamJaya Logo" style="  border-radius: 5px;width: 50px ">
+      </a>
+    </li>
+
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="<?php echo base_url('home') ?>" class="nav-link font-weight-bold">
+      <a href="<?php echo base_url('home') ?>" class="nav-link font-weight-bold" style="color: #006efd">
         Portal PAM JAYA
       </a>
     </li>
@@ -32,7 +27,7 @@
 
   </ul>
 </nav>
-<!-- /.navbar -->
+
 
 <!-- Modal Logout aplikasi -->
 <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-hidden="true">

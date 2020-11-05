@@ -97,6 +97,35 @@
   });
 </script>
 
+
+<script>
+  var state = false;
+
+  function togglepassword() {
+    if (state) {
+      document.getElementById("new_password1").setAttribute("type", "password");
+      document.getElementById("eye").style.color = '#7a797e';
+      state = false;
+    } else {
+      document.getElementById("new_password1").setAttribute("type", "text");
+      document.getElementById("eye").style.color = '#5887ef';
+      state = true;
+    }
+  }
+
+  function togglepassword2() {
+    if (state) {
+      document.getElementById("new_password2").setAttribute("type", "password");
+      document.getElementById("eye2").style.color = '#7a797e';
+      state = false;
+    } else {
+      document.getElementById("new_password2").setAttribute("type", "text");
+      document.getElementById("eye2").style.color = '#5887ef';
+      state = true;
+    }
+  }
+</script>
+
 </body>
 
 </html>

@@ -256,6 +256,7 @@ h6 .h6 {
     text-align: center;
 }
 
+
 /* hover card  */
 
 .hovereffect {
@@ -424,7 +425,6 @@ h6 .h6 {
     cursor: pointer;
     transition: 2s;
     box-sizing: border-box;
-   
 }
 
 .img-berita {
@@ -474,7 +474,6 @@ img.gambar-konten-berita {
     cursor: pointer;
     transition: 0.5s;
     box-sizing: border-box;
-    <<<<<<< HEAD=======>>>>>>>629afcbdb96ca616da8c85c4ff4ac264c5bbfbf3
 }
 
 .berita:hover .hide {
@@ -737,7 +736,6 @@ img.gambar-konten-berita {
     }
     .berita {
         margin-bottom: 0;
-       
     }
     .container {
         padding-right: 5px;
@@ -775,6 +773,7 @@ img.gambar-konten-berita {
         background-color: rgb(235, 235, 235, .5);
     }
 }
+
 @media (max-width: 680px) {
     .menu .brand {
         display: grid;
@@ -820,12 +819,12 @@ img.gambar-konten-berita {
     .gone h5 {
         margin-right: 30px;
     }
-     .berita {
+    .berita {
         margin-bottom: 0;
         padding-left: 20px;
-        padding-top:20px;
+        padding-top: 20px;
         padding-bottom: 20px;
-        margin-left:45px;
+        margin-left: 45px;
     }
     .img-berita {
         width: 200px;
@@ -852,11 +851,12 @@ img.gambar-konten-berita {
         padding: 0;
     }
 }
+
 @media (max-width: 560px) {
     .services {
         margin-left: 40px;
     }
-        .page-berita {
+    .page-berita {
         display: grid;
         width: 80%;
         grid-template-columns: 440px;
@@ -872,19 +872,15 @@ img.gambar-konten-berita {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 3em;
         margin-left: 15px;
-       
     }
     .gone {
         display: grid;
         grid-template-columns: 180px auto;
         column-gap: 10px;
-      
     }
-    .berita{
+    .berita {
         margin: 0;
-        
     }
-
     .img-berita {
         width: 180px;
         height: 100px;
@@ -892,7 +888,6 @@ img.gambar-konten-berita {
         background-size: cover;
         background-color: rgb(235, 235, 235, .5);
     }
-   
     .berita:hover {
         display: grid;
         background-color: rgb(66, 135, 245, 0.5);
@@ -908,12 +903,13 @@ img.gambar-konten-berita {
         width: 100%;
         border-radius: 6px;
     }
-}@media (max-width: 512px) {
+}
+
+@media (max-width: 512px) {
     .services {
         margin-left: 35px;
     }
- 
-     .page-berita {
+    .page-berita {
         display: grid;
         width: 80%;
         grid-template-columns: 1fr;
@@ -929,21 +925,19 @@ img.gambar-konten-berita {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 3em;
         margin-left: 0;
-       
     }
-
-    .berita{
+    .berita {
         margin: 0;
         padding: 1rem 0 1rem 1rem;
-        
     }
-    .judul-berita{
+    .judul-berita {
         font-size: 14px;
     }
-    .fluidy{
+    .fluidy {
         font-size: 11px;
     }
 }
+
 @media (max-width: 459px) {
     body {
         margin: 0;
@@ -967,12 +961,9 @@ img.gambar-konten-berita {
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 3em;
         margin-left: 10px;
-       
     }
-
-    .berita{
+    .berita {
         margin: 0;
-        
     }
     .menu .brand {
         display: grid;
@@ -987,11 +978,10 @@ img.gambar-konten-berita {
         justify-content: end;
         justify-self: end;
     }
-    
 }
 
 @media (max-width: 420px) {
-      .services {
+    .services {
         margin-left: 20px;
         margin-right: 0;
     }
@@ -999,7 +989,7 @@ img.gambar-konten-berita {
         position: absolute;
         font-size: 2.5em;
     }
-       .page-berita {
+    .page-berita {
         display: grid;
         width: 80%;
         grid-template-columns: 1fr;
@@ -1014,9 +1004,8 @@ img.gambar-konten-berita {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 3em;
-       margin-left: 45px;
-        background-color:aliceblue;
-       
+        margin-left: 45px;
+        background-color: aliceblue;
     }
     .gone {
         display: grid;
@@ -1028,31 +1017,28 @@ img.gambar-konten-berita {
         grid-area: 1/1/2/2;
         width: 240px;
         height: 150px;
-       
         margin-bottom: 10px;
     }
     .content {
         grid-area: 2/1/3/2;
     }
-        .berita {
+    .berita {
         padding: 1rem;
-       
     }
-    .fluidy{
+    .fluidy {
         font-size: 16px;
     }
 }
+
 @media (max-width: 376px) {
     .services {
-    display: grid;
-    margin-left: 70px;
-    grid-template-columns: repeat(2, 50px);
-
-}
+        display: grid;
+        margin-left: 70px;
+        grid-template-columns: repeat(2, 50px);
+    }
     .ubah-pw {
-    margin-right: .5rem!important;
-}
-
+        margin-right: .5rem!important;
+    }
     .gone {
         display: grid;
         grid-template-columns: 250px;
@@ -1071,7 +1057,6 @@ img.gambar-konten-berita {
     .content {
         grid-area: 2/1/3/2;
     }
-  
     .page-berita {
         display: grid;
         width: 80%;
@@ -1094,48 +1079,49 @@ img.gambar-konten-berita {
         display: grid;
         grid-template-columns: 250px auto;
         column-gap: 0;
-      
     }
-   .berita {
+    .berita {
         margin-bottom: 0;
         padding: 1rem;
         margin-left: 15px;
-      
     }
-    .img-berita{
+    .img-berita {
         width: 250px;
         height: 150px;
     }
 }
-}
 
+
+}
 @media (max-width: 322px) {
-     .services {
+    .services {
         margin-left: 105px;
     }
+    
     .gone {
         display: grid;
         grid-template-columns: 200px;
         grid-template-rows: repeat(2, 1fr);
         column-gap: 10px;
     }
+    
     .img-berita {
         grid-area: 1/1/2/2;
         width: 180px;
         height: 120px;
         margin-bottom: 10px;
     }
+    
     .judul-berita {
         font-size: 15px;
     }
+    
     .content {
         grid-area: 2/1/3/2;
     }
 }
 
-
 /* footer */
-
 footer .footer {
     width: 100% !important;
     height: 40px !important;
@@ -1143,7 +1129,6 @@ footer .footer {
     text-align: center !important;
     padding: 5px !important;
 }
-
 #login-page {
     background-color: blue;
 }

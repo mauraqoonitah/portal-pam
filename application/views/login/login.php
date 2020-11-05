@@ -2,14 +2,17 @@
 background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100%);">
     <div class="login-box">
         <div class="login-logo">
-            <h4 class="mt-3"><b>Login<br>Admin Portal PAM JAYA</b></h4>
+            <div class="mx-auto " style="background-color: white;width: 90px; border-radius: 5px; ">
+                <img alt="logo" style="width: 90px" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
+            </div>
+            <h4 class="text-white"><b><br>Admin Portal PAM JAYA</b></h4>
         </div>
 
         <div class="card">
             <div class="card-body login-card-body" style="border-radius: 20px;">
 
                 <?= $this->session->flashdata('message'); ?>
-
+                <p class="text-center font-weight-bold" style="font-size:larger">LOGIN</p>
                 <form action="<?= base_url('login'); ?>" method="post">
                     <div class="input-group mt-4">
                         <input type="text" class="form-control" placeholder="Email" id="email" name="email" value="<?= set_value('email'); ?>">
