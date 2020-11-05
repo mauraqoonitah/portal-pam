@@ -2,13 +2,12 @@
 background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100%);">
     <div class="login-box">
         <div class="login-logo">
-            <div class="mx-auto " style="background-color: white;width: 50px; border-radius: 5px; ">
-                <img alt="logo" style="width: 50px" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
+            <div class="mx-auto " style="background-color: white;width: 90px; border-radius: 5px; ">
+                <img alt="logo" style="width: 90px" src="<?= base_url('assets/img/pamjaya-logo.png'); ?>">
             </div>
         </div>
         <div class="card">
             <div class="card-body login-card-body" style="border-radius: 20px;">
-                <p class="login-box-msg"></p>
                 <p class="text-center font-weight-bold" style="font-size:larger">REGISTER</p>
 
                 <form action="<?= base_url('login/registration'); ?> " method="post">

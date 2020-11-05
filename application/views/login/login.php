@@ -41,7 +41,7 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                 </form>
                 <hr>
                 <div class="text-center">
-                    <a class="" href="<?= base_url('login/registration'); ?>">Register New Admin Account</a>
+                    <a class="" href="<?= base_url('login/registration'); ?>">Register Admin Account</a>
                     <form method="post" action="<?= base_url() ?>">
                         <button type="submit" class="btn btn-outline-primary mt-3">Back to Portal</button>
                     </form>
