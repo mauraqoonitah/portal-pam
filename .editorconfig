@@ -1,4 +1,4 @@
-# top-most EditorConfig file
+# top-most EditorConfig file 
 root = true
 
 # Unix-style newlines with a newline ending every file
@@ -13,3 +13,5 @@ charset = utf-8
 
 # Tab indentation (no size specified)
 indent_style = tab
+
+#
