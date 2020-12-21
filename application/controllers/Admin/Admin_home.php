@@ -14,6 +14,7 @@ class Admin_home extends CI_Controller
     public function index()
     {
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
+        $data['visitorcount'] = $this->db->get_where('visitorcount')->row_array();
 
         $data['title'] = 'Dashboard Admin Portal PAM Jaya';
 
@@ -63,4 +64,6 @@ class Admin_home extends CI_Controller
             }
         }
     }
+
+
 }
