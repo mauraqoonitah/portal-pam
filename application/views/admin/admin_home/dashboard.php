@@ -42,7 +42,7 @@
               <div class="small-box bg-light mb-2 mt-4 mb-4 pt-2 pl-4 pr-4 pb-4"  >
              
                 <div class="inner" >
-                  <h5 class="font-weight-bold text-center" style="font-size: 18px;">Statistik Pengunjung Portal</h5>
+                  <h5 class="font-weight-bold text-center" style="font-size: 18px;">Statistik Kunjungan Portal</h5>
                 </div>
    
              <!-- visitor counter -->
@@ -62,13 +62,28 @@
               $totalkunjungan  = "SELECT SUM(hits) as totalhits FROM visitorcount"; 
               $totalkunjungan_result = $this->db->query($totalkunjungan) ;
               $outputTotalKunjungan = $totalkunjungan_result->row()->totalhits;
-              // hitung pengunjung online
-              $pengunjungonline  = $this->db->query("SELECT * FROM visitorcount WHERE online > '".$bataswaktu."'")->num_rows(); 
+            
+              // hitung total pengunjung hari ini 
+              $totalpengunjungHariini  = "SELECT SUM(hits) as totalhitsToday FROM visitorcount WHERE date='".$date."'" ; 
+              $totalpengunjungHariini_result = $this->db->query($totalpengunjungHariini) ;
+              $outputTotalPengunjungHariini =  $totalpengunjungHariini_result->row()->totalhitsToday;
   
             ?> 
 
               <table style="font-size: 16px;">
-              <tr>
+           
+              <tr> 
+                <td>Kunjungan Hari ini</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><?=  $outputTotalPengunjungHariini; ?> kali</td>
+              </tr>
+              <tr> 
+                <td>Pengunjung Hari ini</td>
+                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+                <td><?= $pengunjunghariini; ?> orang</td>
+               </tr>
+
+               <tr>
                 <td> Total Kunjungan</td>
                 <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
                 <td><?= $outputTotalKunjungan; ?> kali</td>
@@ -78,19 +93,8 @@
                 <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
                 <td><?= $totalpengunjung; ?> orang</td>
               </tr>            
-              <tr>
-                <td></td>
-              </tr>
-              <tr> 
-                <td>Pengunjung Hari ini</td>
-                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
-                <td><?= $pengunjunghariini; ?> orang</td>
-              </tr>
-              <tr> 
-                <td>Pengunjung Online</td>
-                <td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
-                <td><?= $pengunjungonline; ?> orang</td>
-              </tr>
+
+
 
               </table>
         <!-- end visitor counter -->

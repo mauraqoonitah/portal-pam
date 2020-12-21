@@ -30,12 +30,12 @@ class Home extends CI_Controller
 
         // Kalau belum ada, simpan data user tersebut ke database
         if($ss == 0){
-            $this->db->query("INSERT INTO visitorcount(ip, date, hits, online, time) VALUES('".$ip."','".$date."','1','".$waktu."','".$timeinsert."')");
+            $this->db->query("INSERT INTO visitorcount(ip, date, hits,  time) VALUES('".$ip."','".$date."','1','".$waktu."','".$timeinsert."')");
         }
  
     // Jika sudah ada, update
         else{
-            $this->db->query("UPDATE visitorcount SET hits=hits+1, online='".$waktu."' WHERE ip='".$ip."' AND date='".$date."'");
+            $this->db->query("UPDATE visitorcount SET hits=hits+1  WHERE ip='".$ip."' AND date='".$date."'");
         }
     }
     public function ubahpassword()
