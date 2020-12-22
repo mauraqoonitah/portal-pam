@@ -103,8 +103,8 @@
                     <h6><strong>Role: </strong></h6>
                     <p>
                     <b>*Active</b> = Izinkan akun untuk akses ke halaman admin<br>
-                    <b>*Super Admin</b> = Admin bisa akses manage akun & semua menu<br>
-                    <b>*Berita</b> = Admin hanya bisa akses menu List dan Tambah Berita<br>
+                    <b>*Super Admin</b> = Admin bisa akses Menu Manage Akun<br>
+                    <b>*Berita</b> = Admin hanya bisa akses Menu List dan Tambah Berita<br>
 
 
                     </p>

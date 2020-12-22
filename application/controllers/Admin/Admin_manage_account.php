@@ -145,7 +145,7 @@ class Admin_manage_account extends CI_Controller
         }
         if ($role_id == "3") {
             $this->session->set_flashdata('message', '<div class="alert alert-dark col-lg-8" role="alert">
-            Berhasil! Admin dapat akses ke Menu <b>Aplikasi</b> & Menu <b>Berita</b></div>');
+            Berhasil! Admin hanya dapat akses ke Menu <b>Aplikasi</b> & Menu <b>Berita</b></div>');
             $data = [
                 "role_id" => "2"
             ];
