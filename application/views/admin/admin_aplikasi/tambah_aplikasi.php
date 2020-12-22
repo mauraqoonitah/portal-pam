@@ -27,7 +27,7 @@
             <a href="<?php echo base_url('') ?>" class="nav-link" target="_blank">
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di Portal
             </a>
-            <a href="<?php echo base_url('admin/admin_list_aplikasi') ?>" class="nav-link" >
+            <a href="<?php echo base_url('Admin/admin_list_aplikasi') ?>" class="nav-link" >
               <i class="fas fa-fw fa-chevron-right"></i> Lihat di List Aplikasi
             </a>
           </div>
@@ -45,7 +45,7 @@
               <h3 class="card-title"> </h3>
             </div>
 
-            <?php echo form_open_multipart(base_url('admin/Admin_tambah_aplikasi')) ?>
+            <?php echo form_open_multipart(base_url('Admin/Admin_tambah_aplikasi')) ?>
             <!-- Form Edit -->
             <div class="card-body">
               <?php if (validation_errors()) : ?>

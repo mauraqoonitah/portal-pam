@@ -54,7 +54,7 @@
                   <!-- lihat berita -->
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-berita-<?= $berita['id']; ?>"><i class="fas fa-eye"></i></a>
                   <!-- edit berita -->
-                  <a href="<?= base_url(); ?>admin/Admin_list_berita/edit/<?= $berita['id']; ?>" data-toggle="modal" data-target="#modal-edit-berita-<?= $berita['id']; ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+                  <a href="<?= base_url(); ?>Admin/Admin_list_berita/edit/<?= $berita['id']; ?>" data-toggle="modal" data-target="#modal-edit-berita-<?= $berita['id']; ?>" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
                   <!-- hapus berita -->
                   <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-berita-<?= $berita['id']; ?>"><i class="fas fa-trash"></i></a>
                 </div>
@@ -132,7 +132,7 @@
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
 
-                    <a href="<?= base_url(); ?>admin/Admin_list_berita/edit/<?= $berita['id']; ?>">
+                    <a href="<?= base_url(); ?>Admin/Admin_list_berita/edit/<?= $berita['id']; ?>">
                       <button type="button" class="btn btn-success">Edit </button></a>
 
                   </div>
@@ -155,7 +155,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-                    <a href="<?= base_url(); ?>admin/Admin_list_berita/hapus/<?= $berita['id']; ?>">
+                    <a href="<?= base_url(); ?>Admin/Admin_list_berita/hapus/<?= $berita['id']; ?>">
                       <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
                   </div>
                 </div>

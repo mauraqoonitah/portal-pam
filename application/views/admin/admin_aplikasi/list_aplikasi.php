@@ -55,7 +55,7 @@
                   <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-lihat-aplikasi-<?= $item['id']; ?>"><i class="fas fa-eye"></i></a>
 
                   <!-- edit aplikasi -->
-                  <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>" data-toggle="modal" data-target="#modal-edit-aplikasi-<?= $item['id']; ?>" target="_blank" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
+                  <a href="<?= base_url(); ?>Admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>" data-toggle="modal" data-target="#modal-edit-aplikasi-<?= $item['id']; ?>" target="_blank" class="btn btn-success"><i class="fas fa-pencil-alt"></i></a>
 
                   <!-- hapus aplikasi -->
                   <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-aplikasi-<?= $item['id']; ?>"><i class="fas fa-trash"></i></a>
@@ -105,7 +105,7 @@
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-                    <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>">
+                    <a href="<?= base_url(); ?>Admin/Admin_list_aplikasi/edit/<?= $item['id']; ?>">
                       <button type="button" class="btn btn-success">Edit </button></a>
                   </div>
                 </div>
@@ -128,7 +128,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Batalkan</button>
-                    <a href="<?= base_url(); ?>admin/Admin_list_aplikasi/hapus/<?= $item['id']; ?>">
+                    <a href="<?= base_url(); ?>Admin/Admin_list_aplikasi/hapus/<?= $item['id']; ?>">
                       <button type="button" class="btn btn-danger">Ya, Hapus</button></a>
                   </div>
                 </div>
