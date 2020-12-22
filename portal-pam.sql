@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2020 at 01:04 AM
+-- Generation Time: Dec 22, 2020 at 09:30 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -45,11 +45,12 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
 (1, 'Irwan Wibawa', 'irwan@pamjaya.co.id', 'default.png', '$2y$10$cFrUZrBcI9.MgDORstX8peMaLRaC.34YVYw.1/jsqiSW.C8PiElEe', 1, 1, '1 September 2020'),
-(2, 'Maura Qoonitah Putri', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$mII5MezRhjhm3JXYc3lQ8OB4lm7/fZC1SLGWeUgaSySRuPZ9EOgJC', 3, 0, '3 October 2020'),
-(3, 'Ilham Arrosyid', 'ilhamarrosyid@gmail.com', 'default.png', '$2y$10$KGFAnqH4hmcHjCcDRD/Jh.ob.E49qX3matDpWb6Y2KqurA.Eh6FOa', 3, 1, '15 October 2020'),
-(4, 'Fachry Muhammad', 'fachry.muhammad13@gmail.com', 'default.png', '$2y$10$0nR0H6wUcoPWqdJbCN0upe8yU9al4GYU2Jv7rVcCJGvBHlIRyUIrC', 2, 1, '16 October 2020'),
-(75, 'Enar Legowo', 'enar@pamjaya.co.id', 'default.png', '$2y$10$t1BNtOrjsKL5wEt4JDfpYOwlqTLO2kngLYTO1j3d9rbfTU3A9LkeG', 2, 1, '5 November 2020'),
-(76, 'Ditha Pratama', 'mdithapratama@pamjaya.co.id', 'default.png', '$2y$10$kt01DJAouqy5dDiPO0jpe.1g4Jl3sHiqWkxppRol.hl.p3Smpr5je', 1, 1, '5 November 2020');
+(75, 'Enar Legowo', 'enar@pamjaya.co.id', 'default.png', '$2y$10$t1BNtOrjsKL5wEt4JDfpYOwlqTLO2kngLYTO1j3d9rbfTU3A9LkeG', 1, 1, '5 November 2020'),
+(76, 'Ditha Pratama', 'mdithapratama@pamjaya.co.id', 'default.png', '$2y$10$kt01DJAouqy5dDiPO0jpe.1g4Jl3sHiqWkxppRol.hl.p3Smpr5je', 1, 1, '5 November 2020'),
+(77, 'Maura Qoonitah', 'mauraqoonitah@gmail.com', 'default.png', '$2y$10$eJd7Yp2pHD7Ck4etWlmGH.Uyc550Wb2IKIOb6EJLj0oHGt6Ofk426', 2, 1, '22 December 2020'),
+(78, 'Ilham Arrosyid', 'ilhamarrosyid@gmail.com', 'default.png', '$2y$10$pH4foIJBcJk76kef1ofQl.wajHgV6Mjp3/lhdt/zX.kql2C6kAX6G', 2, 1, '23 December 2020'),
+(79, 'Fachry Muhammad', 'fachry.muhammad13@gmail.com', 'default.png', '$2y$10$Ex1K1lp4YJI.QFUwj4nX.O54lelsJ4LksNMeu4QWFEq8DbEE1IvHG', 2, 1, '23 December 2020'),
+(80, 'Admin Berita', 'guest@gmail.com', 'default.png', '$2y$10$WQNmfIdr.OJF2G4Y/tzmOeSFD7EPm0H7TZFAwVVtH.e71P0CxzHr.', 3, 1, '23 December 2020');
 
 -- --------------------------------------------------------
 
@@ -76,7 +77,7 @@ INSERT INTO `berita` (`id`, `judul`, `gambar`, `publishedAt`, `konten`, `creator
 (6, 'BiggerPockets Podcast 400: “This Advice Changed My Life” withBiggerPockets Podcast 400: “This Advice', 'berita-img.png', '6 September 2020', 'Some industry-watchers believe Microsoft\'s combination of a £250 price for the XBox Series S and the value offered by the Xbox Game Pass subscription service could give the US firm an advantage.\r\nMicrosoft offers members its first-party blockbuster games at launch in its games library, unlike Sony\'s existing PlayStation Now services, which is limited to older major releases.\r\nSony\'s decision to price some of its first PS5 releases at £70 - including the \"ultimate edition\" of a new Spider-Man game, and Demon\'s Souls - represents a rise, and will also have to be taken into consideration.\r\nIt showed off a new subscription service called the PlayStation Plus Collection for the PS5.Some industry-watchers believe Microsoft\'s combination of a £250 price for the XBox Series S and the value offered by the Xbox Game Pass subscription service could give the US firm an advantage.\r\nMicrosoft offers members its first-party blockbuster games at launch in its games library, unlike Sony\'s existing PlayStation Now services, which is limited to older major releases.\r\nSony\'s decision to price some of its first PS5 releases at £70 - including the \"ultimate edition\" of a new Spider-Man game, and Demon\'s Souls - represents a rise, and will also have to be taken into consideration.\r\nIt showed off a new subscription service called the PlayStation Plus Collection for the PS5.', 'Fachry'),
 (7, '3 Biggest Takeaways for Bitcoin From Powell’s Press Conference', 'berita-img.png', '8 September 2020', 'Tech firms have been urged to stop advertising to under-18s in an open letter signed by MPs, academics and children\'s-rights advocates.\r\nBehavioural advertising not only undermines privacy but puts \"susceptible\" youngsters under unfair marketing pressure, the letter says.\r\nIt is addressed to Google, Amazon, Apple, Facebook and Microsoft.\r\nIn a separate move Google-owned YouTube is accused of unlawfully mining data from five million under-13s in the UK.\r\nEuropean data protection laws forbid the mining of data of young children.\r\n\"The fact that ad-tech companies hold 72 million data points on a child by the time they turn 13 shows the extent of disregard for these laws, and the extraordinary surveillance to which children are subjected,\" the letter reads.\r\n\"There is no justification for targeting teenagers with personalised ads any more than there is for targeting 12-year-olds.\r\n\"You, the most powerful companies on the internet, have a responsibility to protect your users.\"\r\nYouTube legal fight\r\nAmong the 23 signatories are MP Caroline Lucas and clinical psychologist Dr Elly Hanson. Friends of the Earth is also named on the letter.\r\nIt was co-ordinated by Global Action Plan, which argues that online advertising accelerates consumerism, and adds unnecessary pressure to the planet.\r\nAll the firms involved have been asked to comment but none has yet responded.\r\nSeparately, privacy advocate Duncan McCann is suing Google on behalf of five million British children, claiming it broke privacy laws by tracking children online, in breach of both UK and European data-protection laws.\r\nThe case, lodged with the UK High Court in July, will be strongly contested by YouTube which will argue its platform is not for children aged under 13.\r\nMr McCann, who has three children under that age, believes damages of between £100 and £500 could be payable to children who are found to have had their data breached.\r\nMore on this story', 'Ilham'),
 (8, 'Ethereum Based Uniswap Gave All Its Users', '20200430193210fd4dcca102d30acaf2c266cbe9ba9624.jpeg', '2 Oktober 2020', '                                                                                                                        How e-commerce is exploding in South Africa Close E-commerce has been one sector that has boomed in South Africa during the pandemic.  Startup Bottles launched South Africa\'s first ever on-demand alcohol delivery app service in 2016.  During the coronavirus lockdown the app firm expanded its services to provide groceries instead, and it saw triple the demand and its user base doubled.  \"Most definitely, I think coronavirus has, in just the space of a few weeks, accelerated the entire ecommerce industry in South Africa by 4-5 years at least,\" Bottles\' co-founder and chief executive Vincent Viviers told the BBC.                                                                                                                                                                 ', 'Maura'),
-(31, 'The \'dose\' of coronavirus a person gets may determine how sick they get; masks could help', '20200430193129556576d9821833f806e791321a28f660.jpeg', '02 November 2020', '(CNN)\"The dose makes the poison\" is an adage credited to Paracelsus, a Swiss physician-philosopher from the early Renaissance.\r\n\r\nBasically, it means that any substance can become toxic if given at a high enough concentration. Even too much water can throw off your electrolytes and be potentially fatal.\r\n\r\nViewing the coronavirus through that lens -- that the \"dose\" of the virus you receive might make the difference between being asymptomatic, getting mildly sick or becoming critically ill -- may be helpful when thinking about protection against Covid-19 as the colder temperatures arrive and cases spike.', 'Maura Qoonitah');
+(31, 'The \'dose\' of coronavirus a person gets may determine how sick they get and masks could help', '20200430193129556576d9821833f806e791321a28f6601.jpeg', '02 November 2020', '                                                                                (CNN) \"The dose makess the poison\" is an adage credited to Paracelsus, a Swiss physician-philosopher from the early Renaissance.\r\n\r\nBasically, it means that any substance can become toxic if given at a high enough concentration. Even too much water can throw off your electrolytes and be potentially fatal.\r\n\r\nViewing the coronavirus through that lens -- that the \"dose\" of the virus you receive might make the difference between being asymptomatic, getting mildly sick or becoming critically ill -- may be helpful when thinking about protection against Covid-19 as the colder temperatures arrive and cases spike.                                                                                                                        ', 'Maura Qoonitah');
 
 -- --------------------------------------------------------
 
@@ -107,10 +108,9 @@ INSERT INTO `item` (`id`, `nama`, `icon`, `link`, `deskripsi`) VALUES
 (15, 'Kimonev', 'kimonev-icon.png', 'https://kimonev.pamjaya.co.id/', 'kimonev Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (16, 'MAYA', 'maya-icon.png', 'http://203.161.27.194:3821/sim_aset/', 'maya Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
 (17, 'MONICA', 'monica-icon.png', 'https://monica.pamjaya.co.id/', 'monica Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, minima adipisci odio, est optio ipsum iure officia amet hic eaque laborum unde, nulla magni explicabo. Nam obcaecati deleniti sit molestiae voluptate vero aliquid optio, eos quia possimus, impedit, voluptatem dicta totam itaque earum facere dolorum id eveniet perferendis voluptatibus veritatis!'),
-(77, 'Default Image', 'item_default.png', 'https://www.instagram.com/', 'Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                 '),
-(84, 'Default Image', 'item_default.png', 'https://www.instagram.com/', 'Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                 '),
-(85, 'Default Image', 'item_default.png', 'https://www.instagram.com/', 'Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                 '),
-(86, 'test', 'item_default.png', '#', 'test');
+(77, 'App Default Image', 'item_default.png', 'https://www.instagram.com/', '                                        Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                                                         '),
+(84, 'App Default Image', 'item_default.png', 'https://www.instagram.com/', '                                        Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                                                         '),
+(85, 'App Default Image', 'item_default.png', 'https://www.instagram.com/', '                                        Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk Aplikasi untuk PelangiAplikasi untuk Aplikasi untuk Aplikasi                                                                                                                         ');
 
 -- --------------------------------------------------------
 
@@ -129,15 +129,15 @@ CREATE TABLE `user_access_menu` (
 --
 
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
-(1, 1, 1),
-(2, 1, 2),
-(3, 2, 2),
-(22, 2, 3),
-(23, 1, 3),
-(24, 1, 4),
-(25, 2, 4),
-(26, 3, 2),
-(27, 4, 4);
+(32, 1, 1),
+(33, 1, 2),
+(34, 1, 3),
+(35, 1, 4),
+(36, 2, 2),
+(37, 2, 3),
+(38, 2, 4),
+(39, 3, 2),
+(40, 3, 4);
 
 -- --------------------------------------------------------
 
@@ -178,8 +178,7 @@ CREATE TABLE `user_role` (
 INSERT INTO `user_role` (`id`, `role`) VALUES
 (1, 'Admin'),
 (2, 'Member'),
-(3, 'AdmBerita'),
-(4, 'Guest');
+(3, 'AdmBerita');
 
 -- --------------------------------------------------------
 
@@ -222,13 +221,6 @@ CREATE TABLE `visitorcount` (
   `hits` int(15) NOT NULL,
   `time` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `visitorcount`
---
-
-INSERT INTO `visitorcount` (`id`, `ip`, `date`, `hits`, `time`) VALUES
-(11, '::1', '2020-12-22', 1, '2020-12-22 06:19:04');
 
 --
 -- Indexes for dumped tables
@@ -290,25 +282,25 @@ ALTER TABLE `visitorcount`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
@@ -332,7 +324,7 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `visitorcount`
 --
 ALTER TABLE `visitorcount`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
