@@ -35,10 +35,12 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                     <?= form_error('email', '<small class="text-danger ml-2" >', '</small>'); ?>
 
                     <div class="input-group mt-2">
-                        <input type="password" class="form-control" placeholder="Password" id="password1" name="password1">
+                        <input type="password" class="form-control" placeholder="Password" id="password1" name="password1" style="background-color: transparent;">
+                        <span style="color: #7a797e;position: absolute; right: 12px;transform: translate(0,-55%);top: 50%;cursor: pointer; ">
+                                <i class="fa fa-eye " id="eye" onclick="togglepasswordRegister()"></i>
+                        </span>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
@@ -46,10 +48,12 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
 
 
                     <div class="input-group mt-2">
-                        <input type="password" class="form-control" placeholder="Repeat Password" id="password2" name="password2">
+                        <input type="password" class="form-control" placeholder="Repeat Password" id="password2" name="password2" style="background-color: transparent;">
+                        <span style="color: #7a797e;position: absolute; right: 12px;transform: translate(0,-55%);top: 50%;cursor: pointer; ">
+                                <i class="fa fa-eye " id="eye" onclick="togglepasswordRegister2()"></i>
+                        </span>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
@@ -81,6 +85,37 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
 
         </div>
     </div>
+
+   
+    <script>
+    var state = false;
+
+    function togglepasswordRegister() {
+        if (state) {
+        document.getElementById("password1").setAttribute("type", "password");
+        document.getElementById("eye").style.color = '#7a797e';
+        state = false;
+        } else {
+        document.getElementById("password1").setAttribute("type", "text");
+        document.getElementById("eye").style.color = '#5887ef';
+        state = true;
+        }
+    }
+
+    function togglepasswordRegister2() {
+        if (state) {
+        document.getElementById("password2").setAttribute("type", "password");
+        document.getElementById("eye2").style.color = '#7a797e';
+        state = false;
+        } else {
+        document.getElementById("password2").setAttribute("type", "text");
+        document.getElementById("eye2").style.color = '#5887ef';
+        state = true;
+        }
+    }
+    
+    </script>
+
 
 </body>
 <!-- Bootstrap 4 -->

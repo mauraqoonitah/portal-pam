@@ -24,10 +24,13 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
                     </div>
                     <?= form_error('email', '<small class="text-danger">', '</small>'); ?>
                     <div class="input-group mt-3">
-                        <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+                    <label for="password"></label>
+                        <input type="password" class="form-control" placeholder="Password" id="password" name="password" style="background-color: transparent;">
+                        <span style="color: #7a797e;position: absolute; right: 12px;transform: translate(0,-55%);top: 43%;cursor: pointer; ">
+                                <i class="fa fa-eye " id="eye" onclick="togglepasswordLogin()"></i>
+                        </span>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
@@ -54,5 +57,20 @@ background: linear-gradient(180deg, rgba(33,162,246,1) 0%, rgba(46,55,142,1) 100
         </div>
 
     </div>
+
+    <script>
+        var state = false;   
+        function togglepasswordLogin() {
+            if (state) {
+            document.getElementById("password").setAttribute("type", "password");
+            document.getElementById("eye").style.color = '#7a797e';
+            state = false;
+            } else {
+            document.getElementById("password").setAttribute("type", "text");
+            document.getElementById("eye").style.color = '#5887ef';
+            state = true;
+            }
+        }
+     </script>
 
 </body>
