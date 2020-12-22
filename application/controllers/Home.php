@@ -22,7 +22,6 @@ class Home extends CI_Controller
         // visitor counter
         $ip    = $this->input->ip_address(); // Mendapatkan IP user
         $date  = date("Y-m-d"); // Mendapatkan tanggal sekarang
-        $waktu = time(); 
         date_default_timezone_set('Asia/Jakarta');
         $timeinsert = date("Y-m-d H:i:s");        // Cek berdasarkan IP, apakah user sudah pernah mengakses hari ini
         $s = $this->db->query("SELECT * FROM visitorcount WHERE ip='".$ip."' AND date='".$date."'")->num_rows();

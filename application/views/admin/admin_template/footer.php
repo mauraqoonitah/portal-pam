@@ -1,4 +1,4 @@
-<footer class="main-footer text-center my-auto">
+<footer class="main-footer text-center ">
   <strong>Copyright <?= date('Y'); ?>&copy;Portal Pam Jaya.</strong>
 
   <div class="float-right d-none d-sm-inline-block">
