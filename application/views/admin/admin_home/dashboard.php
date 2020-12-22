@@ -26,7 +26,7 @@
                   <div class="col-md-12 text-center">
                     <div class="card-body ">
                       <h3 class=""><?= $admin['name']; ?></h3>
-                      <p class="card-text" style="color: lightblue;"><?= $admin['email']; ?></p>
+                      <p class="card-text" style="color: lightblue; font-size: 1.2rem;"><?= $admin['email']; ?></p>
                     </div>
                   </div>
                 </div>

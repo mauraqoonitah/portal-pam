@@ -32,7 +32,6 @@
                                 <th scope="col">Date Created</th>
                                 <th scope="col">Active</th>
                                 <th scope="col">Manage Akun</th>
-                                <th scope="col">Berita</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -45,7 +44,8 @@
                                     <td><?= $akun['name'] ?></td>
                                     <td><?= $akun['email'] ?></td>
                                     <td><?= $akun['date_created'] ?></td>
-                                    
+                      
+                                  
                                     <td>
                                         <div class="form-check">
                                             <input class="form-check-input-status" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>" data-id="<?= $akun['id']; ?>">
@@ -56,12 +56,6 @@
                                             <input class="form-check-input-role" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input-role-admBerita" type="checkbox" <?= admin_berita($akun['role_id']); ?>  data-admBerita="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
-                                        </div>
-                                    </td>
-                           
 
                                     <td>
 
@@ -97,9 +91,16 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-lg-8 mt-5" style="color: grey;">
+                <div class="col-lg-12" style="color: grey; font-size: 16px;">
+                    <hr>
                     <h6><strong>Role: </strong></h6>
-                    <p class="">*Super Admin = Dapat mengakses Menu Manage Akun <br>*Active = Izinkan akun untuk akses ke halaman admin</p>
+                    <p>
+                    <b>*Active</b> = Izinkan akun untuk akses ke halaman admin<br>
+                    <b>*Super Admin</b> = Admin bisa akses manage akun & semua menu<br>
+                    <b>*Berita</b> = Admin hanya bisa akses menu List dan Tambah Berita<br>
+
+
+                    </p>
                 </div>
             </div>
         </div>

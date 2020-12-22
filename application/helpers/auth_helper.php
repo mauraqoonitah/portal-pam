@@ -52,30 +52,3 @@ function check_status($role_id)
         return "checked='checked'";
     }
 }
-
-function admin_berita($role_id)
-{
-    $ci = get_instance();
-
-    $ci->db->get_where('admin', [
-        'role_id' => $role_id
-    ]);
-    //status as admin berita
-    if ($role_id == '3') {
-        return "checked='checked'";
-    }
-}
-
-
-function admin_guest($role_id)
-{
-    $ci = get_instance();
-
-    $ci->db->get_where('admin', [
-        'role_id' => $role_id
-    ]);
-    //status as admin berita
-    if ($role_id == '4') {
-        return "checked='checked'";
-    }
-}
