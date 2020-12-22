@@ -52,3 +52,18 @@ function check_status($role_id)
         return "checked='checked'";
     }
 }
+
+function check_admin_berita($role_id){
+    $ci = get_instance();
+
+    $ci->db->get_where('admin', [
+        'role_id' => $role_id
+    ]);
+    //status as admin
+    if ($role_id == '3') {
+        return "checked='checked'";
+    }
+
+}
+
+

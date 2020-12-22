@@ -26,13 +26,15 @@
                     <table class="table table-hover ">
                         <thead class="thead-light">
                             <tr>
-                                <th scope="col">No.</th>
-                                <th scope="col">Nama</th>
+                                <th scope="col" >No.</th>
+                                <th scope="col" >Nama</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Date Created</th>
                                 <th scope="col">Active</th>
-                                <th scope="col">Manage Akun</th>
+                                <th scope="col" class="text-center">Manage Akun</th>
+                                <th scope="col">Berita</th>
                                 <th scope="col">Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -43,20 +45,25 @@
                                     <th scope="row"><?= $i; ?></th>
                                     <td><?= $akun['name'] ?></td>
                                     <td><?= $akun['email'] ?></td>
-                                    <td><?= $akun['date_created'] ?></td>
+                                    <td style="color: grey;"><?= $akun['date_created'] ?></td>
                       
                                   
                                     <td>
-                                        <div class="form-check">
+                                        <div class="form-check mr-4">
                                             <input class="form-check-input-status" type="checkbox" <?= check_access($akun['is_active']); ?> data-active="<?= $akun['is_active']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
-                                    <td>
-                                        <div class="form-check">
+                                    <td  class="text-center">
+                                        <div class="form-check mr-4" > 
                                             <input class="form-check-input-role" type="checkbox" <?= check_status($akun['role_id']); ?> data-role="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
                                         </div>
                                     </td>
-
+                                    <!-- berita -->
+                                    <td >
+                                        <div class="form-check mr-4">
+                                            <input class="form-check-input-adminberita" type="checkbox" <?= check_admin_berita($akun['role_id']); ?> data-adminberita="<?= $akun['role_id']; ?>" data-id="<?= $akun['id']; ?>">
+                                        </div>
+                                    </td>
                                     <td>
 
                                         <a href="" class="badge badge-danger" data-toggle="modal" data-target="#modal-delete-account-<?= $akun['id']; ?>">delete</a>

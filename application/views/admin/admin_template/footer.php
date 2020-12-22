@@ -97,14 +97,15 @@
   });
 </script>
 
+
 <script>
   // get data
-  $('.form-check-input-role-admBerita').on('click', function() {
-    const roleId = $(this).data('role-admBerita');
+  $('.form-check-input-adminberita').on('click', function() {
+    const roleId = $(this).data('adminberita');
     const id = $(this).data('id');
 
     $.ajax({
-      url: "<?= base_url('Admin/Admin_manage_account/admBerita/'); ?>",
+      url: "<?= base_url('Admin/Admin_manage_account/adminBerita/'); ?>",
       type: 'post',
       data: {
         roleId: roleId,
@@ -117,8 +118,6 @@
     })
   });
 </script>
-
-
 
 
 
