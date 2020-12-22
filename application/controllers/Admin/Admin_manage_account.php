@@ -47,7 +47,7 @@ class Admin_manage_account extends CI_Controller
 
         if ($role_id == "1") {
             $this->session->set_flashdata('message', '<div class="alert alert-success  col-lg-4" role="alert">
-            Status Super Admin: <b>OFF</b></div>');
+            Akses Manage Akun: <b>OFF</b></div>');
             $data = [
                 "role_id" => "2",
                 'id' => $id
@@ -57,7 +57,7 @@ class Admin_manage_account extends CI_Controller
             $this->db->update('admin', $data);
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-success col-lg-4" role="alert">
-            Status Super Admin: <b>ON</b></div>');
+            Akses Manage Akun: <b>ON</b></div>');
             $data = [
                 "role_id" => "1"
             ];
@@ -87,7 +87,8 @@ class Admin_manage_account extends CI_Controller
             $this->db->set('is_active', $data);
             $this->db->where('id', $id);
             $this->db->update('admin', $data);
-        } else {
+        } 
+        if ($is_active == "1") {
             $this->session->set_flashdata('message', '<div class="alert alert-success  col-lg-4" role="alert">
             Status Active: <b>OFF</b></div>');
 
@@ -98,5 +99,19 @@ class Admin_manage_account extends CI_Controller
             $this->db->where('id', $id);
             $this->db->update('admin', $data);
         }
+        if ($is_active == "4") {
+            $this->session->set_flashdata('message', '<div class="alert alert-success  col-lg-4" role="alert">
+            Status Active: <b>OFF</b></div>');
+
+            $data = [
+                "is_active" => "3"
+            ];
+            $this->db->set('is_active', $data);
+            $this->db->where('id', $id);
+            $this->db->update('admin', $data);
+        }
+
     }
+
+
 }

@@ -30,7 +30,7 @@ class Home extends CI_Controller
 
         // Kalau belum ada, simpan data user tersebut ke database
         if($ss == 0){
-            $this->db->query("INSERT INTO visitorcount(ip, date, hits,  time) VALUES('".$ip."','".$date."','1','".$waktu."','".$timeinsert."')");
+            $this->db->query("INSERT INTO visitorcount(ip, date, hits,  time) VALUES('".$ip."','".$date."','1','".$timeinsert."')");
         }
  
     // Jika sudah ada, update

@@ -97,6 +97,30 @@
   });
 </script>
 
+<script>
+  // get data
+  $('.form-check-input-role-admBerita').on('click', function() {
+    const roleId = $(this).data('role-admBerita');
+    const id = $(this).data('id');
+
+    $.ajax({
+      url: "<?= base_url('Admin/Admin_manage_account/admBerita/'); ?>",
+      type: 'post',
+      data: {
+        roleId: roleId,
+        id: id
+      },
+      success: function() {
+        document.location.href = "<?= base_url('Admin/Admin_manage_account/'); ?>"
+
+      }
+    })
+  });
+</script>
+
+
+
+
 
 <script>
   var state = false;
