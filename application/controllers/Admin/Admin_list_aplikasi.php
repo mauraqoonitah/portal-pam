@@ -9,7 +9,9 @@ class Admin_list_Aplikasi extends CI_Controller
         if (!$this->session->userdata('email')) {
             redirect(base_url('login'));
         }
-        is_logged_in();
+        $this->load->model('Admin_model');
+        $this->load->helper('auth');
+        is_logged_in_role_2();
 
         
     }
@@ -17,6 +19,9 @@ class Admin_list_Aplikasi extends CI_Controller
     {
         $data['item'] = $this->Item_model->getAllItem();
         $data['admin'] = $this->db->get_where('admin', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['adminAkun'] = $this->Admin_model->getAllAdmin();
+
 
         $data['title'] = 'Daftar Aplikasi Portal | Admin Portal PAM Jaya';
 

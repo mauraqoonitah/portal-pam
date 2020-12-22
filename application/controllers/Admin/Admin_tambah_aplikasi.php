@@ -11,7 +11,9 @@ class Admin_tambah_aplikasi extends CI_Controller
         if (!$this->session->userdata('email')) {
             redirect(base_url('login'));
         }
-        is_logged_in();
+        $this->load->model('Admin_model');
+        $this->load->helper('auth');
+        is_logged_in_role_2();
         
     }
 

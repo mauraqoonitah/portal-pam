@@ -24,6 +24,30 @@ function is_logged_in()
     }
 }
 
+function is_logged_in_role_2()
+{
+    $ci = get_instance();
+    if (!$ci->session->userdata('email')) {
+        redirect(base_url('login'));
+    } else {
+
+        $role_id = $ci->session->userdata('role_id');
+
+        $queryMenu = $ci->db->get_where('user_menu', ['id' => '3'])->row_array();
+        $menu_id = $queryMenu['id'];
+
+        $userAccess = $ci->db->get_where('user_access_menu', [
+            'role_id' => $role_id,
+            'menu_id' => $menu_id
+        ]);
+
+        if ($userAccess->num_rows() < 1) {
+            redirect('login/blocked');
+        }
+    }
+}
+
+
 function check_access($is_active)
 {
     $ci = get_instance();
