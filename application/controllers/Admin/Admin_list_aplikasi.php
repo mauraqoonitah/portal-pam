@@ -9,6 +9,7 @@ class Admin_list_Aplikasi extends CI_Controller
         if (!$this->session->userdata('email')) {
             redirect(base_url('login'));
         }
+        is_logged_in();
 
         
     }
